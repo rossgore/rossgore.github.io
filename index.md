@@ -11,25 +11,22 @@ VMASC Homepage: [Ross Gore - ODU/VMASC](https://vmasc.org/staff-profiles/dr-ross
 Publications: [Google Scholar](https://scholar.google.com/citations?user=Sp4pikIAAAAJ&hl=en)  
 Open Source: [GitHub Profile](https://github.com/rossgore)
 
-Research Interests: Simulation Validation | Data Science & Predictive Analytics | Agent-based Simulation | Software Debugging
+### Research Interests: 
 
-## Selected Publications
+Simulation Validation | Data Science & Predictive Analytics | Agent-based Simulation | Software Debugging
 
-My research focuses on extracting, combining, and analyzing data from new and diverse sources to provide quantitative and interpretable answers to questions. This analysis can take the form of analysis, statistical models or simulations. The domains of the questions have included public health, refugee migration, city planning, terrorist attack risk assessments, cyber security, software engineering and social science. The unifying theme across my work is the use of novel data sources to improve understanding of the problem at hand. These are 5 publications that higlight my different research interests and themes of my research. A full list of my publications is available at my Google Scholar profile.
+## [Selected Research Projects](research/research.md)
 
-* Gore, R. J., Diallo, S., & Padilla, J. (2015). You are what you tweet: connecting the geographic variation in america’s obesity rate to Twitter content. *PloS one*, *10*(9), e0133505.
-* Gore, R., Lemos, C., Shults, F. L., & Wildman, W. J. (2018). Forecasting changes in religiosity and existential security with an agent-based model. *Journal of Artificial Societies and Social Simulation*, *21*(1).
-* Gore, R., Reynolds Jr, P. F., Kamensky, D., Diallo, S., & Padilla, J. (2015). Statistical debugging for simulations. *ACM Transactions on Modeling and Computer Simulation (TOMACS)*, *25*(3), 1-26.
-* Shults, F. L., Gore, R., Wildman, W. J., Lynch, C. J., Lane, J. E., & Toft, M. D. (2018). A generative model of the mutual escalation of anxiety between religious groups. *Journal of Artificial Societies and Social Simulation*, *21*(4).
-* Lemos, C. M., Gore, R. J., Puga-Gonzalez, I., & Shults, F. L. (2019). Dimensionality and factorial invariance of religiosity among Christians and the religiously unaffiliated: A cross-cultural analysis based on the International Social Survey Programme. *PloS one*, *14*(5), e0216352.
+My research focuses on extracting, combining, and analyzing data from new and diverse sources to provide quantitative and interpretable answers to questions. This analysis can take the form of analysis, statistical models or simulations. The domains of the questions have varied from public health, refugee migration, city planning, terrorist attack risk assessments, cyber security, software engineering and social science. The unifying theme across my work is the use of novel data sources to improve understanding of the problem at hand. [Here]((research/research.md)) are descriptions and publications from some of my projects that highlight my different interests and the themes of my research. A full list of my publications is available at my [Google Scholar profile](https://scholar.google.com/citations?user=Sp4pikIAAAAJ&hl=en).
 
-## Selected Funded Research
 
-These are 5 projects where I have served as Principle Investigator (PI) or Co-Principle Investigator (Co-PI) that give an overview of my work and my research.
 
-* IPOET (2018-2019). **R. Gore** (VMASC/ODU, PI). With: S. Diallo (VMASC/ODU, Co-PI). Camber Corporation, $150,000.00. % of Credit: $30,000
-* Proactive Cyber Security Data-Driven Assessment Tool (2016-2017). **R. Gore** (VMASC/ODU, PI). With: B. Ezell (VMASC/ODU, Co-PI). G2 Ops, Inc. $20,398. % of Credit: $10,199.
-* Modeling Religion in Norway (2017-2019). **R. Gore** (VMASC/ODU, PI). With: S. Diallo (VMASC/ODU, Co-PI) and A. Barraco (VMASC/ODU Co-PI). University of Agder, $252,900. % of Credit: $101,160.
-* Cyber Risk and Resilience Analytics (2020-2021). S. Shetty (VMASC/ODU, PI). With: **R. Gore** (VMASC/ODU, Co-PI). Frontier Technology Inc., $102,000.00. % of Credit: $10,200.00.
-* Automation Tools and Analytics Courses for the Naval Shipyard (2018-2022). A. Collins (EMSE/ODU, PI). With: **R. Gore** (VMASC/ODU, Co-PI). Naval Sea Systems Command, $943,899.00. % of Credit: $94,389.90
+## [Community Service](service/service.md)
 
+Service is an important component of our profession and an activity that grounds us in the local community, the university, and the academic community at large. [Here]((service/service.md)) are descriptions and publications from some of my projects that highlight my different interests and the themes of my research. [This white paper](service/Service-Gore.pdf) provides a detailed description of my approach and experience with service is available.
+
+
+
+## [Teaching](teaching/teaching.md)
+
+A university encourages students to appreciate profound ideas from different cultures and disciplines and to use them in new, creative and interesting ways. As a professor I encourage every student I teach to embrace this appreciation and innovation. An overview of my teaching experience, awards, evaluations and student / colleague testimonials is available [here](teaching/teaching.md). [This document](teaching/TeachingStatement_RossJGore.pdf) provides a description of my teaching philosophy.
