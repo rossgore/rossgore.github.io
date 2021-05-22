@@ -26,14 +26,20 @@ Developed a model at the city and county level of Virginia that gives a short-te
 
   
 
-## Leveraging Public Behavior to better understand human behavior 
+## Leveraging Data Artifacts to better understand human behavior 
+
+A major focus of my research is leveraging data that is an artifact of the way we live to better understand human behavior. Typically, this data takes the form of social media data, anomyized GPS mobility data, and anomyized SMS messages and cell phone records. My aim is to novel insight about human behavior by quantifying and anlayzing these data sources.
 
 ### You Are What You Tweet
 We studied the relationship among the obesity rate of urban areas and expressions of happiness, diet and physical activity on social media. We showed that areas with lower obesity rates: (1) have happier tweets and frequently discuss (2) food, particularly fruits and vegetables, and (3) physical activities of any intensity.
 
 #### Related Publications
 
+* Gore, R. J., Diallo, S., & Padilla, J. (2015). [You are what you tweet: connecting the geographic variation in america’s obesity rate to Twitter content](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133505). *PloS one*, *10*(9), e0133505.
+
 #### Selected Media Coverage
+
+* January 14, 2016. [ODU Modeling & Simulation Researcher Looks for Clues in Big Data](https://www.odu.edu/news/2016/1/vmasc_big_data#.YKkNykhKheu)
 
 ### Understanding how the locals and tourists react differently to city attractions
 
@@ -41,13 +47,31 @@ We studied how the time of day and if individuals were locals or tourists can af
 
 #### Related Publications
 
+* Padilla, J. J., Kavak, H., Lynch, C. J., Gore, R. J., & Diallo, S. Y. (2018). [Temporal and spatiotemporal investigation of tourist attraction visit sentiment on Twitter](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0198857). *PloS one*, *13*(6), e0198857.
+
 ### Characterizing the Mobile Phone Use Patterns of Refugee-Hosting Provinces in Turkey
 
-We used an anomyized mobile phone data set to understand the experience of refugees throughout Turkey based on their proximity to refugee targeted violent incidents and refugee camps. We showed that: (1) there is more negative sentiment targeted expressed towards refugees in those areas close to refugee camps and (2) the mobile phone behavior (i.e. number of calls made and text messages sent) in the wake of a violent incident for refugees and non-refugees is more similar the close the individuals are to the location of the incident.
+We used an anomyized mobile phone data set to understand the experience of refugees throughout Turkey based on their proximity to refugee targeted violent incidents and refugee camps. We showed that: (1) there is more negative sentiment targeted expressed towards refugees in those areas close to refugee camps and (2) the mobile phone behavior (i.e. number of calls made and text messages sent) in the wake of a violent incident for refugees and non-refugees is more similar the close the individuals are to the location of the incident. The research won the "Safety and Security Prize" in the Data For Refugees (D4R) challenge sponsored by Turk Telecom.
 
 #### Related Publications
 
-#### Selected Media Coverage and Awards
+* Frydenlund, E., Şener, M. Y., Gore, R., Boshuijzen-van Burken, C., Bozdag, E., & de Kock, C. (2019). [Characterizing the Mobile Phone Use Patterns of Refugee-Hosting Provinces in Turkey.](/turkey-refugee-analysis-paper.pdf) In *Guide to Mobile Data Analytics in Refugee Scenarios* (pp. 417-431). Springer, Cham.
+
+
+
+## Simulation Debugging, Verification Validation
+
+ The process of developing, verifying and validating models and simulations should be straightforward. Unfortunately, following conventional development approaches can render a model design that appeared complete and robust into an incomplete, incoherent and invalid simulation during implementation. An alternative approach is for subject matter experts (SMEs) to employ formal methods to describe their models. However, formal methods are rarely used in practice due to their intimidating syntax and semantics rooted in mathematics.
+
+To address this problem I have developed an approach to gaining insight about unexpected outputs, in some cases bugs, centered around the practice of predicate-based statistical debugging used in software engineering. This approach is realized in a standalone tool published on my [Github](https://github.com/rossgore/IVandVLevelChecker) and in an [online web application](https://vmasc.shinyapps.io/VandVCalculator/). We have a small but regular user base (~25-50 users) and we are always looking to grow it.
+
+#### Related Publications and Slides
+
+* Gore, R., Reynolds Jr, P. F., Kamensky, D., Diallo, S., & Padilla, J. (2015). [Statistical debugging for simulations.](/tomacs-statistical-debugging.pdf) *ACM Transactions on Modeling and Computer Simulation (TOMACS)*, *25*(3), 1-26.
+* Diallo, S. Y., Gore, R., Lynch, C. J., & Padilla, J. J. (2016). [Formal methods, statistical debugging and exploratory analysis in support of system development: Towards a verification and validation calculator tool.](/towards-a-v-and-v-calculator.pdf) *International Journal of Modeling, Simulation, and Scientific Computing*, *7*(01), 1641001.
+* Gore, R. J., Lynch, C. J., & Kavak, H. (2017). [Applying statistical debugging for enhanced trace validation of agent-based models.](/Applying_statistical_debugging_for_enhanced_trace_.pdf) *Simulation*, *93*(4), 273-284.
+
+
 
 
 
