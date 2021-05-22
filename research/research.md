@@ -59,19 +59,39 @@ We used an anomyized mobile phone data set to understand the experience of refug
 
 
 
-## Simulation Debugging, Verification Validation
+## Simulation Debugging, Verification & Validation
 
  The process of developing, verifying and validating models and simulations should be straightforward. Unfortunately, following conventional development approaches can render a model design that appeared complete and robust into an incomplete, incoherent and invalid simulation during implementation. An alternative approach is for subject matter experts (SMEs) to employ formal methods to describe their models. However, formal methods are rarely used in practice due to their intimidating syntax and semantics rooted in mathematics.
 
 To address this problem I have developed an approach to gaining insight about unexpected outputs, in some cases bugs, centered around the practice of predicate-based statistical debugging used in software engineering. This approach is realized in a standalone tool published on my [Github](https://github.com/rossgore/IVandVLevelChecker) and in an [online web application](https://vmasc.shinyapps.io/VandVCalculator/). We have a small but regular user base (~25-50 users) and we are always looking to grow it.
 
-#### Related Publications and Slides
+#### Related Publications
 
 * Gore, R., Reynolds Jr, P. F., Kamensky, D., Diallo, S., & Padilla, J. (2015). [Statistical debugging for simulations.](/tomacs-statistical-debugging.pdf) *ACM Transactions on Modeling and Computer Simulation (TOMACS)*, *25*(3), 1-26.
 * Diallo, S. Y., Gore, R., Lynch, C. J., & Padilla, J. J. (2016). [Formal methods, statistical debugging and exploratory analysis in support of system development: Towards a verification and validation calculator tool.](/towards-a-v-and-v-calculator.pdf) *International Journal of Modeling, Simulation, and Scientific Computing*, *7*(01), 1641001.
 * Gore, R. J., Lynch, C. J., & Kavak, H. (2017). [Applying statistical debugging for enhanced trace validation of agent-based models.](/Applying_statistical_debugging_for_enhanced_trace_.pdf) *Simulation*, *93*(4), 273-284.
+* Gore, R., Diallo, S., Lynch, C., & Padilla, J. (2017). [Augmenting bottom-up metamodels with predicates.](http://jasss.soc.surrey.ac.uk/20/1/4.html) *Journal of Artificial Societies and Social Simulation*, *20*(1).
+
+#### Related Slides
+
+* Gore, R., Diallo, S. Y. [Verification & Validation Calculator](/v-and-v-calculator-tool-presentation.pptx). Presentation on January 17th 2017 to [The MITRE Corporation](https://www.mitre.org/).
 
 
 
+## Modeling Human Behavior with Agent-based Models
 
 
+
+#### Related Publications
+
+* Gore, R., Lemos, C., Shults, F. L., & Wildman, W. J. (2018). [Forecasting changes in religiosity and existential security with an agent-based model.](http://jasss.soc.surrey.ac.uk/21/1/4.html) *Journal of Artificial Societies and Social Simulation*, *21*(1).
+* Shults, F. L., Gore, R., Wildman, W. J., Lynch, C., Lane, J. E., & Toft, M. (2017). [Mutually escalating religious violence: A generative model.](http://jasss.soc.surrey.ac.uk/21/4/7.html) In *Proceedings of the Social Science Conference* (pp. 1-12).
+
+#### Selected Media Coverage
+
+* November 6, 2018. [Researchers created an artificial society to find the causes of religious conflict](https://qz.com/1451287/researchers-created-an-artificial-society-to-find-the-causes-of-religious-conflict/)
+* October 31, 2018. [Researchers Simulated Religious Groups With AI to Try to Understand Religious Violence](https://www.vice.com/en/article/598n3z/researchers-simulated-religious-groups-with-ai-to-try-to-understand-religious-violence)
+
+#### Related Slides
+
+* Gore, R., Diallo, S. Y. [A Generative Model of the Mutual Escalation of Anxiety Between Religious Groups](/MERV-Slides.pptx). Presentation on August 15th 2018 at The Annual Meeting of the International Association for the Cognitive Science of Religion.
