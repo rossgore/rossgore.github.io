@@ -26,7 +26,7 @@ Developed a model at the city and county level of Virginia that gives a short-te
 
   
 
-## Leveraging Data Artifacts to better understand human behavior 
+## Leveraging Data Artifacts to better understand human experience 
 
 A major focus of my research is leveraging data that is an artifact of the way we live to better understand human behavior. Typically, this data takes the form of social media data, anomyized GPS mobility data, and anomyized SMS messages and cell phone records. My aim is to novel insight about human behavior by quantifying and anlayzing these data sources.
 
@@ -57,7 +57,13 @@ We used an anomyized mobile phone data set to understand the experience of refug
 
 * Frydenlund, E., Şener, M. Y., Gore, R., Boshuijzen-van Burken, C., Bozdag, E., & de Kock, C. (2019). [Characterizing the Mobile Phone Use Patterns of Refugee-Hosting Provinces in Turkey.](/turkey-refugee-analysis-paper.pdf) In *Guide to Mobile Data Analytics in Refugee Scenarios* (pp. 417-431). Springer, Cham.
 
+## Mobile Data as Public Health Decision Enabler: A Case Study of Cardiac and Neurological Emergencies
 
+We used [anomyized cell-phone data](/D4D_Senegal.pdf) from Senegal provided by the Data For Development challenge and joined with with demographic data and the location of hospitals to identify those areas in the country where adding an additional hospital would most reduce the travel time during the critical initial period for patients experiencing an heart attack or stroke. The research won the "Partical Application Prize" in the Data For Development (D4D) challenge sponsored by [The Orange Foundation](https://www.fondationorange.com/Orange-Foundation-around-the-world).
+
+#### Related Publications
+
+* Mutafungwa, E., Thiessard, F., Diallo, P., Gore, R., Jouhet, V., Karray, C. & Diallo, G. (2015). [Mobile Data as Public Health Decision Enabler: A Case Study of Cardiac and Neurological Emergencies.](/D4D_Research_report.pdf) In *Data for Development (D4D) Challenge at Net Mob 2015, Boston, USA, 7-10 April 2015*.
 
 ## Simulation Debugging, Verification & Validation
 
@@ -80,12 +86,14 @@ To address this problem I have developed an approach to gaining insight about un
 
 ## Modeling Human Behavior with Agent-based Models
 
-
+They are diverse in their knowledge and abilities but their behavior is far from random. However, despite often making rational decisions, their behavior is also emotional. My research with agent-based models has attempted to capture these attributes, when they matter, to better understand how humans operate and how the institutions around them operate in a variety of domains.
 
 #### Related Publications
 
 * Gore, R., Lemos, C., Shults, F. L., & Wildman, W. J. (2018). [Forecasting changes in religiosity and existential security with an agent-based model.](http://jasss.soc.surrey.ac.uk/21/1/4.html) *Journal of Artificial Societies and Social Simulation*, *21*(1).
 * Shults, F. L., Gore, R., Wildman, W. J., Lynch, C., Lane, J. E., & Toft, M. (2017). [Mutually escalating religious violence: A generative model.](http://jasss.soc.surrey.ac.uk/21/4/7.html) In *Proceedings of the Social Science Conference* (pp. 1-12).
+* Gore, R., Wozny, P., Dignum, F. P., Shults, F. L., Boshuijzen-van Burken, C., & Royakkers, L. (2019, April). [A value sensitive ABM of the refugee crisis in the Netherlands.](/spring-sim-19-paper.pdf) In *2019 Spring Simulation Conference (SpringSim)* (pp. 1-12). IEEE.
+* Boshuijzen-van Burken, C., Gore, R., Dignum, F., Royakkers, L., Wozny, P., & Shults, F. L. (2020). [Agent-based modelling of values: The case of value sensitive design for refugee logistics.](http://jasss.soc.surrey.ac.uk/23/4/6.html) *JASSS: Journal of Artificial Societies and Social Simulation*, *23*(4).
 
 #### Selected Media Coverage
 
@@ -94,4 +102,5 @@ To address this problem I have developed an approach to gaining insight about un
 
 #### Related Slides
 
-* Gore, R., Diallo, S. Y. [A Generative Model of the Mutual Escalation of Anxiety Between Religious Groups](/MERV-Slides.pptx). Presentation on August 15th 2018 at The Annual Meeting of the International Association for the Cognitive Science of Religion.
+* Gore, R. [A Generative Model of the Mutual Escalation of Anxiety Between Religious Groups](/MERV-Slides.pptx). Presentation on August 15, 2018 at The Annual Meeting of the International Association for the Cognitive Science of Religion.
+* Gore, R. [A value sensitive ABM of the refugee crisis in the Netherlands.](/SpringSim19.pptx) Presenentation on May 1, 2019 at the 2019 Spring Simulation Conference.
