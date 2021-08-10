@@ -7,7 +7,9 @@ While teaching is not part of my duties as a research faculty, I engage in teach
  - [Working With Graduate Students](#working-with-graduate-students)
  - [Serving On Dissertation Committees](#serving-on-dissertation-committees)
  - [Previous Teaching Experience](#previous-teaching-experience)
-___
+<hr>
+
+
 
 ### Working With Graduate Students
 

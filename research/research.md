@@ -1,23 +1,29 @@
 # Selected Research Projects
 
-  [COVID-19 Case and Vaccine Forecasting](#covid-19-case-and-vaccine-forecasting)
+[COVID-19 Case and Vaccine Forecasting](#covid-19-case-and-vaccine-forecasting)
+
+<hr>
 
   [Leveraging Data To Better Understand The Human Experience](#leveraging-data-to-better-understand-humanity)
 
+
+
  - [You Are What You Tweet: Connecting The Geographic Variation In America’s Obesity Rate To Twitter Content](#you-are-what-you-tweet)
+
  - [Understanding How Locals And Tourists React Differently To City Attractions](#understanding-how-locals-and-tourists-react-differently-to-city-attractions)
 
  - [Characterizing The Mobile Phone Use Patterns Of Refugee Hosting Provinces In Turkey](#characterizing-the-mobile-phone-use-patterns-of-refugee-hosting-provinces-in-turkey)
+
  - [Mobile Data As A Public Health Decision Enabler](#mobile-data-as-a-public-health-decision-enabler)
+
  - [Modeling Human Behavior With Agent Based Models](#modeling-human-behavior-with-agent-based-models)
 
-    
+   
 
-    
+<hr> 
 
-  [Simulation-Debugging, Validation & Verification](#simulation-debugging-validation-and-verification)
-    
-    
+ [Simulation-Debugging, Validation & Verification](#simulation-debugging-validation-and-verification)
+
 ----------
 
 ## COVID-19 Case and Vaccine Forecasting
