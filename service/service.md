@@ -4,17 +4,21 @@ Service is an important component of our profession and an activity that grounds
 
 ## Jump To Subsections
 
--   [Supporting Local Emergency Services With Analytics](#supporting-local-emergency-services-with-analytics)
+-   **[Supporting Local Emergency Services With Analytics](#supporting-local-emergency-services-with-analytics)**
     
--   [Conducting Virginia COVID-19 Case And Vaccine Forecasting](#conducting-virginia-covid-19-case-and-vaccine-forecasting)
+-   **[Conducting Virginia COVID-19 Case And Vaccine Forecasting](#conducting-virginia-covid-19-case-and-vaccine-forecasting)**
     
--   [Supporting The Hampton Roads Pedestrian And Bicycle Advisory Committee](#supporting-the-hampton-roads-pedestrian-and-bicycle-advisory-committee)
+-   **[Supporting The Hampton Roads Pedestrian And Bicycle Advisory Committee](#supporting-the-hampton-roads-pedestrian-and-bicycle-advisory-committee)**
     
--   [University Service](#university-service)
+-   **[University Service](#university-service)**
+	- [Committee Membership](#committee-membership)
     
--   [Professional Service](#professional-service)
+-   **[Professional Service](#professional-service)**
+	- [Publication Peer Review](#publication-peer-review)
+	- [Conference Organizing](#conference-organizing)
+	- [Professional Membership](#professional-membership)
     
--   [Ensuring My Research Helps Humanity](#ensuring-my-research-helps-humanity)
+-   **[Ensuring My Research Helps Humanity](#ensuring-my-research-helps-humanity)**
     
 
 ----------
@@ -35,7 +39,7 @@ Also, in 2017 I became a regular participant in the Hampton Roads Pedestrian and
 
 In service to the university, I have participated in the search/selection committees of three research faculty positions, and three project scientist positions at the Hampton Roads Biomedical Research Center (HRBRC) associated with ODU. In addition I have served on the search/selection committees for the ODU Information Technology Services High Performance Computing (ITS/HPC) computational scientist and three VMASC project scientists. In addition, I serve on the ODU HPC committee, and am a regular participant at ODU’s Annual Research Computing Day. In addition, in 2018 I collaborated with colleagues at Old Dominion University to contribute to the State of the Region: Hampton Roads Report. I have also represented ODU and VMASC during visits from esteemed guests including the governor, mayors, and US Joint Staff College high-ranking military officials. These visits provide opportunities to give guests from the wider community of ODU supporters a chance to test the systems we have built in my lab and challenge our approach to solving pressing research problems in M&S and other application areas.
 
-##### Summary:
+#### Committee Membership:
 
 • Member of ODU High Performance Computing Committee
 
@@ -55,7 +59,7 @@ In service to the university, I have participated in the search/selection commit
 
 I continue to serve the simulation community at large not only by peer-reviewing for journals and conferences, but by also participating in conference organization. I have served as the Tutorial chair for the Society for Modeling & Simulation International 2016 Spring Simulation Conference. This was a particularly rewarding experience because I was able to curate a selection of technology tutorials for the conference audience that I thought would enhance the future research of conferences attendees. I have been able to see the effect of the tutorials on the research papers submitted to the conference as a member of the program committee in subsequent years (2017-2021). Ultimately, it was a great responsibility that generated many connections and the opportunity to represent ODU, VMASC, and promote the work of colleagues in the community.
 
-##### Publication Peer-Reviewer
+#### Publication Peer Review
 
 • Journal of Defense Modeling and Simulation
 
@@ -91,7 +95,7 @@ I continue to serve the simulation community at large not only by peer-reviewing
 
 • Applied Science
 
-##### Conference Organizing
+#### Conference Organizing
 
 • Member of Program Committee - 2014 - 2020 SCS Spring Simulation Conference.
 
@@ -101,7 +105,7 @@ I continue to serve the simulation community at large not only by peer-reviewing
 
 • Tutorial Chair – 2016 SCS Spring Simulation Conference, Pasadena, CA
 
-##### Professional Membership
+#### Professional Membership
 
 • Association for Computing Machinery (ACM)
 
