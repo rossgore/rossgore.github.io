@@ -1,10 +1,10 @@
 # Selected Research Projects
 
-[COVID-19 Case and Vaccine Forecasting](#covid-19-case-and-vaccine-forecasting)
+**[COVID-19 Case and Vaccine Forecasting](#covid-19-case-and-vaccine-forecasting)**
 
 <hr>
 
-  [Leveraging Data To Better Understand The Human Experience](#leveraging-data-to-better-understand-humanity)
+**[Leveraging Data To Better Understand The Human Experience](#leveraging-data-to-better-understand-humanity)**
 
 
 
@@ -22,7 +22,7 @@
 
 <hr> 
 
- [Simulation-Debugging, Validation & Verification](#simulation-debugging-validation-and-verification)
+**[Simulation-Debugging, Validation & Verification](#simulation-debugging-validation-and-verification)**
 
 ----------
 
