@@ -36,7 +36,7 @@ var setDefaultMode = function(){
 	//clear the display field
 	clearDisplayField();
 
-	defaultMode = true;	
+	defaultMode = true;
 };
 
 //handle drag behaviour
@@ -51,14 +51,14 @@ var dragmove = function(d) {
 	// //handle node dragging
 	else {
 		//set the state to being dragged
-		dragged = true;			
+		dragged = true;
 		//move the node
 		d.x += d3.event.dx;
 		d.y += d3.event.dy;
 		//disable dragging out of boundaries
 		// d.x = Math.min(width-radius, Math.max(d.x, radius));
 		// d.y = Math.min(height-radius, Math.max(d.y, radius));
-		refresh();		
+		refresh();
 	}
 };
 
@@ -90,14 +90,14 @@ var zoom = d3.behavior.zoom()
 			 })
 			 .on("zoom", function() {
 			 	// if(!editNodeTextMode) {
-				 	zoomBehavior();			 		
+				 	zoomBehavior();
 			 	// }
 			 })
 			 .on("zoomend", function(){
 			 	svg.style("cursor", "default");
 			 	//recalculate the zoom scale
 				d3.select("#zoom-scale")
-				  .text("Zoom Scale: " + zoom.scale().toFixed(2));			 	
+				  .text("Zoom Scale: " + zoom.scale().toFixed(2));
 			 });
 
 var clearDisplayField = function() {
@@ -116,7 +116,7 @@ var displayHelp = function() {
 		   				.classed("da-slider my-slider", true)
 		   				.attr("id", "help-slider");
 
-	// Append frames for the slideshow 
+	// Append frames for the slideshow
 	slider.append("div")
 		  .classed("da-slide", true)
 		  .append("p")
@@ -166,9 +166,9 @@ var displayHelp = function() {
 		  .classed("da-slide", true)
 		  .append("p")
 		  .attr("class", "instructions-text text-justified")
-		  .html("Other options you can explore are importing/exporting different file formats and using pre-loaded data."); 
+		  .html("Other options you can explore are importing/exporting different file formats and using pre-loaded data.");
 
-	// Append the arrows 
+	// Append the arrows
 	var arrowsNav = slider.append("nav")
 						  .attr("class", "da-arrows");
 	arrowsNav.append("span")
@@ -179,14 +179,14 @@ var displayHelp = function() {
 	// Start the slider
 	$('#help-slider').cslider({
 		// index of current slide
-		// current		: 0, 	
-		// increment the background position 
-		// (parallax effect) when sliding	
-		bgincrement	: 50,	
-		// slideshow on / off	
+		// current		: 0,
+		// increment the background position
+		// (parallax effect) when sliding
+		bgincrement	: 50,
+		// slideshow on / off
 		autoplay	: true,
-		// time between transitions	
-		// interval	: 3000 
+		// time between transitions
+		// interval	: 3000
 	});
 
 }
@@ -198,7 +198,7 @@ var displayInfo = function() {
 	var slider = control.append("div")
 		   				.classed("da-slider my-slider", true)
 		   				.attr("id", "info-slider");
-	// Append frames for the slideshow 
+	// Append frames for the slideshow
 	slider.append("div")
 		  .classed("da-slide", true)
 		  .append("p")
@@ -235,7 +235,7 @@ var displayInfo = function() {
 		  .attr("class", "instructions-text text-justified")
 		  .html("If there is a network with known structure but not known probabilities for the random variables, sample data can be used to learn the probabilities for the network.")
 
-	// Append the arrows 
+	// Append the arrows
 	var arrowsNav = slider.append("nav")
 						  .attr("class", "da-arrows");
 	arrowsNav.append("span")
@@ -246,14 +246,14 @@ var displayInfo = function() {
 	// Start the slider
 	$('#info-slider').cslider({
 		// index of current slide
-		current		: 0, 	
-		// increment the background position 
-		// (parallax effect) when sliding	
-		bgincrement	: 50,	
-		// slideshow on / off	
+		current		: 0,
+		// increment the background position
+		// (parallax effect) when sliding
+		bgincrement	: 50,
+		// slideshow on / off
 		autoplay	: true,
-		// time between transitions	
-		interval	: 3000 
+		// time between transitions
+		interval	: 3000
 	});
 }
 
@@ -264,24 +264,24 @@ var displayAbout = function() {
 	var slider = control.append("div")
 		   				.classed("da-slider my-slider", true)
 		   				.attr("id", "about-slider");
-	// Append frames for the slideshow 
+	// Append frames for the slideshow
 	slider.append("div")
 		  .classed("da-slide", true)
 		  .append("p")
 		  .attr("class", "instructions-text text-justified")
-		  .html("BayANet has been developed as a third year project by Anna Aleksieva in the School of Computer Science.");
+		  .html("The Attack Ladder Tool has been developed by ODU/VMASC.");
 	slider.append("div")
 		  .classed("da-slide", true)
 		  .append("p")
 		  .attr("class", "instructions-text text-justified")
-		  .html("The tool has been developed to serve as a teaching tool for COMP61011.");	
+		  .html("The tool goal of the tool is to help better understand cybersecurity risk.");
 	slider.append("div")
 		  .classed("da-slide", true)
 		  .append("p")
 		  .attr("class", "instructions-text text-justified")
-		  .html("The aim of this application is to overcome the limitations of other existing Bayesian Networks tools and to provide beginners with understanding of the core principles of BNs.");	
+		  .html("The aim of this application is to overcome the limitations existing tools with respect to measuring probabilities of successful attacks on cyber networks and to provide a foundation for measuring risk more formally.");
 
-	// Append the arrows 
+	// Append the arrows
 	var arrowsNav = slider.append("nav")
 						  .attr("class", "da-arrows");
 	arrowsNav.append("span")
@@ -292,15 +292,15 @@ var displayAbout = function() {
 	// Start the slider
 	$('#about-slider').cslider({
 		// index of current slide
-		current		: 0, 	
-		// increment the background position 
-		// (parallax effect) when sliding	
-		bgincrement	: 50,	
-		// slideshow on / off	
+		current		: 0,
+		// increment the background position
+		// (parallax effect) when sliding
+		bgincrement	: 50,
+		// slideshow on / off
 		autoplay	: true,
-		// time between transitions	
-		interval	: 3000 
-	});	
+		// time between transitions
+		interval	: 3000
+	});
 };
 
 var displayResources = function(){
@@ -312,7 +312,7 @@ var displayResources = function(){
 		   				.classed("da-slider my-slider", true)
 		   				.attr("id", "resources-slider");
 // TODO
-	// Append frames for the slideshow 
+	// Append frames for the slideshow
 	// slider.append("div")
 	// 	  .classed("da-slide", true)
 	// 	  .append("p")
@@ -322,15 +322,15 @@ var displayResources = function(){
 	// 	  .classed("da-slide", true)
 	// 	  .append("p")
 	// 	  .attr("class", "instructions-text text-justified")
-	// 	  .html("The tool has been developed to serve as a teaching tool for COMP61011.");	
+	// 	  .html("The tool has been developed to serve as a teaching tool for COMP61011.");
 	// slider.append("div")
 	// 	  .classed("da-slide", true)
 	// 	  .append("p")
 	// 	  .attr("class", "instructions-text text-justified")
-	// 	  .html("The aim of this application is to overcome the limitations of other existing Bayesian Networks tools and to provide beginners with understanding of the core principles of BNs.");	
+	// 	  .html("The aim of this application is to overcome the limitations of other existing Bayesian Networks tools and to provide beginners with understanding of the core principles of BNs.");
 
 
-	// Append the arrows 
+	// Append the arrows
 	var arrowsNav = slider.append("nav")
 						  .attr("class", "da-arrows");
 	arrowsNav.append("span")
@@ -341,15 +341,15 @@ var displayResources = function(){
 	// Start the slider
 	$('#resouces-slider').cslider({
 		// index of current slide
-		current		: 0, 	
-		// increment the background position 
-		// (parallax effect) when sliding	
-		bgincrement	: 50,	
-		// slideshow on / off	
+		current		: 0,
+		// increment the background position
+		// (parallax effect) when sliding
+		bgincrement	: 50,
+		// slideshow on / off
 		autoplay	: true,
-		// time between transitions	
-		interval	: 3000 
-	});	
+		// time between transitions
+		interval	: 3000
+	});
 };
 
 var refresh = function(){
@@ -376,7 +376,7 @@ var refresh = function(){
 		 .attr("d", function(d) {
 		 	return "M" + d.source.x + "," + d.source.y + "L" + d.target.x + "," + d.target.y;
 		 })
-		 .on("mousedown", function(d){ 
+		 .on("mousedown", function(d){
 		 	d3.event.stopPropagation();
 
 		    //select/deselect the path
@@ -456,9 +456,9 @@ var refresh = function(){
     circleGroup.each(function(c) {
     	multipleLinesText(c.title, d3.select(this));
     });
-   			    			    			    			
+
     //remove old circles
-    circles.exit().remove();	   
+    circles.exit().remove();
 };
 
 //on double click on the canvas, create a new node
@@ -512,12 +512,12 @@ var deleteData = function(){
 	d3.select("#p-struct").append("span")
 						  .attr("id", "glyphicon-struct")
 						  .attr("class", "glyphicon glyphicon-ban-circle glyphicon-navbar-ban")
-						  .attr("aria-hidden", "true");	
+						  .attr("aria-hidden", "true");
 	d3.select("#glyphicon-params").remove();
 	d3.select("#p-params").append("span")
 						  .attr("id", "glyphicon-params")
 						  .attr("class", "glyphicon glyphicon-ban-circle glyphicon-navbar-ban")
-						  .attr("aria-hidden", "true");	  
+						  .attr("aria-hidden", "true");
 }
 
 var deleteNetwork = function(isConfirm, all) {
@@ -533,13 +533,13 @@ var deleteNetwork = function(isConfirm, all) {
 					deleteData();
 				}
 	  		}
-		});		
+		});
 	}
 	else {
 		nodes = [];
 		edges = [];
 		lastID = 0;
-		refresh();		
+		refresh();
 		setDefaultMode();
 		if(all) {
 			deleteData();
@@ -566,7 +566,7 @@ var forceLayout = function(nodes, links) {
 
 	// 	// update positions of links
 	// 	paths.attr("d", function(d){
-	// 	 	return "M" + d.source.x + "," + d.source.y + "L" + d.target.x + "," + d.target.y;			
+	// 	 	return "M" + d.source.x + "," + d.source.y + "L" + d.target.x + "," + d.target.y;
 	// 	})
 	// });
 	// force.start();
@@ -597,7 +597,7 @@ var init = function() {
 	height = 0.82 * window.innerHeight;
 	radius=25;
 	pressedKey = -1;
-	
+
 	//TODO remove?
 	constants = {
 		BACKSPACE: 8,
@@ -609,14 +609,14 @@ var init = function() {
 	selectedNode = null;
 	selectedPath = null;
 	mousedownNode = null;
-	
+
 	//status states
 	dragged = false;
 	zoomed = false;
 	connecting = false;
 	focused = false;
 	uploaded = false;
-	
+
 	//work mode
 	defaultMode = true;
 
@@ -640,10 +640,10 @@ var init = function() {
 
 		// update positions of links
 		paths.attr("d", function(d){
-		 	return "M" + d.source.x + "," + d.source.y + "L" + d.target.x + "," + d.target.y;			
+		 	return "M" + d.source.x + "," + d.source.y + "L" + d.target.x + "," + d.target.y;
 		})
 	});
-	// end 
+	// end
 
 	control = d3.select("#control");
 
@@ -655,7 +655,7 @@ var init = function() {
 				.attr("class", "tour-step tour-step-six")
 				.attr("version", 1.1)
 				.attr("xmlns", "http://www.w3.org/2000/svg");
-	
+
 	//arrow markers
 	//parts of the code used from these examples http://tutorials.jenkov.com/svg/marker-element.html
 	svg.append("defs")
@@ -669,7 +669,7 @@ var init = function() {
 	   .append("path")
 	   .attr("d", "M0,-5L10,0L0,5")
 	   .attr("class", "arrow")
-	
+
 	svg.append("defs")
 	   .append("marker")
 	   .attr("id", "dragline-arrow")
@@ -681,17 +681,17 @@ var init = function() {
 	   .append("path")
 	   .attr("d", "M0,-5L10,0L0,5")
 	   .attr("class", "arrow");
-	
+
 	//graph group, paths, circles
 	graph = svg.append("g").attr("id", "graph");
 	paths = graph.append("g").selectAll("path");
     circles = graph.append("g").selectAll("g");
-	
+
 	//dragline
 	dragline = graph.append("path")
 					.attr("class", "conn hidden dragline")
 				 	.attr("d", "M0,0L0,0")
-				 	.style("marker-end", "url(#dragline-arrow)");	
+				 	.style("marker-end", "url(#dragline-arrow)");
 
 	// svg.on("mousedown", svgMouseDown)
 	svg.on("dblclick", svgDblClick)
@@ -703,7 +703,7 @@ var init = function() {
 	   .on("mouseout", function() {
 	   	   focused = false;
 	   })
-	   .call(zoom); 
+	   .call(zoom);
 	svg.on("dblclick.zoom", null);
 
 	d3.select("#downloadNet")
@@ -798,7 +798,7 @@ var init = function() {
 	  .append("p")
 	  .attr("id", "zoom-scale")
 	  .attr("class", "pull-right zoom-text")
-	  .text("Zoom Scale: " + zoom.scale().toFixed(2));  	  	
+	  .text("Zoom Scale: " + zoom.scale().toFixed(2));
 }();
 
 //Initialise

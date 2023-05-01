@@ -14,14 +14,14 @@ var startTour = function() {
         placement: "bottom",
         orphan: true,
         backdrop:true ,
-        title: "Welcome to the Bayesian Networks tutorial!",
+        title: "Welcome to the Attack Ladder tutorial!",
         content: "This tour will guide you through the main features of the tool."
       },
       {
         element: ".tour-step.tour-step-two",
         placement: "bottom",
         title: "Controls",
-        content: "Use the dropdown menus to upload/download data, sample, learn structures and learn more about the tool itself."
+        content: "Use the dropdown menus to upload/download attack ladder data, sample, learn attack ladder structures and learn more about the tool itself."
       },
       {
         element: ".tour-step.tour-step-two-one",
@@ -33,13 +33,13 @@ var startTour = function() {
         element: ".tour-step.tour-step-three",
         placement: "top",
         title: "Canvas",
-        content: "Use the canvas to add and delete elements. Click on the created elements to edit their properties."
+        content: "Use the canvas to add and delete attack ladder elements. Click on the created attack ladder elements to edit their properties."
       },
       {
         element: ".tour-step.tour-step-four",
         placement: "left",
         title: "Information box",
-        content: "Use the information box to edit nodes' properties and get hints on how to control the tool."
+        content: "Use the information box to edit attack ladder rungs' properties and get hints on how to control the tool."
       },
       {
         element: ".tour-step.tour-step-zoom",
@@ -55,8 +55,8 @@ var startTour = function() {
       {
         element: ".tour-step.tour-step-six",
         placement: "right",
-        title: "Adding a Node",
-        content: "Double-click to add a node on the field.",
+        title: "Adding an Attack Ladder Rung",
+        content: "Double-click to add a rung on the field.",
         // reflex: true,
         // onShown: function(tour) {
         //   $(".popover.tour-tour .popover-navigation .btn-group .btn[data-role=next]").prop("disabled", true);
@@ -66,7 +66,7 @@ var startTour = function() {
         element: ".tour-step.tour-step-seven",
         placement: "left",
         title: "Renaming a Node",
-        content: "Click on the label to change the node's title. Change the title to 'MaryCalls'",
+        content: "Click on the label to change the rung's title. Change the title to 'Attempt To Compromise System Admin'",
         onShow: function(tour) {
           // check if node has been created and if not create it
           var selection = d3.select("h3.node-label");
@@ -79,7 +79,7 @@ var startTour = function() {
         element: ".tour-step.tour-step-eight",
         placement: "top",
         title: "Adding a Link",
-        content: "Click on the 'Alarm' node to select it.",
+        content: "Click on the 'State of Attack' rung to select it.",
         reflex:true,
         onShow: function(tour) {
           var selection = d3.selectAll("g.node");
@@ -94,7 +94,7 @@ var startTour = function() {
         element: ".tour-step.tour-step-eight",
         placement: "top",
         title: "Adding Link",
-        content: "Drag from the 'Alarm' node to 'MaryCalls' node to add a connection between them.",
+        content: "Drag from the 'Attempted Reconnaissance' rung to 'Attempt to Execute Added Code' rung to add a connection between them.",
         onPrev: function(tour) {
           // setMode("");
         }                      
@@ -102,8 +102,8 @@ var startTour = function() {
       {
         element: ".tour-step.tour-step-nine",
         placement: "top",
-        title: "Editing Node",
-        content: "Click on the 'MaryCalls' node to edit its properties.",
+        title: "Editing Rung",
+        content: "Click on the 'Attempted Reconnaissance' rung to edit its properties.",
         reflex: true,
         onShow: function(tour) {
           selectedNode = null;
@@ -120,8 +120,8 @@ var startTour = function() {
       {
         element: ".tour-step.tour-step-ten",
         placement: "left",
-        title: "Explore Node Properties",
-        content: "Choose 'Node Values' from the dropdown to explore this node values.",
+        title: "Explore Rung Properties",
+        content: "Choose 'Rung Values' from the dropdown to explore this rung values.",
         onShow: function(tour) {
           d3.select("#node-options")
             .classed("tour-step tour-step-ten", true);
@@ -130,7 +130,7 @@ var startTour = function() {
       {
         element: ".tour-step.tour-step-ten",
         placement: "left",
-        title: "Explore Node Properties",
+        title: "Explore Rung Properties",
         content: "Go back to CPT table.",
         onShow: function(tour) {
           d3.select("#node-options")
@@ -140,8 +140,8 @@ var startTour = function() {
       {
         element: ".tour-step.tour-step-eleven",
         placement: "left",
-        title: "Explore Node Properties",
-        content: "Edit the CPT values for 'MaryCalls' to being <0.7, 0.3>, <0.01, 0.99>.",
+        title: "Explore Rung Properties",
+        content: "Edit the CPT values for 'Attempt To Add Code' to being <0.7, 0.3>, <0.00, 1.00>.",
         onShow: function(tour) {
           d3.select(".cpt-table")
             .classed("tour-step tour-step-eleven", true);
@@ -150,7 +150,7 @@ var startTour = function() {
       {
         element: ".tour-step.tour-step-twelve",
         placement: "left",
-        title: "Explore Node Properties",
+        title: "Explore Rung Properties",
         content: "Click 'Save Changes' button to save the update.",
         reflex: true,
         onShow: function(tour) {
@@ -164,7 +164,7 @@ var startTour = function() {
       {
         element: ".tour-step.tour-step-success",
         placement: "left",
-        title: "Explore Node Properties",
+        title: "Explore Rung Properties",
         content: "Message on the result of your update.",
         onShow: function(tour) {
           d3.select(".alert-text")
@@ -319,15 +319,7 @@ var startTour = function() {
           d3.select(".cpt-table.table-bayes")
           .classed("tour-step tour-step-updated-cpt", true);
         },                                
-      },
-      {
-        element: ".tour-step.tour-step-twenty",
-        placement: "bottom",
-        orphan: true,
-        backdrop: true,
-        title: "Thank you.",
-        content: "Have fun exploring the other features of the tool.",
-      },                    
+      },        
     ]);
  
     // Initialize the tour
