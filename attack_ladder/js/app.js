@@ -311,24 +311,6 @@ var displayResources = function(){
 	var slider = control.append("div")
 		   				.classed("da-slider my-slider", true)
 		   				.attr("id", "resources-slider");
-// TODO
-	// Append frames for the slideshow
-	// slider.append("div")
-	// 	  .classed("da-slide", true)
-	// 	  .append("p")
-	// 	  .attr("class", "instructions-text text-justified")
-	// 	  .html("BayANet has been developed as a third year project by Anna Aleksieva in the School of Computer Science.");
-	// slider.append("div")
-	// 	  .classed("da-slide", true)
-	// 	  .append("p")
-	// 	  .attr("class", "instructions-text text-justified")
-	// 	  .html("The tool has been developed to serve as a teaching tool for COMP61011.");
-	// slider.append("div")
-	// 	  .classed("da-slide", true)
-	// 	  .append("p")
-	// 	  .attr("class", "instructions-text text-justified")
-	// 	  .html("The aim of this application is to overcome the limitations of other existing Bayesian Networks tools and to provide beginners with understanding of the core principles of BNs.");
-
 
 	// Append the arrows
 	var arrowsNav = slider.append("nav")
@@ -802,4 +784,4 @@ var init = function() {
 }();
 
 //Initialise
-loadDefaultNetwork("files/nets/attackladder.json", true);
+loadDefaultNetwork("files/nets/attack_ladder.json", true);
