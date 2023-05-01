@@ -8,12 +8,12 @@
 		<title> ODU/VMASC: Attack Ladder Browser Based Tool </title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-tour.min.css">
-		<link rel="stylesheet" href="lib/d3-context-menu-master/css/d3-context-menu.css">    
+		<link rel="stylesheet" href="lib/d3-context-menu-master/css/d3-context-menu.css">
         <link rel="stylesheet" type="text/css" href="lib/ParallaxContentSlider/css/style2.css" />
 		<!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
 		<link rel="stylesheet" href="css/stylesheet2.css">
 		<link rel="stylesheet" href="css/my-slider.css">
-		<script type="text/javascript" src="lib/ParallaxContentSlider/js/modernizr.custom.28468.js"></script>		
+		<script type="text/javascript" src="lib/ParallaxContentSlider/js/modernizr.custom.28468.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-main" role="navigation">
@@ -34,7 +34,7 @@
         		    <span class="icon-bar"></span>
             		<span class="icon-bar"></span>
           			</button>
-				</div> 
+				</div>
 				<div class="navbar-collapse collapse"> <!-- id=menu? -->
 					<ul class="nav navbar-nav tour-step tour-step-two">
 						<!-- Load/Save -->
@@ -42,8 +42,9 @@
 							<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Load/Save<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><input type="file" id="hidden-upload-2" class="hidden-upload"> </li>
+	<!--
 								<li><a href='#' id='loadData' class="control">Use Toy Dataset
-            						<span class="glyphicon glyphicon-list pull-right" aria-hidden="true"></span>	
+            						<span class="glyphicon glyphicon-list pull-right" aria-hidden="true"></span>
 								</a></li>
             					<li><a href='#' id='loadNet' class="control">Use Toy Network
             						<span class="glyphicon glyphicon-gift pull-right" aria-hidden="true"></span>
@@ -52,18 +53,19 @@
 								<li><input type="file" id="hidden-upload-3" class="hidden-upload"> </li>
             					<li><a href='#' id='uploadBif' class="control">Import BIF
             						<span class="glyphicon glyphicon-upload pull-right" aria-hidden="true"></span>
-            					</a></li>									
+            					</a></li>
 								<li><a href='#' id='uploadSample' class="control">Import CSV
 									<span class="glyphicon glyphicon-file pull-right" aria-hidden="true"></span>
-								</a></li>
-								<li><input type="file" id="hidden-upload" class="hidden-upload"> </li>	
+								</a></li>-->
+
+								<li><input type="file" id="hidden-upload" class="hidden-upload"> </li>
             					<li><a href='#' id='uploadNet' class="control">Import JSON
             						<span class="glyphicon glyphicon-upload pull-right" aria-hidden="true"></span>
-            					</a></li>							
+            					</a></li>
             					<li role="separator" class="divider"></li>
 								<li><a href='#' id='downloadNet' class="control tour-step tour-step-eighteen">Export JSON
 									<span class="glyphicon glyphicon-download pull-right" aria-hidden="true"></span>
-								</a></li> 
+								</a></li>
 								<li><a href='#' id='downloadImg' class="control">Export PNG
 									<span class="glyphicon glyphicon-picture pull-right" aria-hidden="true"></span>
 								</a></li>
@@ -73,9 +75,9 @@
 						<li class="dropdown tour-step tour-step-dropdown tour-step-learning-one tour-step-learning-two">
 							<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Network<span class="caret"></span></a>
           					<ul class="dropdown-menu">
-          						<li><a href='#' id='sample-net' class="control tour-step tour-step-thirteen">Sample from Network  
+          						<li><a href='#' id='sample-net' class="control tour-step tour-step-thirteen">Sample from Network
 									<span class="glyphicon glyphicon-list-alt pull-right" aria-hidden="true"></span>
-								</a></li> 
+								</a></li>
 								<li><a href='#' id='learnStruct' class="control disabled">Learn Structure
 									<span class="glyphicon glyphicon-link pull-right" aria-hidden="true"></span>
 								</a></li>
@@ -85,27 +87,28 @@
             					<li role="separator" class="divider"></li>
             					<li><a href='#' id='deleteNet' class="control">Clear All
         							<span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span>
-		        				</a></li>	
-          					</ul>							
+		        				</a></li>
+          					</ul>
 						</li>
 						<!-- Help -->
 						<li class="dropdown">
 							<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href='#' id='about' class='control'>About this Tool
-									<span class="glyphicon glyphicon-user pull-right" aria-hidden="true"></span>								
+									<span class="glyphicon glyphicon-user pull-right" aria-hidden="true"></span>
 								</a></li>
+								<!--
 								<li><a href='#' id='info' class='control'>Bayesian Nets Information
-									<span class="glyphicon glyphicon-info-sign pull-right" aria-hidden="true"></span>								
+									<span class="glyphicon glyphicon-info-sign pull-right" aria-hidden="true"></span>
 								</a></li>
-<!-- 									<li><a href='#' id='help' class='control'>Help
-									<span class="glyphicon glyphicon-question-sign pull-right" aria-hidden="true"></span>								
+								<li><a href='#' id='help' class='control'>Help
+									<span class="glyphicon glyphicon-question-sign pull-right" aria-hidden="true"></span>
 								</a></li>
 							<li><a href='#' id='resources' class='control'>Resources
 									<span class="glyphicon glyphicon-paperclip pull-right" aria-hidden="true"></span>
 								</a></li>
 								<li><a href='#' id='tutorial' class='control'>Tutorial
-									<span class="glyphicon glyphicon-bell pull-right" aria-hidden="true"></span>								
+									<span class="glyphicon glyphicon-bell pull-right" aria-hidden="true"></span>
 								</a></li> -->
 							</ul>
 						</li>
@@ -114,13 +117,13 @@
 					<!-- change the text on data upload -->
 						<p id="dataset-name" class="navbar-text tour-step tour-step-two-one">Dataset: (none)</p>
 					<!-- update if the structure and the parameters have been learnt -->
-						<p id="p-struct" class="navbar-text">Structure: 
+						<p id="p-struct" class="navbar-text">Structure:
 							<span id="glyphicon-struct" class="glyphicon glyphicon-ban-circle glyphicon-navbar-ban" aria-hidden="true"></span>
 						</p>
-						<p id="p-params" class="navbar-text">Parameters: 
+						<p id="p-params" class="navbar-text">Parameters:
 							<span id="glyphicon-params" class="glyphicon glyphicon-ban-circle glyphicon-navbar-ban" aria-hidden="true"></span>
 						</p>
-					</ul>														
+					</ul>
 				</div>
 			</div> <!-- container-fluid -->
 		</nav>
@@ -160,14 +163,14 @@
 		<script type="text/javascript" src="lib/ParallaxContentSlider/js/jquery.cslider.js"></script>
 
 		<script src="js/external.js"></script>
-		<script src="js/cpts.js"></script>	
-		<script src="js/edges.js"></script>		
-		<script src="js/nodes.js"></script>		
+		<script src="js/cpts.js"></script>
+		<script src="js/edges.js"></script>
+		<script src="js/nodes.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/sampling.js"></script>
 		<script src="js/learnCpts.js"></script>
-		<script src="js/learnStruct.js"></script> 
-		<script src="js/tour.js"></script>		
+		<script src="js/learnStruct.js"></script>
+		<script src="js/tour.js"></script>
 
 	</body>
 </html>
