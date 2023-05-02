@@ -1,3337 +1,1588 @@
 {
   "nodes": [
     {
-      "id": 6,
-      "title": "Attempt To Escalate Privileges",
-      "x": 462.0531532388309,
-      "y": 221.1503433348813,
+      "id": 12,
+      "title": "Recon Victim Network",
+      "x": 49.230892181396484,
+      "y": 70.61113739013672,
+      "values": [
+        "recon successful",
+        "recon unsuccessful"
+      ],
+      "tbl": {
+        "12recon successful": 0.5,
+        "12recon unsuccessful": 0.5
+      },
+      "sampled": false
+    },
+    {
+      "id": 13,
+      "title": "Find The Target Server",
+      "x": 293.2149353027344,
+      "y": 129.53948974609375,
+      "values": [
+        "target server found",
+        "target server could not be found"
+      ],
+      "tbl": {
+        "12recon successful": {
+          "13target server found": 0.5,
+          "13target server could not be found": 0.5
+        },
+        "12recon unsuccessful": {
+          "13target server found": 0,
+          "13target server could not be found": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 14,
+      "title": "Exploit Vulnerability",
+      "x": 545.4696044921875,
+      "y": 221.5504150390625,
+      "values": [
+        "vulnerability exploited",
+        "vulnerability could not be exploited"
+      ],
+      "tbl": {
+        "13target server found": {
+          "14vulnerability exploited": 0.5,
+          "14vulnerability could not be exploited": 0.5
+        },
+        "13target server could not be found": {
+          "14vulnerability exploited": 0,
+          "14vulnerability could not be exploited": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 15,
+      "title": "Escalate Privileges",
+      "x": 769.8109741210938,
+      "y": 344.5762634277344,
       "values": [
         "privileges escalated",
         "privileges could not be escalated"
       ],
       "tbl": {
-        "8vulnerability exploited": {
-          "6privileges escalated": 0.5,
-          "6privileges could not be escalated": 0.5
+        "14vulnerability exploited": {
+          "15privileges escalated": 0.5,
+          "15privileges could not be escalated": 0.5
         },
-        "8exploit attempt failed": {
-          "6privileges escalated": 0,
-          "6privileges could not be escalated": 1
+        "14vulnerability could not be exploited": {
+          "15privileges escalated": 0,
+          "15privileges could not be escalated": 1
         }
       },
-      "index": 0,
-      "weight": 3,
-      "px": 462.072364685412,
-      "py": 221.17466539977494,
       "sampled": false
     },
     {
-      "id": 7,
-      "title": "Attempted Reconnaissance",
-      "x": 656.3811326238417,
-      "y": 420.72067097770844,
+      "id": 16,
+      "title": "Install Software",
+      "x": 922.8179321289062,
+      "y": 482.0757827758789,
       "values": [
-        "yes",
-        "no"
+        "software installed",
+        "software could not be installed"
       ],
       "tbl": {
-        "7yes": 1,
-        "7no": 0
-      },
-      "index": 1,
-      "weight": 2,
-      "px": 656.365283114706,
-      "py": 420.6956816740168,
-      "sampled": false
-    },
-    {
-      "id": 8,
-      "title": "Attempt To Exploit Vulnerability",
-      "x": 412.839092403148,
-      "y": 360.67112370539115,
-      "values": [
-        "vulnerability exploited",
-        "exploit attempt failed"
-      ],
-      "tbl": {
-        "9vulnerability identified": {
-          "8vulnerability exploited": 0.5,
-          "8exploit attempt failed": 0.5
+        "15privileges escalated": {
+          "16software installed": 0.5,
+          "16software could not be installed": 0.5
         },
-        "9no vulnerability could be found": {
-          "8vulnerability exploited": 0,
-          "8exploit attempt failed": 1
+        "15privileges could not be escalated": {
+          "16software installed": 0,
+          "16software could not be installed": 1
         }
       },
-      "index": 2,
-      "weight": 3,
-      "px": 412.86849465761173,
-      "py": 360.66597046326655,
       "sampled": false
     },
     {
-      "id": 9,
-      "title": "Attempt To Identify Vulnerability",
-      "x": 516.5382482312564,
-      "y": 466.20837909213935,
+      "id": 17,
+      "title": "Victim State",
+      "x": 100.92243194580078,
+      "y": 630.947395324707,
       "values": [
-        "vulnerability identified",
-        "no vulnerability could be found"
+        "victim is unable to use the server",
+        "victim is able to use the server"
       ],
       "tbl": {
-        "7yes": {
-          "9vulnerability identified": 0.5,
-          "9no vulnerability could be found": 0.5
-        },
-        "7no": {
-          "9vulnerability identified": 0,
-          "9no vulnerability could be found": 1
-        }
-      },
-      "index": 3,
-      "weight": 3,
-      "px": 516.5459318949119,
-      "py": 466.1804669698271,
-      "sampled": false
-    },
-    {
-      "id": 10,
-      "title": "State Of Attack",
-      "x": 548.8557102937599,
-      "y": 330.6327559310028,
-      "values": [
-        "attack success",
-        "attack failed"
-      ],
-      "tbl": {
-        "11code successfully added": {
-          "12added code executed": {
-            "6privileges escalated": {
-              "7yes": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 1,
-                    "10attack failed": 0
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+        "12recon successful": {
+          "13target server found": {
+            "14vulnerability exploited": {
+              "15privileges escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 1,
+                  "17victim is able to use the server": 0
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               },
-              "7no": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+              "15privileges could not be escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               }
             },
-            "6privileges could not be escalated": {
-              "7yes": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+            "14vulnerability could not be exploited": {
+              "15privileges escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               },
-              "7no": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+              "15privileges could not be escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               }
             }
           },
-          "12added code could not be executed": {
-            "6privileges escalated": {
-              "7yes": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+          "13target server could not be found": {
+            "14vulnerability exploited": {
+              "15privileges escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               },
-              "7no": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+              "15privileges could not be escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               }
             },
-            "6privileges could not be escalated": {
-              "7yes": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+            "14vulnerability could not be exploited": {
+              "15privileges escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               },
-              "7no": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+              "15privileges could not be escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               }
             }
           }
         },
-        "11code could not be added": {
-          "12added code executed": {
-            "6privileges escalated": {
-              "7yes": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+        "12recon unsuccessful": {
+          "13target server found": {
+            "14vulnerability exploited": {
+              "15privileges escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               },
-              "7no": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+              "15privileges could not be escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               }
             },
-            "6privileges could not be escalated": {
-              "7yes": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+            "14vulnerability could not be exploited": {
+              "15privileges escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               },
-              "7no": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+              "15privileges could not be escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               }
             }
           },
-          "12added code could not be executed": {
-            "6privileges escalated": {
-              "7yes": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+          "13target server could not be found": {
+            "14vulnerability exploited": {
+              "15privileges escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               },
-              "7no": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+              "15privileges could not be escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               }
             },
-            "6privileges could not be escalated": {
-              "7yes": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+            "14vulnerability could not be exploited": {
+              "15privileges escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               },
-              "7no": {
-                "8vulnerability exploited": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+              "15privileges could not be escalated": {
+                "16software installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "8exploit attempt failed": {
-                  "9vulnerability identified": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  },
-                  "9no vulnerability could be found": {
-                    "10attack success": 0,
-                    "10attack failed": 1
-                  }
+                "16software could not be installed": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 }
               }
             }
           }
         }
       },
-      "index": 4,
-      "weight": 6,
-      "px": 548.8592383685066,
-      "py": 330.6336788860297,
       "sampled": false
-    },
-    {
-      "id": 11,
-      "title": "Attempt To Add Code",
-      "x": 609.2327020518621,
-      "y": 205.20797655500567,
-      "values": [
-        "code successfully added",
-        "code could not be added"
-      ],
-      "tbl": {
-        "6privileges escalated": {
-          "11code successfully added": 0.5,
-          "11code could not be added": 0.5
-        },
-        "6privileges could not be escalated": {
-          "11code successfully added": 0,
-          "11code could not be added": 1
-        }
-      },
-      "sampled": false,
-      "index": 5,
-      "weight": 3,
-      "px": 609.2210593001471,
-      "py": 205.2341399057006
-    },
-    {
-      "id": 12,
-      "title": "Attempt To Execute Code",
-      "x": 688.6966530771535,
-      "y": 330.3905621011967,
-      "values": [
-        "added code executed",
-        "added code could not be executed"
-      ],
-      "tbl": {
-        "11code successfully added": {
-          "12added code executed": 0.5,
-          "12added code could not be executed": 0.5
-        },
-        "11code could not be added": {
-          "12added code executed": 0,
-          "12added code could not be executed": 1
-        }
-      },
-      "sampled": false,
-      "index": 6,
-      "weight": 2,
-      "px": 688.6688390548399,
-      "py": 330.39359752841176
     }
   ],
   "edges": [
     {
       "source": {
-        "id": 7,
-        "title": "Attempted Reconnaissance",
-        "x": 656.3811326238417,
-        "y": 420.72067097770844,
-        "values": [
-          "yes",
-          "no"
-        ],
-        "tbl": {
-          "7yes": 1,
-          "7no": 0
-        },
-        "index": 1,
-        "weight": 2,
-        "px": 656.365283114706,
-        "py": 420.6956816740168,
-        "sampled": false
-      },
-      "target": {
-        "id": 9,
-        "title": "Attempt To Identify Vulnerability",
-        "x": 516.5382482312564,
-        "y": 466.20837909213935,
-        "values": [
-          "vulnerability identified",
-          "no vulnerability could be found"
-        ],
-        "tbl": {
-          "7yes": {
-            "9vulnerability identified": 0.5,
-            "9no vulnerability could be found": 0.5
-          },
-          "7no": {
-            "9vulnerability identified": 0,
-            "9no vulnerability could be found": 1
-          }
-        },
-        "index": 3,
-        "weight": 3,
-        "px": 516.5459318949119,
-        "py": 466.1804669698271,
-        "sampled": false
-      }
-    },
-    {
-      "source": {
-        "id": 7,
-        "title": "Attempted Reconnaissance",
-        "x": 656.3811326238417,
-        "y": 420.72067097770844,
-        "values": [
-          "yes",
-          "no"
-        ],
-        "tbl": {
-          "7yes": 1,
-          "7no": 0
-        },
-        "index": 1,
-        "weight": 2,
-        "px": 656.365283114706,
-        "py": 420.6956816740168,
-        "sampled": false
-      },
-      "target": {
-        "id": 10,
-        "title": "State Of Attack",
-        "x": 548.8557102937599,
-        "y": 330.6327559310028,
-        "values": [
-          "attack success",
-          "attack failed"
-        ],
-        "tbl": {
-          "11code successfully added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 1,
-                      "10attack failed": 0
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "11code could not be added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "index": 4,
-        "weight": 6,
-        "px": 548.8592383685066,
-        "py": 330.6336788860297,
-        "sampled": false
-      }
-    },
-    {
-      "source": {
-        "id": 9,
-        "title": "Attempt To Identify Vulnerability",
-        "x": 516.5382482312564,
-        "y": 466.20837909213935,
-        "values": [
-          "vulnerability identified",
-          "no vulnerability could be found"
-        ],
-        "tbl": {
-          "7yes": {
-            "9vulnerability identified": 0.5,
-            "9no vulnerability could be found": 0.5
-          },
-          "7no": {
-            "9vulnerability identified": 0,
-            "9no vulnerability could be found": 1
-          }
-        },
-        "index": 3,
-        "weight": 3,
-        "px": 516.5459318949119,
-        "py": 466.1804669698271,
-        "sampled": false
-      },
-      "target": {
-        "id": 10,
-        "title": "State Of Attack",
-        "x": 548.8557102937599,
-        "y": 330.6327559310028,
-        "values": [
-          "attack success",
-          "attack failed"
-        ],
-        "tbl": {
-          "11code successfully added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 1,
-                      "10attack failed": 0
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "11code could not be added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "index": 4,
-        "weight": 6,
-        "px": 548.8592383685066,
-        "py": 330.6336788860297,
-        "sampled": false
-      }
-    },
-    {
-      "source": {
-        "id": 8,
-        "title": "Attempt To Exploit Vulnerability",
-        "x": 412.839092403148,
-        "y": 360.67112370539115,
-        "values": [
-          "vulnerability exploited",
-          "exploit attempt failed"
-        ],
-        "tbl": {
-          "9vulnerability identified": {
-            "8vulnerability exploited": 0.5,
-            "8exploit attempt failed": 0.5
-          },
-          "9no vulnerability could be found": {
-            "8vulnerability exploited": 0,
-            "8exploit attempt failed": 1
-          }
-        },
-        "index": 2,
-        "weight": 3,
-        "px": 412.86849465761173,
-        "py": 360.66597046326655,
-        "sampled": false
-      },
-      "target": {
-        "id": 10,
-        "title": "State Of Attack",
-        "x": 548.8557102937599,
-        "y": 330.6327559310028,
-        "values": [
-          "attack success",
-          "attack failed"
-        ],
-        "tbl": {
-          "11code successfully added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 1,
-                      "10attack failed": 0
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "11code could not be added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "index": 4,
-        "weight": 6,
-        "px": 548.8592383685066,
-        "py": 330.6336788860297,
-        "sampled": false
-      }
-    },
-    {
-      "source": {
-        "id": 9,
-        "title": "Attempt To Identify Vulnerability",
-        "x": 516.5382482312564,
-        "y": 466.20837909213935,
-        "values": [
-          "vulnerability identified",
-          "no vulnerability could be found"
-        ],
-        "tbl": {
-          "7yes": {
-            "9vulnerability identified": 0.5,
-            "9no vulnerability could be found": 0.5
-          },
-          "7no": {
-            "9vulnerability identified": 0,
-            "9no vulnerability could be found": 1
-          }
-        },
-        "index": 3,
-        "weight": 3,
-        "px": 516.5459318949119,
-        "py": 466.1804669698271,
-        "sampled": false
-      },
-      "target": {
-        "id": 8,
-        "title": "Attempt To Exploit Vulnerability",
-        "x": 412.839092403148,
-        "y": 360.67112370539115,
-        "values": [
-          "vulnerability exploited",
-          "exploit attempt failed"
-        ],
-        "tbl": {
-          "9vulnerability identified": {
-            "8vulnerability exploited": 0.5,
-            "8exploit attempt failed": 0.5
-          },
-          "9no vulnerability could be found": {
-            "8vulnerability exploited": 0,
-            "8exploit attempt failed": 1
-          }
-        },
-        "index": 2,
-        "weight": 3,
-        "px": 412.86849465761173,
-        "py": 360.66597046326655,
-        "sampled": false
-      }
-    },
-    {
-      "source": {
-        "id": 8,
-        "title": "Attempt To Exploit Vulnerability",
-        "x": 412.839092403148,
-        "y": 360.67112370539115,
-        "values": [
-          "vulnerability exploited",
-          "exploit attempt failed"
-        ],
-        "tbl": {
-          "9vulnerability identified": {
-            "8vulnerability exploited": 0.5,
-            "8exploit attempt failed": 0.5
-          },
-          "9no vulnerability could be found": {
-            "8vulnerability exploited": 0,
-            "8exploit attempt failed": 1
-          }
-        },
-        "index": 2,
-        "weight": 3,
-        "px": 412.86849465761173,
-        "py": 360.66597046326655,
-        "sampled": false
-      },
-      "target": {
-        "id": 6,
-        "title": "Attempt To Escalate Privileges",
-        "x": 462.0531532388309,
-        "y": 221.1503433348813,
-        "values": [
-          "privileges escalated",
-          "privileges could not be escalated"
-        ],
-        "tbl": {
-          "8vulnerability exploited": {
-            "6privileges escalated": 0.5,
-            "6privileges could not be escalated": 0.5
-          },
-          "8exploit attempt failed": {
-            "6privileges escalated": 0,
-            "6privileges could not be escalated": 1
-          }
-        },
-        "index": 0,
-        "weight": 3,
-        "px": 462.072364685412,
-        "py": 221.17466539977494,
-        "sampled": false
-      }
-    },
-    {
-      "source": {
-        "id": 6,
-        "title": "Attempt To Escalate Privileges",
-        "x": 462.0531532388309,
-        "y": 221.1503433348813,
-        "values": [
-          "privileges escalated",
-          "privileges could not be escalated"
-        ],
-        "tbl": {
-          "8vulnerability exploited": {
-            "6privileges escalated": 0.5,
-            "6privileges could not be escalated": 0.5
-          },
-          "8exploit attempt failed": {
-            "6privileges escalated": 0,
-            "6privileges could not be escalated": 1
-          }
-        },
-        "index": 0,
-        "weight": 3,
-        "px": 462.072364685412,
-        "py": 221.17466539977494,
-        "sampled": false
-      },
-      "target": {
-        "id": 10,
-        "title": "State Of Attack",
-        "x": 548.8557102937599,
-        "y": 330.6327559310028,
-        "values": [
-          "attack success",
-          "attack failed"
-        ],
-        "tbl": {
-          "11code successfully added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 1,
-                      "10attack failed": 0
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "11code could not be added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "index": 4,
-        "weight": 6,
-        "px": 548.8592383685066,
-        "py": 330.6336788860297,
-        "sampled": false
-      }
-    },
-    {
-      "source": {
-        "id": 6,
-        "title": "Attempt To Escalate Privileges",
-        "x": 462.0531532388309,
-        "y": 221.1503433348813,
-        "values": [
-          "privileges escalated",
-          "privileges could not be escalated"
-        ],
-        "tbl": {
-          "8vulnerability exploited": {
-            "6privileges escalated": 0.5,
-            "6privileges could not be escalated": 0.5
-          },
-          "8exploit attempt failed": {
-            "6privileges escalated": 0,
-            "6privileges could not be escalated": 1
-          }
-        },
-        "index": 0,
-        "weight": 3,
-        "px": 462.072364685412,
-        "py": 221.17466539977494,
-        "sampled": false
-      },
-      "target": {
-        "id": 11,
-        "title": "Attempt To Add Code",
-        "x": 609.2327020518621,
-        "y": 205.20797655500567,
-        "values": [
-          "code successfully added",
-          "code could not be added"
-        ],
-        "tbl": {
-          "6privileges escalated": {
-            "11code successfully added": 0.5,
-            "11code could not be added": 0.5
-          },
-          "6privileges could not be escalated": {
-            "11code successfully added": 0,
-            "11code could not be added": 1
-          }
-        },
-        "sampled": false,
-        "index": 5,
-        "weight": 3,
-        "px": 609.2210593001471,
-        "py": 205.2341399057006
-      }
-    },
-    {
-      "source": {
-        "id": 11,
-        "title": "Attempt To Add Code",
-        "x": 609.2327020518621,
-        "y": 205.20797655500567,
-        "values": [
-          "code successfully added",
-          "code could not be added"
-        ],
-        "tbl": {
-          "6privileges escalated": {
-            "11code successfully added": 0.5,
-            "11code could not be added": 0.5
-          },
-          "6privileges could not be escalated": {
-            "11code successfully added": 0,
-            "11code could not be added": 1
-          }
-        },
-        "sampled": false,
-        "index": 5,
-        "weight": 3,
-        "px": 609.2210593001471,
-        "py": 205.2341399057006
-      },
-      "target": {
         "id": 12,
-        "title": "Attempt To Execute Code",
-        "x": 688.6966530771535,
-        "y": 330.3905621011967,
+        "title": "Recon Victim Network",
+        "x": 49.230892181396484,
+        "y": 70.61113739013672,
         "values": [
-          "added code executed",
-          "added code could not be executed"
+          "recon successful",
+          "recon unsuccessful"
         ],
         "tbl": {
-          "11code successfully added": {
-            "12added code executed": 0.5,
-            "12added code could not be executed": 0.5
+          "12recon successful": 0.5,
+          "12recon unsuccessful": 0.5
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 13,
+        "title": "Find The Target Server",
+        "x": 293.2149353027344,
+        "y": 129.53948974609375,
+        "values": [
+          "target server found",
+          "target server could not be found"
+        ],
+        "tbl": {
+          "12recon successful": {
+            "13target server found": 0.5,
+            "13target server could not be found": 0.5
           },
-          "11code could not be added": {
-            "12added code executed": 0,
-            "12added code could not be executed": 1
+          "12recon unsuccessful": {
+            "13target server found": 0,
+            "13target server could not be found": 1
           }
         },
-        "sampled": false,
-        "index": 6,
-        "weight": 2,
-        "px": 688.6688390548399,
-        "py": 330.39359752841176
+        "sampled": false
       }
     },
     {
       "source": {
-        "id": 11,
-        "title": "Attempt To Add Code",
-        "x": 609.2327020518621,
-        "y": 205.20797655500567,
+        "id": 13,
+        "title": "Find The Target Server",
+        "x": 293.2149353027344,
+        "y": 129.53948974609375,
         "values": [
-          "code successfully added",
-          "code could not be added"
+          "target server found",
+          "target server could not be found"
         ],
         "tbl": {
-          "6privileges escalated": {
-            "11code successfully added": 0.5,
-            "11code could not be added": 0.5
+          "12recon successful": {
+            "13target server found": 0.5,
+            "13target server could not be found": 0.5
           },
-          "6privileges could not be escalated": {
-            "11code successfully added": 0,
-            "11code could not be added": 1
+          "12recon unsuccessful": {
+            "13target server found": 0,
+            "13target server could not be found": 1
           }
         },
-        "sampled": false,
-        "index": 5,
-        "weight": 3,
-        "px": 609.2210593001471,
-        "py": 205.2341399057006
+        "sampled": false
       },
       "target": {
-        "id": 10,
-        "title": "State Of Attack",
-        "x": 548.8557102937599,
-        "y": 330.6327559310028,
+        "id": 14,
+        "title": "Exploit Vulnerability",
+        "x": 545.4696044921875,
+        "y": 221.5504150390625,
         "values": [
-          "attack success",
-          "attack failed"
+          "vulnerability exploited",
+          "vulnerability could not be exploited"
         ],
         "tbl": {
-          "11code successfully added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 1,
-                      "10attack failed": 0
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
+          "13target server found": {
+            "14vulnerability exploited": 0.5,
+            "14vulnerability could not be exploited": 0.5
           },
-          "11code could not be added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
-                  }
-                }
-              }
-            }
+          "13target server could not be found": {
+            "14vulnerability exploited": 0,
+            "14vulnerability could not be exploited": 1
           }
         },
-        "index": 4,
-        "weight": 6,
-        "px": 548.8592383685066,
-        "py": 330.6336788860297,
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 14,
+        "title": "Exploit Vulnerability",
+        "x": 545.4696044921875,
+        "y": 221.5504150390625,
+        "values": [
+          "vulnerability exploited",
+          "vulnerability could not be exploited"
+        ],
+        "tbl": {
+          "13target server found": {
+            "14vulnerability exploited": 0.5,
+            "14vulnerability could not be exploited": 0.5
+          },
+          "13target server could not be found": {
+            "14vulnerability exploited": 0,
+            "14vulnerability could not be exploited": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 15,
+        "title": "Escalate Privileges",
+        "x": 769.8109741210938,
+        "y": 344.5762634277344,
+        "values": [
+          "privileges escalated",
+          "privileges could not be escalated"
+        ],
+        "tbl": {
+          "14vulnerability exploited": {
+            "15privileges escalated": 0.5,
+            "15privileges could not be escalated": 0.5
+          },
+          "14vulnerability could not be exploited": {
+            "15privileges escalated": 0,
+            "15privileges could not be escalated": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 15,
+        "title": "Escalate Privileges",
+        "x": 769.8109741210938,
+        "y": 344.5762634277344,
+        "values": [
+          "privileges escalated",
+          "privileges could not be escalated"
+        ],
+        "tbl": {
+          "14vulnerability exploited": {
+            "15privileges escalated": 0.5,
+            "15privileges could not be escalated": 0.5
+          },
+          "14vulnerability could not be exploited": {
+            "15privileges escalated": 0,
+            "15privileges could not be escalated": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 16,
+        "title": "Install Software",
+        "x": 922.8179321289062,
+        "y": 482.0757827758789,
+        "values": [
+          "software installed",
+          "software could not be installed"
+        ],
+        "tbl": {
+          "15privileges escalated": {
+            "16software installed": 0.5,
+            "16software could not be installed": 0.5
+          },
+          "15privileges could not be escalated": {
+            "16software installed": 0,
+            "16software could not be installed": 1
+          }
+        },
         "sampled": false
       }
     },
     {
       "source": {
         "id": 12,
-        "title": "Attempt To Execute Code",
-        "x": 688.6966530771535,
-        "y": 330.3905621011967,
+        "title": "Recon Victim Network",
+        "x": 49.230892181396484,
+        "y": 70.61113739013672,
         "values": [
-          "added code executed",
-          "added code could not be executed"
+          "recon successful",
+          "recon unsuccessful"
         ],
         "tbl": {
-          "11code successfully added": {
-            "12added code executed": 0.5,
-            "12added code could not be executed": 0.5
-          },
-          "11code could not be added": {
-            "12added code executed": 0,
-            "12added code could not be executed": 1
-          }
+          "12recon successful": 0.5,
+          "12recon unsuccessful": 0.5
         },
-        "sampled": false,
-        "index": 6,
-        "weight": 2,
-        "px": 688.6688390548399,
-        "py": 330.39359752841176
+        "sampled": false
       },
       "target": {
-        "id": 10,
-        "title": "State Of Attack",
-        "x": 548.8557102937599,
-        "y": 330.6327559310028,
+        "id": 17,
+        "title": "Victim State",
+        "x": 100.92243194580078,
+        "y": 630.947395324707,
         "values": [
-          "attack success",
-          "attack failed"
+          "victim is unable to use the server",
+          "victim is able to use the server"
         ],
         "tbl": {
-          "11code successfully added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 1,
-                      "10attack failed": 0
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+          "12recon successful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 1,
+                    "17victim is able to use the server": 0
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 }
               },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 }
               },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 }
               }
             }
           },
-          "11code could not be added": {
-            "12added code executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+          "12recon unsuccessful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 }
               },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "12added code could not be executed": {
-              "6privileges escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 }
               },
-              "6privileges could not be escalated": {
-                "7yes": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 },
-                "7no": {
-                  "8vulnerability exploited": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "8exploit attempt failed": {
-                    "9vulnerability identified": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    },
-                    "9no vulnerability could be found": {
-                      "10attack success": 0,
-                      "10attack failed": 1
-                    }
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   }
                 }
               }
             }
           }
         },
-        "index": 4,
-        "weight": 6,
-        "px": 548.8592383685066,
-        "py": 330.6336788860297,
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 13,
+        "title": "Find The Target Server",
+        "x": 293.2149353027344,
+        "y": 129.53948974609375,
+        "values": [
+          "target server found",
+          "target server could not be found"
+        ],
+        "tbl": {
+          "12recon successful": {
+            "13target server found": 0.5,
+            "13target server could not be found": 0.5
+          },
+          "12recon unsuccessful": {
+            "13target server found": 0,
+            "13target server could not be found": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 17,
+        "title": "Victim State",
+        "x": 100.92243194580078,
+        "y": 630.947395324707,
+        "values": [
+          "victim is unable to use the server",
+          "victim is able to use the server"
+        ],
+        "tbl": {
+          "12recon successful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 1,
+                    "17victim is able to use the server": 0
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            },
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            }
+          },
+          "12recon unsuccessful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            },
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 14,
+        "title": "Exploit Vulnerability",
+        "x": 545.4696044921875,
+        "y": 221.5504150390625,
+        "values": [
+          "vulnerability exploited",
+          "vulnerability could not be exploited"
+        ],
+        "tbl": {
+          "13target server found": {
+            "14vulnerability exploited": 0.5,
+            "14vulnerability could not be exploited": 0.5
+          },
+          "13target server could not be found": {
+            "14vulnerability exploited": 0,
+            "14vulnerability could not be exploited": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 17,
+        "title": "Victim State",
+        "x": 100.92243194580078,
+        "y": 630.947395324707,
+        "values": [
+          "victim is unable to use the server",
+          "victim is able to use the server"
+        ],
+        "tbl": {
+          "12recon successful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 1,
+                    "17victim is able to use the server": 0
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            },
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            }
+          },
+          "12recon unsuccessful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            },
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 15,
+        "title": "Escalate Privileges",
+        "x": 769.8109741210938,
+        "y": 344.5762634277344,
+        "values": [
+          "privileges escalated",
+          "privileges could not be escalated"
+        ],
+        "tbl": {
+          "14vulnerability exploited": {
+            "15privileges escalated": 0.5,
+            "15privileges could not be escalated": 0.5
+          },
+          "14vulnerability could not be exploited": {
+            "15privileges escalated": 0,
+            "15privileges could not be escalated": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 17,
+        "title": "Victim State",
+        "x": 100.92243194580078,
+        "y": 630.947395324707,
+        "values": [
+          "victim is unable to use the server",
+          "victim is able to use the server"
+        ],
+        "tbl": {
+          "12recon successful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 1,
+                    "17victim is able to use the server": 0
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            },
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            }
+          },
+          "12recon unsuccessful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            },
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 16,
+        "title": "Install Software",
+        "x": 922.8179321289062,
+        "y": 482.0757827758789,
+        "values": [
+          "software installed",
+          "software could not be installed"
+        ],
+        "tbl": {
+          "15privileges escalated": {
+            "16software installed": 0.5,
+            "16software could not be installed": 0.5
+          },
+          "15privileges could not be escalated": {
+            "16software installed": 0,
+            "16software could not be installed": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 17,
+        "title": "Victim State",
+        "x": 100.92243194580078,
+        "y": 630.947395324707,
+        "values": [
+          "victim is unable to use the server",
+          "victim is able to use the server"
+        ],
+        "tbl": {
+          "12recon successful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 1,
+                    "17victim is able to use the server": 0
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            },
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            }
+          },
+          "12recon unsuccessful": {
+            "13target server found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            },
+            "13target server could not be found": {
+              "14vulnerability exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              },
+              "14vulnerability could not be exploited": {
+                "15privileges escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                },
+                "15privileges could not be escalated": {
+                  "16software installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  },
+                  "16software could not be installed": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
+                  }
+                }
+              }
+            }
+          }
+        },
         "sampled": false
       }
     }
