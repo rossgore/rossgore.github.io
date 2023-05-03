@@ -192,7 +192,7 @@ var CVSS = function (id, options) {
     }
     //f.appendChild(e('hr'));
     f.appendChild(dl = e('dl'));
-    dl.innerHTML = '<dt>Risk Level&sdot;Average Exploit Success Rate&sdot;Exploit Vector</dt>';
+    dl.innerHTML = '<dt>Risk Level&sdot;Average Success Rate&sdot;CVSS Vector</dt>';
     dd = e('dd');
     dl.appendChild(dd);
     l = dd.appendChild(e('label'));
@@ -210,10 +210,10 @@ var CVSS = function (id, options) {
     l.appendChild(this.copyButton = e('a'))
     this.copyButton.style.visibility = "hidden"
     this.copyButton.className = "copy-button"
-    this.copyButton.title = "Copy Vector to Clipboard"
+    this.copyButton.title = "Copy Success Rate to Clipboard"
     this.copyButton.innerHTML = 'Copy'
     this.copyButton.onclick = function () {
-        navigator.clipboard.writeText(document.querySelector(".vector").innerText)
+        navigator.clipboard.writeText(document.querySelector(".score").innerText)
     }
 
     if (options.onsubmit) {
@@ -459,12 +459,12 @@ CVSS.prototype.update = function(newVec) {
 	  };
 	var data = [trace];
 	var layout = {
-	  title: 'Histogram of Rates of Successfully Exploiting Vulnerability Given Characterization',
+	  title: 'Histogram of Success Rates for Attack Ladder Node Given Characterization',
 	  plot_bgcolor:"#f7f7f4",
 	  paper_bgcolor: "#f7f7f4",
 	  xaxis: {
 		title: {
-		            text: "Rate of Successfully Exploiting Vulnerability"
+		            text: "Rate of Success for Attack Ladder Node"
 		},
 	    autotick: false,
 	    ticks: 'outside',
