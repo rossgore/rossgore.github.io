@@ -201,10 +201,6 @@ var CVSS = function (id, options) {
     this.risk.className = 'risk';
     l.appendChild(this.score = e('span'));
     this.score.className = 'score';
-    l.appendChild(document.createTextNode(' '));
-    l.appendChild(this.vector = e('a'));
-    this.vector.className = 'vector';
-	this.vector.innerHTML = 'CVSS:3.1/AV:_/AC:_/PR:_/UI:_/S:_';
     // setup the copy button/icon
     l.appendChild(document.createTextNode(' '));
     l.appendChild(this.copyButton = e('a'))
@@ -215,7 +211,10 @@ var CVSS = function (id, options) {
     this.copyButton.onclick = function () {
         navigator.clipboard.writeText(document.querySelector(".score").innerText)
     }
-
+    l.appendChild(document.createTextNode(' '));
+    l.appendChild(this.vector = e('a'));
+    this.vector.className = 'vector';
+	this.vector.innerHTML = 'CVSS:3.1/AV:_/AC:_/PR:_/UI:_/S:_';
     if (options.onsubmit) {
         f.appendChild(e('hr'));
         this.submitButton = f.appendChild(e('input'));
