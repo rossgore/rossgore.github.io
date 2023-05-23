@@ -3,130 +3,130 @@
     {
       "id": 12,
       "title": "Recon Victim Network",
-      "x": 127.10574716473275,
-      "y": 164.08884526185454,
+      "x": 246.45227332321133,
+      "y": 513.081074743128,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
-        "12yes": 0.5,
-        "12no": 0.5
+        "12yes": 0.67,
+        "12no": 0.33
       },
-      "sampled": true,
+      "sampled": false,
       "index": 0,
       "weight": 2,
-      "px": 793.0979263487641,
-      "py": 436.10538320682076
+      "px": 883.4546345382706,
+      "py": 450.11055169757697
     },
     {
       "id": 13,
       "title": "Find The Target Server",
-      "x": 283.4582332916982,
-      "y": 219.61836933457698,
+      "x": 395.6077983442982,
+      "y": 594.3128817901635,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "12yes": {
-          "13yes": 0.5,
-          "13no": 0.5
+          "13yes": 0.77,
+          "13no": 0.23
         },
         "12no": {
-          "13yes": 0.5,
-          "13no": 0.5
+          "13yes": 0,
+          "13no": 1
         }
       },
-      "sampled": true,
+      "sampled": false,
       "index": 1,
       "weight": 3,
-      "px": 713.477861808962,
-      "py": 573.5947494923803
+      "px": 917.5870552489713,
+      "py": 605.2652809823558
     },
     {
       "id": 14,
       "title": "Exploit Vulnerability",
-      "x": 403.8460102124707,
-      "y": 256.820583288765,
+      "x": 435.70547212734016,
+      "y": 424.03565091229245,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "13yes": {
-          "14yes": 0.5,
-          "14no": 0.5
+          "14yes": 0.83,
+          "14no": 0.17
         },
         "13no": {
-          "14yes": 0.5,
-          "14no": 0.5
+          "14yes": 0,
+          "14no": 1
         }
       },
-      "sampled": true,
+      "sampled": false,
       "index": 2,
       "weight": 3,
-      "px": 751.89006066308,
-      "py": 442.8284392860447
+      "px": 920.6304419368953,
+      "py": 469.025345991195
     },
     {
       "id": 15,
       "title": "Escalate Privileges",
-      "x": 539.9279212335423,
-      "y": 298.414226902289,
+      "x": 794.319423051649,
+      "y": 404.2256758156792,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "14yes": {
-          "15yes": 0.5,
-          "15no": 0.5
+          "15yes": 0.66,
+          "15no": 0.34
         },
         "14no": {
-          "15yes": 0.5,
-          "15no": 0.5
+          "15yes": 0,
+          "15no": 1
         }
       },
-      "sampled": true,
+      "sampled": false,
       "index": 3,
       "weight": 3,
-      "px": 891.9126143473931,
-      "py": 419.43682761441715
+      "px": 794.3305193498488,
+      "py": 404.2684115346868
     },
     {
       "id": 16,
       "title": "Install Software",
-      "x": 745.3206006135729,
-      "y": 397.1287592731154,
+      "x": 671.0067719676101,
+      "y": 477.29980226005534,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "15yes": {
-          "16yes": 0.5,
-          "16no": 0.5
+          "16yes": 0.6,
+          "16no": 0.4
         },
         "15no": {
-          "16yes": 0.5,
-          "16no": 0.5
+          "16yes": 0,
+          "16no": 1
         }
       },
-      "sampled": true,
+      "sampled": false,
       "index": 4,
       "weight": 2,
-      "px": 986.293521456723,
-      "py": 526.1293184741234
+      "px": 672.0474696843897,
+      "py": 477.3137430860847
     },
     {
       "id": 17,
       "title": "Victim Compromised",
-      "x": 607.8051750558541,
-      "y": 708.2825466363752,
+      "x": 789.2371081259364,
+      "y": 552.5225654822441,
       "values": [
-        "victim is unable to use the server",
-        "victim is able to use the server"
+        "yes",
+        "no"
       ],
       "tbl": {
         "12yes": {
@@ -134,44 +134,44 @@
             "14yes": {
               "15yes": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 1,
+                  "17no": 0
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               },
               "15no": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             },
             "14no": {
               "15yes": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               },
               "15no": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             }
@@ -180,44 +180,44 @@
             "14yes": {
               "15yes": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               },
               "15no": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             },
             "14no": {
               "15yes": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               },
               "15no": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             }
@@ -228,44 +228,44 @@
             "14yes": {
               "15yes": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               },
               "15no": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             },
             "14no": {
               "15yes": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               },
               "15no": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             }
@@ -274,55 +274,55 @@
             "14yes": {
               "15yes": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               },
               "15no": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             },
             "14no": {
               "15yes": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               },
               "15no": {
                 "16yes": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 },
                 "16no": {
-                  "17victim is unable to use the server": 0,
-                  "17victim is able to use the server": 1
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             }
           }
         }
       },
-      "sampled": true,
+      "sampled": false,
       "index": 5,
       "weight": 5,
-      "px": 851.7963334573719,
-      "py": 562.2615769693708
+      "px": 789.2598755104902,
+      "py": 552.49343187515
     }
   ],
   "edges": [
@@ -330,232 +330,232 @@
       "source": {
         "id": 12,
         "title": "Recon Victim Network",
-        "x": 127.10574716473275,
-        "y": 164.08884526185454,
+        "x": 246.45227332321133,
+        "y": 513.081074743128,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
-          "12yes": 0.5,
-          "12no": 0.5
+          "12yes": 0.67,
+          "12no": 0.33
         },
-        "sampled": true,
+        "sampled": false,
         "index": 0,
         "weight": 2,
-        "px": 793.0979263487641,
-        "py": 436.10538320682076
+        "px": 883.4546345382706,
+        "py": 450.11055169757697
       },
       "target": {
         "id": 13,
         "title": "Find The Target Server",
-        "x": 283.4582332916982,
-        "y": 219.61836933457698,
+        "x": 395.6077983442982,
+        "y": 594.3128817901635,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "12yes": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0.77,
+            "13no": 0.23
           },
           "12no": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0,
+            "13no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 1,
         "weight": 3,
-        "px": 713.477861808962,
-        "py": 573.5947494923803
+        "px": 917.5870552489713,
+        "py": 605.2652809823558
       }
     },
     {
       "source": {
         "id": 13,
         "title": "Find The Target Server",
-        "x": 283.4582332916982,
-        "y": 219.61836933457698,
+        "x": 395.6077983442982,
+        "y": 594.3128817901635,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "12yes": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0.77,
+            "13no": 0.23
           },
           "12no": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0,
+            "13no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 1,
         "weight": 3,
-        "px": 713.477861808962,
-        "py": 573.5947494923803
+        "px": 917.5870552489713,
+        "py": 605.2652809823558
       },
       "target": {
         "id": 14,
         "title": "Exploit Vulnerability",
-        "x": 403.8460102124707,
-        "y": 256.820583288765,
+        "x": 435.70547212734016,
+        "y": 424.03565091229245,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "14yes": 0.5,
-            "14no": 0.5
+            "14yes": 0.83,
+            "14no": 0.17
           },
           "13no": {
-            "14yes": 0.5,
-            "14no": 0.5
+            "14yes": 0,
+            "14no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 2,
         "weight": 3,
-        "px": 751.89006066308,
-        "py": 442.8284392860447
+        "px": 920.6304419368953,
+        "py": 469.025345991195
       }
     },
     {
       "source": {
         "id": 14,
         "title": "Exploit Vulnerability",
-        "x": 403.8460102124707,
-        "y": 256.820583288765,
+        "x": 435.70547212734016,
+        "y": 424.03565091229245,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "14yes": 0.5,
-            "14no": 0.5
+            "14yes": 0.83,
+            "14no": 0.17
           },
           "13no": {
-            "14yes": 0.5,
-            "14no": 0.5
+            "14yes": 0,
+            "14no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 2,
         "weight": 3,
-        "px": 751.89006066308,
-        "py": 442.8284392860447
+        "px": 920.6304419368953,
+        "py": 469.025345991195
       },
       "target": {
         "id": 15,
         "title": "Escalate Privileges",
-        "x": 539.9279212335423,
-        "y": 298.414226902289,
+        "x": 794.319423051649,
+        "y": 404.2256758156792,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "14yes": {
-            "15yes": 0.5,
-            "15no": 0.5
+            "15yes": 0.66,
+            "15no": 0.34
           },
           "14no": {
-            "15yes": 0.5,
-            "15no": 0.5
+            "15yes": 0,
+            "15no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 3,
         "weight": 3,
-        "px": 891.9126143473931,
-        "py": 419.43682761441715
+        "px": 794.3305193498488,
+        "py": 404.2684115346868
       }
     },
     {
       "source": {
         "id": 15,
         "title": "Escalate Privileges",
-        "x": 539.9279212335423,
-        "y": 298.414226902289,
+        "x": 794.319423051649,
+        "y": 404.2256758156792,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "14yes": {
-            "15yes": 0.5,
-            "15no": 0.5
+            "15yes": 0.66,
+            "15no": 0.34
           },
           "14no": {
-            "15yes": 0.5,
-            "15no": 0.5
+            "15yes": 0,
+            "15no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 3,
         "weight": 3,
-        "px": 891.9126143473931,
-        "py": 419.43682761441715
+        "px": 794.3305193498488,
+        "py": 404.2684115346868
       },
       "target": {
         "id": 16,
         "title": "Install Software",
-        "x": 745.3206006135729,
-        "y": 397.1287592731154,
+        "x": 671.0067719676101,
+        "y": 477.29980226005534,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "15yes": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0.6,
+            "16no": 0.4
           },
           "15no": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0,
+            "16no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 4,
         "weight": 2,
-        "px": 986.293521456723,
-        "py": 526.1293184741234
+        "px": 672.0474696843897,
+        "py": 477.3137430860847
       }
     },
     {
       "source": {
         "id": 12,
         "title": "Recon Victim Network",
-        "x": 127.10574716473275,
-        "y": 164.08884526185454,
+        "x": 246.45227332321133,
+        "y": 513.081074743128,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
-          "12yes": 0.5,
-          "12no": 0.5
+          "12yes": 0.67,
+          "12no": 0.33
         },
-        "sampled": true,
+        "sampled": false,
         "index": 0,
         "weight": 2,
-        "px": 793.0979263487641,
-        "py": 436.10538320682076
+        "px": 883.4546345382706,
+        "py": 450.11055169757697
       },
       "target": {
         "id": 17,
         "title": "Victim Compromised",
-        "x": 607.8051750558541,
-        "y": 708.2825466363752,
+        "x": 789.2371081259364,
+        "y": 552.5225654822441,
         "values": [
-          "victim is unable to use the server",
-          "victim is able to use the server"
+          "yes",
+          "no"
         ],
         "tbl": {
           "12yes": {
@@ -563,44 +563,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 1,
+                    "17no": 0
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -609,44 +609,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -657,44 +657,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -703,91 +703,91 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
             }
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 5,
         "weight": 5,
-        "px": 851.7963334573719,
-        "py": 562.2615769693708
+        "px": 789.2598755104902,
+        "py": 552.49343187515
       }
     },
     {
       "source": {
         "id": 13,
         "title": "Find The Target Server",
-        "x": 283.4582332916982,
-        "y": 219.61836933457698,
+        "x": 395.6077983442982,
+        "y": 594.3128817901635,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "12yes": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0.77,
+            "13no": 0.23
           },
           "12no": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0,
+            "13no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 1,
         "weight": 3,
-        "px": 713.477861808962,
-        "py": 573.5947494923803
+        "px": 917.5870552489713,
+        "py": 605.2652809823558
       },
       "target": {
         "id": 17,
         "title": "Victim Compromised",
-        "x": 607.8051750558541,
-        "y": 708.2825466363752,
+        "x": 789.2371081259364,
+        "y": 552.5225654822441,
         "values": [
-          "victim is unable to use the server",
-          "victim is able to use the server"
+          "yes",
+          "no"
         ],
         "tbl": {
           "12yes": {
@@ -795,44 +795,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 1,
+                    "17no": 0
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -841,44 +841,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -889,44 +889,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -935,91 +935,91 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
             }
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 5,
         "weight": 5,
-        "px": 851.7963334573719,
-        "py": 562.2615769693708
+        "px": 789.2598755104902,
+        "py": 552.49343187515
       }
     },
     {
       "source": {
         "id": 14,
         "title": "Exploit Vulnerability",
-        "x": 403.8460102124707,
-        "y": 256.820583288765,
+        "x": 435.70547212734016,
+        "y": 424.03565091229245,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "14yes": 0.5,
-            "14no": 0.5
+            "14yes": 0.83,
+            "14no": 0.17
           },
           "13no": {
-            "14yes": 0.5,
-            "14no": 0.5
+            "14yes": 0,
+            "14no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 2,
         "weight": 3,
-        "px": 751.89006066308,
-        "py": 442.8284392860447
+        "px": 920.6304419368953,
+        "py": 469.025345991195
       },
       "target": {
         "id": 17,
         "title": "Victim Compromised",
-        "x": 607.8051750558541,
-        "y": 708.2825466363752,
+        "x": 789.2371081259364,
+        "y": 552.5225654822441,
         "values": [
-          "victim is unable to use the server",
-          "victim is able to use the server"
+          "yes",
+          "no"
         ],
         "tbl": {
           "12yes": {
@@ -1027,44 +1027,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 1,
+                    "17no": 0
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -1073,44 +1073,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -1121,44 +1121,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -1167,91 +1167,91 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
             }
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 5,
         "weight": 5,
-        "px": 851.7963334573719,
-        "py": 562.2615769693708
+        "px": 789.2598755104902,
+        "py": 552.49343187515
       }
     },
     {
       "source": {
         "id": 15,
         "title": "Escalate Privileges",
-        "x": 539.9279212335423,
-        "y": 298.414226902289,
+        "x": 794.319423051649,
+        "y": 404.2256758156792,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "14yes": {
-            "15yes": 0.5,
-            "15no": 0.5
+            "15yes": 0.66,
+            "15no": 0.34
           },
           "14no": {
-            "15yes": 0.5,
-            "15no": 0.5
+            "15yes": 0,
+            "15no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 3,
         "weight": 3,
-        "px": 891.9126143473931,
-        "py": 419.43682761441715
+        "px": 794.3305193498488,
+        "py": 404.2684115346868
       },
       "target": {
         "id": 17,
         "title": "Victim Compromised",
-        "x": 607.8051750558541,
-        "y": 708.2825466363752,
+        "x": 789.2371081259364,
+        "y": 552.5225654822441,
         "values": [
-          "victim is unable to use the server",
-          "victim is able to use the server"
+          "yes",
+          "no"
         ],
         "tbl": {
           "12yes": {
@@ -1259,44 +1259,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 1,
+                    "17no": 0
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -1305,44 +1305,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -1353,44 +1353,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -1399,91 +1399,91 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
             }
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 5,
         "weight": 5,
-        "px": 851.7963334573719,
-        "py": 562.2615769693708
+        "px": 789.2598755104902,
+        "py": 552.49343187515
       }
     },
     {
       "source": {
         "id": 16,
         "title": "Install Software",
-        "x": 745.3206006135729,
-        "y": 397.1287592731154,
+        "x": 671.0067719676101,
+        "y": 477.29980226005534,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "15yes": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0.6,
+            "16no": 0.4
           },
           "15no": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0,
+            "16no": 1
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 4,
         "weight": 2,
-        "px": 986.293521456723,
-        "py": 526.1293184741234
+        "px": 672.0474696843897,
+        "py": 477.3137430860847
       },
       "target": {
         "id": 17,
         "title": "Victim Compromised",
-        "x": 607.8051750558541,
-        "y": 708.2825466363752,
+        "x": 789.2371081259364,
+        "y": 552.5225654822441,
         "values": [
-          "victim is unable to use the server",
-          "victim is able to use the server"
+          "yes",
+          "no"
         ],
         "tbl": {
           "12yes": {
@@ -1491,44 +1491,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 1,
+                    "17no": 0
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -1537,44 +1537,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -1585,44 +1585,44 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
@@ -1631,55 +1631,55 @@
               "14yes": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               },
               "14no": {
                 "15yes": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 },
                 "15no": {
                   "16yes": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   },
                   "16no": {
-                    "17victim is unable to use the server": 0,
-                    "17victim is able to use the server": 1
+                    "17yes": 0,
+                    "17no": 1
                   }
                 }
               }
             }
           }
         },
-        "sampled": true,
+        "sampled": false,
         "index": 5,
         "weight": 5,
-        "px": 851.7963334573719,
-        "py": 562.2615769693708
+        "px": 789.2598755104902,
+        "py": 552.49343187515
       }
     }
   ]
