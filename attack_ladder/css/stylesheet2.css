@@ -1,0 +1,430 @@
+body {
+	/*background-color: #F9F9F9;*/
+	background-color: white;
+}
+
+.navbar-main {
+	background-color: #0489B1;
+	margin-bottom: 0 !important;
+}
+
+.navbar-title {
+	/*change to color of the left menu text?*/
+	/*color: #0489B1 !important;*/
+	color: #F1F4F5 !important;
+	font-size: 24px;
+	padding-left: 28px;
+	font-weight: 500;
+	/*margin-top: 20px;*/
+}
+
+.container-header {
+	margin-top:4px;
+	margin-bottom: 4px;
+}
+
+/*.navbar-controls{
+	height: 30px;
+}*/
+
+/*TODO Why*/
+.nav-sidebar > li> a.selected {
+	background-color: #01A9DB;
+	color: #F9F9F9;
+}
+
+.navbar-nav > li > a {
+	color:#F1F4F5 !important; 
+	text-decoration: none !important;
+}
+
+/*change width of the dropdown menu*/
+.dropdown-menu {
+	min-width: 200px;
+}
+
+/*TODO change appearance when clicked */
+li > a.control {
+	color:#0489B1 !important; 
+	text-decoration: none !important;
+	white-space: inherit ! important;	
+}
+
+li > a.control:hover, li>a.control:focus {
+	background-color: #e7e7e7 !important;
+}
+
+li > a.disabled {
+	pointer-events:none;
+	color:gray !important;
+}
+
+#control {
+	/*height:78%;*/
+	overflow-x:auto; 
+}
+
+#footer {
+	margin-right: 30px;
+}
+
+.hidden-upload {
+	display:none !important;
+}
+
+.alert-input {
+	width: 200px;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-bayes {
+	color:white;
+	background-color: #01A9DB;
+	width: 120px;
+}
+
+.btn-bayes:hover {
+	background-color: #63CEED;
+	color:gray;		
+}
+
+.btn-bayes:focus {
+	background-color: #63CEED;	
+	color:gray;
+}
+
+.btn-bayes-short {
+	color:white;
+	background-color: #01A9DB;
+	width: 70px;
+}
+
+.btn-bayes-short:hover {
+	background-color: #63CEED;
+	color:gray;		
+}
+
+.btn-bayes-short:focus {
+	background-color: #63CEED;
+	color:gray;	
+}
+
+.btn-bayes-grp {
+	color:white;
+	background-color: #01A9DB;
+	width: 90px;	
+}
+
+.btn-bayes-grp:hover {
+	background-color: #63CEED;
+	color:gray;		
+}
+
+.btn-bayes-grp:focus {
+	background-color: #63CEED;	
+	color:gray;
+}
+
+.margin-btn {
+	margin-left: 6px;
+}
+
+.btn-bayes[disabled] {
+	background-color: #777 !important;
+}
+
+.small-btn {
+    background-color: #999;
+    width: 30px;
+    text-align: center;
+    padding: 0;
+}
+/*#save-changes-btn {
+	width:30%;
+}
+*/
+/*Select*/
+.form-control {
+	width:60%!important;
+	float: left;
+}
+
+/* Tables and Components */
+#div-update-btn {
+	overflow-y: auto;
+}
+
+.div-table {
+	width :100%;
+	height: 188px;
+	/*overflow-y: auto;*/
+	margin-bottom: 10px;
+}
+
+.sample-table {
+	width :100%;
+	/*height: 328px;*/
+	overflow-x: auto;	
+}
+
+.table-bayes {
+	/*border: 1px solid #DDDDDD;*/
+	/*border-radius: 2px;*/
+    /*table-layout: fixed;*/
+    /*word-wrap: break-word;*/
+}
+/* format the cpt table only*/
+.cpt-table {
+	border: 1px solid #DDDDDD;
+	border-radius: 2px;	
+}
+
+.cpt-table>thead>tr>th {
+	border:1px solid #DDDDDD !important;	
+}
+
+.cpt-table>tr>td {
+	border:1px solid #DDDDDD;
+}
+
+.form-group {
+	/*overflow-x:scroll;*/
+}
+.table-dialog {
+	margin-bottom: 0 !important;
+}
+/*TODO combine these with a class and assign the class to the corresponding elements*/
+th {
+	text-align: center;
+	color : gray;
+	/*padding-top:1px;*/
+}
+
+td {
+	text-align: center;
+	color : gray;
+	padding-top:1px;
+}
+
+/* table inputs */
+.editable > input {
+	width:60px;
+	text-align: center;
+	border: 1px solid #2E9DBE;
+	border-radius: 4px;
+	padding: 4px;
+}
+
+input.invalid {
+	border-color: red;
+}
+
+/*SVG elements*/
+#svg {
+	/*border:1px solid black;*/
+	background: #DFF5F9;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+	-webkit-border-radius:none;
+	-moz-border-radius:none;
+	-ms-border-radius:none;
+	-o-border-radius:none;
+	border-radius: 4px;
+	/*float:left;	*/
+}
+
+g.node circle{
+	/*fill: #01A9DB;*/
+	fill: #f8f8f8;
+	stroke:#0489B1;
+	stroke-width:1px;
+}
+
+g.node:hover circle {
+	fill: #C5DEE4;
+}
+
+g.node.selected circle{
+	/*fill:#D265A5 !important; */
+	stroke:#CC0B7C;
+	stroke-width:2px !important;
+}
+
+g.node.selected:hover circle {
+	fill: #EFC9DF !important;
+}
+
+g.node circle.link-node{
+	fill:#0489B1;
+	stroke:#0489B1;
+	stroke-width:1px;
+}
+
+g.node:hover circle.link-node{
+	fill:#0489B1 !important;
+}
+
+g.node.selected circle.link-node{
+	fill:#CC0B7C;
+	stroke:#CC0B7C;
+}
+
+g.node.selected:hover circle.link-node{
+	fill:#CC0B7C !important;
+}
+
+path.conn{
+	fill:none;
+	stroke:#01A9DB;
+	stroke-width:5px;
+	cursor:default;
+}
+
+path.conn:hover {
+	/*stroke: #C5DEE4;*/
+	stroke-width:6px;
+}
+
+path.conn.hidden{
+	stroke-width: 0;
+}
+
+path.conn.dragline{
+	pointer-events:none;
+}
+
+path.conn.selected{
+	stroke:#CC0B7C !important; /* change */
+}
+
+path.conn.selected:hover {
+	stroke:#D265A5 !important;
+}
+
+path.arrow {
+	fill:#01A9DB;
+}
+
+path.conn.orientated {
+	stroke:#FFD700;
+}
+
+/*Text */
+.node-title {
+	font-size:16px;
+	font-family: sans-serif;
+	/*fill : rgb(76, 69, 69);*/
+	fill:#0489B1;
+	font-weight:400;	
+}
+
+.node-label {
+	margin: 0;
+	color: #0489B1;	
+}
+.node-label:hover {
+	font-size:28px !important;
+	color: #01A9DB !important;
+}
+
+.node-input {
+	color:#0489B1;
+	font-size:24px;
+}
+
+.help-text {
+	font-size: 16px;
+	font-family: sans-serif;
+	color : gray;
+	padding-top:18px;
+}
+
+.instructions-text {
+	font-size: 14px;
+	font-family: sans-serif;
+	color : gray;
+	padding-top: 5px;
+	font-weight:150px;
+	margin:0;	
+}
+
+.instructions-text-title {
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	/*color : #0489B1;*/
+	color:#CC0B7C;		
+	padding-top: 5px;
+	font-weight:200px;
+}
+
+.instructions-text-control {
+	font-size: 18px;
+	font-weight: 200px;
+	font-family: Arial, sans-serif;
+	/*color : black;*/
+	color: #0489B1;
+}	
+
+.label-text {
+	font-size:14px;
+	font-family: sans-serif;
+	font-weight: 100;
+	color : gray;
+	display: block;
+}
+
+.zoom-text {
+	font-size:12px;
+	font-family: sans-serif;
+	/*font-weight: 100;*/
+	color : #0489B1;
+}
+
+.footer-text {
+	font-size:14px;
+	font-family: sans-serif;
+	color : #0489B1;	
+}
+
+.notice-text {
+	font-size: 16px;
+	color:#CC0B7C !important;
+}
+
+.alert-text {
+	padding: 5px;
+}
+
+/*Dataset on toggle*/
+.navbar-text {
+	margin-left: 15px;
+}
+
+/* CSV dialog box*/
+.csv-settings-text {
+	padding-top: 7px;
+	font-size: 16px;
+	color:#0489B1;
+}
+
+input.csv-header {
+	color:#0489B1;
+	text-align: center;
+}
+
+/*Glyphicons style*/
+.glyphicon-navbar-ban {
+	color: red;
+}
+
+.glyphicon-navbar-ok {
+	color: green;
+}
