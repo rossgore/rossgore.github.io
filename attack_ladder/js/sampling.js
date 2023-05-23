@@ -144,7 +144,7 @@ var formatSamplesDownload = function(samples) {
 			// console.log(sample[val]);
 			if (sample[val] == 'yes')
 			{
-				newSum[sampleIndex] = newSum[sampleIndex] + 1;
+				newSum[sampleIndex] = 1;
 			}
 			sampleIndex = sampleIndex + 1;
 		}
