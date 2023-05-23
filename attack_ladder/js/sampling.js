@@ -139,13 +139,14 @@ var formatSamplesDownload = function(samples) {
 	//the actual samples
 	var newSum = new Array(len).fill(0);
 	samples.forEach(function(sample) {
-
+    var sampleIndex = 0;
 		for (var val in sample) {
 			// console.log(sample[val]);
 			if (sample[val] == 'yes')
 			{
-				
+				newSum[sampleIndex] = newSum[sampleIndex] + 1;
 			}
+			sampleIndex = sampleIndex + 1;
 		}
 	})
 	sampleArray.push(newSum);
