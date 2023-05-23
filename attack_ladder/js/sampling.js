@@ -133,17 +133,18 @@ var formatSamplesDownload = function(samples) {
 	nodes.forEach(function(node) {
 		titles.push(node.title);
 	})
+	var len = titles.length;
 	sampleArray.push(titles);
 
 	//the actual samples
-	var newSum = new Array(6).fill(0);
+	var newSum = new Array(len).fill(0);
 	samples.forEach(function(sample) {
 
 		for (var val in sample) {
 			// console.log(sample[val]);
 			if (sample[val] == 'yes')
 			{
-				newSum[val] = newSum[val]+1
+				
 			}
 		}
 	})
