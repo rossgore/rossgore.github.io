@@ -3,219 +3,219 @@
     {
       "id": 12,
       "title": "Recon Victim Network",
-      "x": 68.11734910680798,
-      "y": 90.7276824779172,
+      "x": 127.10574716473275,
+      "y": 164.08884526185454,
       "values": [
-        "recon successful",
-        "recon unsuccessful"
+        "yes",
+        "no"
       ],
       "tbl": {
-        "12recon successful": 0.77,
-        "12recon unsuccessful": 0.23
+        "12yes": 0.5,
+        "12no": 0.5
       },
       "sampled": true,
       "index": 0,
       "weight": 2,
-      "px": 694.0576400539675,
-      "py": 264.8451176761705
+      "px": 793.0979263487641,
+      "py": 436.10538320682076
     },
     {
       "id": 13,
       "title": "Find The Target Server",
-      "x": 338.4936777863942,
-      "y": 95.76194210640904,
+      "x": 283.4582332916982,
+      "y": 219.61836933457698,
       "values": [
-        "target server found",
-        "target server could not be found"
+        "yes",
+        "no"
       ],
       "tbl": {
-        "12recon successful": {
-          "13target server found": 0.5,
-          "13target server could not be found": 0.5
+        "12yes": {
+          "13yes": 0.5,
+          "13no": 0.5
         },
-        "12recon unsuccessful": {
-          "13target server found": 0,
-          "13target server could not be found": 1
+        "12no": {
+          "13yes": 0.5,
+          "13no": 0.5
         }
       },
       "sampled": true,
       "index": 1,
       "weight": 3,
-      "px": 555.6268347237401,
-      "py": 232.71827377277887
+      "px": 713.477861808962,
+      "py": 573.5947494923803
     },
     {
       "id": 14,
       "title": "Exploit Vulnerability",
-      "x": 620.1193854030604,
-      "y": 133.78960483425044,
+      "x": 403.8460102124707,
+      "y": 256.820583288765,
       "values": [
-        "vulnerability exploited",
-        "vulnerability could not be exploited"
+        "yes",
+        "no"
       ],
       "tbl": {
-        "13target server found": {
-          "14vulnerability exploited": 0.83,
-          "14vulnerability could not be exploited": 0.17
+        "13yes": {
+          "14yes": 0.5,
+          "14no": 0.5
         },
-        "13target server could not be found": {
-          "14vulnerability exploited": 0,
-          "14vulnerability could not be exploited": 1
+        "13no": {
+          "14yes": 0.5,
+          "14no": 0.5
         }
       },
       "sampled": true,
       "index": 2,
       "weight": 3,
-      "px": 454.86547944353464,
-      "py": 332.3135833163169
+      "px": 751.89006066308,
+      "py": 442.8284392860447
     },
     {
       "id": 15,
       "title": "Escalate Privileges",
-      "x": 1094.2193779248273,
-      "y": 173.54795382421958,
+      "x": 539.9279212335423,
+      "y": 298.414226902289,
       "values": [
-        "privileges escalated",
-        "privileges could not be escalated"
+        "yes",
+        "no"
       ],
       "tbl": {
-        "14vulnerability exploited": {
-          "15privileges escalated": 0.66,
-          "15privileges could not be escalated": 0.34
+        "14yes": {
+          "15yes": 0.5,
+          "15no": 0.5
         },
-        "14vulnerability could not be exploited": {
-          "15privileges escalated": 0,
-          "15privileges could not be escalated": 1
+        "14no": {
+          "15yes": 0.5,
+          "15no": 0.5
         }
       },
       "sampled": true,
       "index": 3,
       "weight": 3,
-      "px": 497.60023615005474,
-      "py": 461.0668872899326
+      "px": 891.9126143473931,
+      "py": 419.43682761441715
     },
     {
       "id": 16,
       "title": "Install Software",
-      "x": 1350.3838506077468,
-      "y": 442.5974975805923,
+      "x": 745.3206006135729,
+      "y": 397.1287592731154,
       "values": [
-        "software installed",
-        "software could not be installed"
+        "yes",
+        "no"
       ],
       "tbl": {
-        "15privileges escalated": {
-          "16software installed": 1,
-          "16software could not be installed": 0
+        "15yes": {
+          "16yes": 0.5,
+          "16no": 0.5
         },
-        "15privileges could not be escalated": {
-          "16software installed": 0,
-          "16software could not be installed": 1
+        "15no": {
+          "16yes": 0.5,
+          "16no": 0.5
         }
       },
       "sampled": true,
       "index": 4,
       "weight": 2,
-      "px": 484.8012069951421,
-      "py": 302.750966090646
+      "px": 986.293521456723,
+      "py": 526.1293184741234
     },
     {
       "id": 17,
-      "title": "Victim State",
-      "x": 1027.7819713481442,
-      "y": 854.8364211657415,
+      "title": "Victim Compromised",
+      "x": 607.8051750558541,
+      "y": 708.2825466363752,
       "values": [
         "victim is unable to use the server",
         "victim is able to use the server"
       ],
       "tbl": {
-        "12recon successful": {
-          "13target server found": {
-            "14vulnerability exploited": {
-              "15privileges escalated": {
-                "16software installed": {
-                  "17victim is unable to use the server": 1,
-                  "17victim is able to use the server": 0
+        "12yes": {
+          "13yes": {
+            "14yes": {
+              "15yes": {
+                "16yes": {
+                  "17victim is unable to use the server": 0,
+                  "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               },
-              "15privileges could not be escalated": {
-                "16software installed": {
+              "15no": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               }
             },
-            "14vulnerability could not be exploited": {
-              "15privileges escalated": {
-                "16software installed": {
+            "14no": {
+              "15yes": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               },
-              "15privileges could not be escalated": {
-                "16software installed": {
+              "15no": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               }
             }
           },
-          "13target server could not be found": {
-            "14vulnerability exploited": {
-              "15privileges escalated": {
-                "16software installed": {
+          "13no": {
+            "14yes": {
+              "15yes": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               },
-              "15privileges could not be escalated": {
-                "16software installed": {
+              "15no": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               }
             },
-            "14vulnerability could not be exploited": {
-              "15privileges escalated": {
-                "16software installed": {
+            "14no": {
+              "15yes": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               },
-              "15privileges could not be escalated": {
-                "16software installed": {
+              "15no": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
@@ -223,93 +223,93 @@
             }
           }
         },
-        "12recon unsuccessful": {
-          "13target server found": {
-            "14vulnerability exploited": {
-              "15privileges escalated": {
-                "16software installed": {
+        "12no": {
+          "13yes": {
+            "14yes": {
+              "15yes": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               },
-              "15privileges could not be escalated": {
-                "16software installed": {
+              "15no": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               }
             },
-            "14vulnerability could not be exploited": {
-              "15privileges escalated": {
-                "16software installed": {
+            "14no": {
+              "15yes": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               },
-              "15privileges could not be escalated": {
-                "16software installed": {
+              "15no": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               }
             }
           },
-          "13target server could not be found": {
-            "14vulnerability exploited": {
-              "15privileges escalated": {
-                "16software installed": {
+          "13no": {
+            "14yes": {
+              "15yes": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               },
-              "15privileges could not be escalated": {
-                "16software installed": {
+              "15no": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               }
             },
-            "14vulnerability could not be exploited": {
-              "15privileges escalated": {
-                "16software installed": {
+            "14no": {
+              "15yes": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
               },
-              "15privileges could not be escalated": {
-                "16software installed": {
+              "15no": {
+                "16yes": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 },
-                "16software could not be installed": {
+                "16no": {
                   "17victim is unable to use the server": 0,
                   "17victim is able to use the server": 1
                 }
@@ -321,8 +321,8 @@
       "sampled": true,
       "index": 5,
       "weight": 5,
-      "px": 605.2373322812387,
-      "py": 372.6409046974661
+      "px": 851.7963334573719,
+      "py": 562.2615769693708
     }
   ],
   "edges": [
@@ -330,321 +330,321 @@
       "source": {
         "id": 12,
         "title": "Recon Victim Network",
-        "x": 68.11734910680798,
-        "y": 90.7276824779172,
+        "x": 127.10574716473275,
+        "y": 164.08884526185454,
         "values": [
-          "recon successful",
-          "recon unsuccessful"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "12recon successful": 0.77,
-          "12recon unsuccessful": 0.23
+          "12yes": 0.5,
+          "12no": 0.5
         },
         "sampled": true,
         "index": 0,
         "weight": 2,
-        "px": 694.0576400539675,
-        "py": 264.8451176761705
+        "px": 793.0979263487641,
+        "py": 436.10538320682076
       },
       "target": {
         "id": 13,
         "title": "Find The Target Server",
-        "x": 338.4936777863942,
-        "y": 95.76194210640904,
+        "x": 283.4582332916982,
+        "y": 219.61836933457698,
         "values": [
-          "target server found",
-          "target server could not be found"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "12recon successful": {
-            "13target server found": 0.5,
-            "13target server could not be found": 0.5
+          "12yes": {
+            "13yes": 0.5,
+            "13no": 0.5
           },
-          "12recon unsuccessful": {
-            "13target server found": 0,
-            "13target server could not be found": 1
+          "12no": {
+            "13yes": 0.5,
+            "13no": 0.5
           }
         },
         "sampled": true,
         "index": 1,
         "weight": 3,
-        "px": 555.6268347237401,
-        "py": 232.71827377277887
+        "px": 713.477861808962,
+        "py": 573.5947494923803
       }
     },
     {
       "source": {
         "id": 13,
         "title": "Find The Target Server",
-        "x": 338.4936777863942,
-        "y": 95.76194210640904,
+        "x": 283.4582332916982,
+        "y": 219.61836933457698,
         "values": [
-          "target server found",
-          "target server could not be found"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "12recon successful": {
-            "13target server found": 0.5,
-            "13target server could not be found": 0.5
+          "12yes": {
+            "13yes": 0.5,
+            "13no": 0.5
           },
-          "12recon unsuccessful": {
-            "13target server found": 0,
-            "13target server could not be found": 1
+          "12no": {
+            "13yes": 0.5,
+            "13no": 0.5
           }
         },
         "sampled": true,
         "index": 1,
         "weight": 3,
-        "px": 555.6268347237401,
-        "py": 232.71827377277887
+        "px": 713.477861808962,
+        "py": 573.5947494923803
       },
       "target": {
         "id": 14,
         "title": "Exploit Vulnerability",
-        "x": 620.1193854030604,
-        "y": 133.78960483425044,
+        "x": 403.8460102124707,
+        "y": 256.820583288765,
         "values": [
-          "vulnerability exploited",
-          "vulnerability could not be exploited"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "13target server found": {
-            "14vulnerability exploited": 0.83,
-            "14vulnerability could not be exploited": 0.17
+          "13yes": {
+            "14yes": 0.5,
+            "14no": 0.5
           },
-          "13target server could not be found": {
-            "14vulnerability exploited": 0,
-            "14vulnerability could not be exploited": 1
+          "13no": {
+            "14yes": 0.5,
+            "14no": 0.5
           }
         },
         "sampled": true,
         "index": 2,
         "weight": 3,
-        "px": 454.86547944353464,
-        "py": 332.3135833163169
+        "px": 751.89006066308,
+        "py": 442.8284392860447
       }
     },
     {
       "source": {
         "id": 14,
         "title": "Exploit Vulnerability",
-        "x": 620.1193854030604,
-        "y": 133.78960483425044,
+        "x": 403.8460102124707,
+        "y": 256.820583288765,
         "values": [
-          "vulnerability exploited",
-          "vulnerability could not be exploited"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "13target server found": {
-            "14vulnerability exploited": 0.83,
-            "14vulnerability could not be exploited": 0.17
+          "13yes": {
+            "14yes": 0.5,
+            "14no": 0.5
           },
-          "13target server could not be found": {
-            "14vulnerability exploited": 0,
-            "14vulnerability could not be exploited": 1
+          "13no": {
+            "14yes": 0.5,
+            "14no": 0.5
           }
         },
         "sampled": true,
         "index": 2,
         "weight": 3,
-        "px": 454.86547944353464,
-        "py": 332.3135833163169
+        "px": 751.89006066308,
+        "py": 442.8284392860447
       },
       "target": {
         "id": 15,
         "title": "Escalate Privileges",
-        "x": 1094.2193779248273,
-        "y": 173.54795382421958,
+        "x": 539.9279212335423,
+        "y": 298.414226902289,
         "values": [
-          "privileges escalated",
-          "privileges could not be escalated"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "14vulnerability exploited": {
-            "15privileges escalated": 0.66,
-            "15privileges could not be escalated": 0.34
+          "14yes": {
+            "15yes": 0.5,
+            "15no": 0.5
           },
-          "14vulnerability could not be exploited": {
-            "15privileges escalated": 0,
-            "15privileges could not be escalated": 1
+          "14no": {
+            "15yes": 0.5,
+            "15no": 0.5
           }
         },
         "sampled": true,
         "index": 3,
         "weight": 3,
-        "px": 497.60023615005474,
-        "py": 461.0668872899326
+        "px": 891.9126143473931,
+        "py": 419.43682761441715
       }
     },
     {
       "source": {
         "id": 15,
         "title": "Escalate Privileges",
-        "x": 1094.2193779248273,
-        "y": 173.54795382421958,
+        "x": 539.9279212335423,
+        "y": 298.414226902289,
         "values": [
-          "privileges escalated",
-          "privileges could not be escalated"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "14vulnerability exploited": {
-            "15privileges escalated": 0.66,
-            "15privileges could not be escalated": 0.34
+          "14yes": {
+            "15yes": 0.5,
+            "15no": 0.5
           },
-          "14vulnerability could not be exploited": {
-            "15privileges escalated": 0,
-            "15privileges could not be escalated": 1
+          "14no": {
+            "15yes": 0.5,
+            "15no": 0.5
           }
         },
         "sampled": true,
         "index": 3,
         "weight": 3,
-        "px": 497.60023615005474,
-        "py": 461.0668872899326
+        "px": 891.9126143473931,
+        "py": 419.43682761441715
       },
       "target": {
         "id": 16,
         "title": "Install Software",
-        "x": 1350.3838506077468,
-        "y": 442.5974975805923,
+        "x": 745.3206006135729,
+        "y": 397.1287592731154,
         "values": [
-          "software installed",
-          "software could not be installed"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "15privileges escalated": {
-            "16software installed": 1,
-            "16software could not be installed": 0
+          "15yes": {
+            "16yes": 0.5,
+            "16no": 0.5
           },
-          "15privileges could not be escalated": {
-            "16software installed": 0,
-            "16software could not be installed": 1
+          "15no": {
+            "16yes": 0.5,
+            "16no": 0.5
           }
         },
         "sampled": true,
         "index": 4,
         "weight": 2,
-        "px": 484.8012069951421,
-        "py": 302.750966090646
+        "px": 986.293521456723,
+        "py": 526.1293184741234
       }
     },
     {
       "source": {
         "id": 12,
         "title": "Recon Victim Network",
-        "x": 68.11734910680798,
-        "y": 90.7276824779172,
+        "x": 127.10574716473275,
+        "y": 164.08884526185454,
         "values": [
-          "recon successful",
-          "recon unsuccessful"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "12recon successful": 0.77,
-          "12recon unsuccessful": 0.23
+          "12yes": 0.5,
+          "12no": 0.5
         },
         "sampled": true,
         "index": 0,
         "weight": 2,
-        "px": 694.0576400539675,
-        "py": 264.8451176761705
+        "px": 793.0979263487641,
+        "py": 436.10538320682076
       },
       "target": {
         "id": 17,
-        "title": "Victim State",
-        "x": 1027.7819713481442,
-        "y": 854.8364211657415,
+        "title": "Victim Compromised",
+        "x": 607.8051750558541,
+        "y": 708.2825466363752,
         "values": [
           "victim is unable to use the server",
           "victim is able to use the server"
         ],
         "tbl": {
-          "12recon successful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
-                    "17victim is unable to use the server": 1,
-                    "17victim is able to use the server": 0
+          "12yes": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -652,93 +652,93 @@
               }
             }
           },
-          "12recon unsuccessful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+          "12no": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -750,133 +750,133 @@
         "sampled": true,
         "index": 5,
         "weight": 5,
-        "px": 605.2373322812387,
-        "py": 372.6409046974661
+        "px": 851.7963334573719,
+        "py": 562.2615769693708
       }
     },
     {
       "source": {
         "id": 13,
         "title": "Find The Target Server",
-        "x": 338.4936777863942,
-        "y": 95.76194210640904,
+        "x": 283.4582332916982,
+        "y": 219.61836933457698,
         "values": [
-          "target server found",
-          "target server could not be found"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "12recon successful": {
-            "13target server found": 0.5,
-            "13target server could not be found": 0.5
+          "12yes": {
+            "13yes": 0.5,
+            "13no": 0.5
           },
-          "12recon unsuccessful": {
-            "13target server found": 0,
-            "13target server could not be found": 1
+          "12no": {
+            "13yes": 0.5,
+            "13no": 0.5
           }
         },
         "sampled": true,
         "index": 1,
         "weight": 3,
-        "px": 555.6268347237401,
-        "py": 232.71827377277887
+        "px": 713.477861808962,
+        "py": 573.5947494923803
       },
       "target": {
         "id": 17,
-        "title": "Victim State",
-        "x": 1027.7819713481442,
-        "y": 854.8364211657415,
+        "title": "Victim Compromised",
+        "x": 607.8051750558541,
+        "y": 708.2825466363752,
         "values": [
           "victim is unable to use the server",
           "victim is able to use the server"
         ],
         "tbl": {
-          "12recon successful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
-                    "17victim is unable to use the server": 1,
-                    "17victim is able to use the server": 0
+          "12yes": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -884,93 +884,93 @@
               }
             }
           },
-          "12recon unsuccessful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+          "12no": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -982,133 +982,133 @@
         "sampled": true,
         "index": 5,
         "weight": 5,
-        "px": 605.2373322812387,
-        "py": 372.6409046974661
+        "px": 851.7963334573719,
+        "py": 562.2615769693708
       }
     },
     {
       "source": {
         "id": 14,
         "title": "Exploit Vulnerability",
-        "x": 620.1193854030604,
-        "y": 133.78960483425044,
+        "x": 403.8460102124707,
+        "y": 256.820583288765,
         "values": [
-          "vulnerability exploited",
-          "vulnerability could not be exploited"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "13target server found": {
-            "14vulnerability exploited": 0.83,
-            "14vulnerability could not be exploited": 0.17
+          "13yes": {
+            "14yes": 0.5,
+            "14no": 0.5
           },
-          "13target server could not be found": {
-            "14vulnerability exploited": 0,
-            "14vulnerability could not be exploited": 1
+          "13no": {
+            "14yes": 0.5,
+            "14no": 0.5
           }
         },
         "sampled": true,
         "index": 2,
         "weight": 3,
-        "px": 454.86547944353464,
-        "py": 332.3135833163169
+        "px": 751.89006066308,
+        "py": 442.8284392860447
       },
       "target": {
         "id": 17,
-        "title": "Victim State",
-        "x": 1027.7819713481442,
-        "y": 854.8364211657415,
+        "title": "Victim Compromised",
+        "x": 607.8051750558541,
+        "y": 708.2825466363752,
         "values": [
           "victim is unable to use the server",
           "victim is able to use the server"
         ],
         "tbl": {
-          "12recon successful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
-                    "17victim is unable to use the server": 1,
-                    "17victim is able to use the server": 0
+          "12yes": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -1116,93 +1116,93 @@
               }
             }
           },
-          "12recon unsuccessful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+          "12no": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -1214,133 +1214,133 @@
         "sampled": true,
         "index": 5,
         "weight": 5,
-        "px": 605.2373322812387,
-        "py": 372.6409046974661
+        "px": 851.7963334573719,
+        "py": 562.2615769693708
       }
     },
     {
       "source": {
         "id": 15,
         "title": "Escalate Privileges",
-        "x": 1094.2193779248273,
-        "y": 173.54795382421958,
+        "x": 539.9279212335423,
+        "y": 298.414226902289,
         "values": [
-          "privileges escalated",
-          "privileges could not be escalated"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "14vulnerability exploited": {
-            "15privileges escalated": 0.66,
-            "15privileges could not be escalated": 0.34
+          "14yes": {
+            "15yes": 0.5,
+            "15no": 0.5
           },
-          "14vulnerability could not be exploited": {
-            "15privileges escalated": 0,
-            "15privileges could not be escalated": 1
+          "14no": {
+            "15yes": 0.5,
+            "15no": 0.5
           }
         },
         "sampled": true,
         "index": 3,
         "weight": 3,
-        "px": 497.60023615005474,
-        "py": 461.0668872899326
+        "px": 891.9126143473931,
+        "py": 419.43682761441715
       },
       "target": {
         "id": 17,
-        "title": "Victim State",
-        "x": 1027.7819713481442,
-        "y": 854.8364211657415,
+        "title": "Victim Compromised",
+        "x": 607.8051750558541,
+        "y": 708.2825466363752,
         "values": [
           "victim is unable to use the server",
           "victim is able to use the server"
         ],
         "tbl": {
-          "12recon successful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
-                    "17victim is unable to use the server": 1,
-                    "17victim is able to use the server": 0
+          "12yes": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -1348,93 +1348,93 @@
               }
             }
           },
-          "12recon unsuccessful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+          "12no": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -1446,133 +1446,133 @@
         "sampled": true,
         "index": 5,
         "weight": 5,
-        "px": 605.2373322812387,
-        "py": 372.6409046974661
+        "px": 851.7963334573719,
+        "py": 562.2615769693708
       }
     },
     {
       "source": {
         "id": 16,
         "title": "Install Software",
-        "x": 1350.3838506077468,
-        "y": 442.5974975805923,
+        "x": 745.3206006135729,
+        "y": 397.1287592731154,
         "values": [
-          "software installed",
-          "software could not be installed"
+          "yes",
+          "no"
         ],
         "tbl": {
-          "15privileges escalated": {
-            "16software installed": 1,
-            "16software could not be installed": 0
+          "15yes": {
+            "16yes": 0.5,
+            "16no": 0.5
           },
-          "15privileges could not be escalated": {
-            "16software installed": 0,
-            "16software could not be installed": 1
+          "15no": {
+            "16yes": 0.5,
+            "16no": 0.5
           }
         },
         "sampled": true,
         "index": 4,
         "weight": 2,
-        "px": 484.8012069951421,
-        "py": 302.750966090646
+        "px": 986.293521456723,
+        "py": 526.1293184741234
       },
       "target": {
         "id": 17,
-        "title": "Victim State",
-        "x": 1027.7819713481442,
-        "y": 854.8364211657415,
+        "title": "Victim Compromised",
+        "x": 607.8051750558541,
+        "y": 708.2825466363752,
         "values": [
           "victim is unable to use the server",
           "victim is able to use the server"
         ],
         "tbl": {
-          "12recon successful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
-                    "17victim is unable to use the server": 1,
-                    "17victim is able to use the server": 0
+          "12yes": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
+                    "17victim is unable to use the server": 0,
+                    "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -1580,93 +1580,93 @@
               }
             }
           },
-          "12recon unsuccessful": {
-            "13target server found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+          "12no": {
+            "13yes": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               }
             },
-            "13target server could not be found": {
-              "14vulnerability exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+            "13no": {
+              "14yes": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 }
               },
-              "14vulnerability could not be exploited": {
-                "15privileges escalated": {
-                  "16software installed": {
+              "14no": {
+                "15yes": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
                 },
-                "15privileges could not be escalated": {
-                  "16software installed": {
+                "15no": {
+                  "16yes": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   },
-                  "16software could not be installed": {
+                  "16no": {
                     "17victim is unable to use the server": 0,
                     "17victim is able to use the server": 1
                   }
@@ -1678,8 +1678,8 @@
         "sampled": true,
         "index": 5,
         "weight": 5,
-        "px": 605.2373322812387,
-        "py": 372.6409046974661
+        "px": 851.7963334573719,
+        "py": 562.2615769693708
       }
     }
   ]
