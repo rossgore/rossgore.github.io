@@ -127,6 +127,40 @@ var sampleTblColumnNames = function(){
 
 var formatSamplesDownload = function(samples) {
 	var sampleArray = [];
+	
+	//first row is the titles
+	var titles = [];
+	nodes.forEach(function(node) {
+		titles.push(node.title);
+	})
+	sampleArray.push(titles);
+	
+	//the actual samples
+	samples.forEach(function(sample) {
+		var newRow = [];
+		for (var val in sample) {
+			// console.log(sample[val]);
+			if (sample[val] == 'yes')
+			{
+				newRow.push(1);
+			}
+		}
+		sampleArray.push(newRow);
+	})
+	
+	//example used from http://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side
+	var csvData = "";
+	sampleArray.forEach(function(singleRow, index){
+		var currRow = singleRow.join(",");
+		csvData += index < sampleArray.length ? currRow + '\n' : currRow;
+	})
+
+	return csvData;
+	
+}
+
+var formatSamplesDownloadRaw = function(samples) {
+	var sampleArray = [];
 
 	//first row is the titles
 	var titles = [];
