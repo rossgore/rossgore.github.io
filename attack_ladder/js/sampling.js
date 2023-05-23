@@ -18,9 +18,9 @@ var doSampling = function(node, parents, sample){
 
 	//reached the deepest level in the cpt
 	//go through the possible values and get the corresponding probabilities
-	//go through the probability ranges for each possible value 
+	//go through the probability ranges for each possible value
 	//and check if the random number is in one of this ranges
-	//return the value associated with this range 
+	//return the value associated with this range
 	var sum = 0.0;
 	for(var val in cpt) {
 		var currProb = parseFloat(cpt[val]);
@@ -30,7 +30,7 @@ var doSampling = function(node, parents, sample){
 		if (lowerBound <= randVal && randVal < upperBound) {
 			return val.replace(node.id.toString(), "");
 		}
-	}	
+	}
 }
 
 var sampleNode = function(node, sample) {
@@ -45,7 +45,7 @@ var sampleNode = function(node, sample) {
 			else if(!currParent.sampled){
 				console.log("currParent is undefined");
 			}
-		})	
+		})
 	}
 	var value = doSampling(node, parents, sample);
 	// console.log(value);
@@ -127,27 +127,27 @@ var sampleTblColumnNames = function(){
 
 var formatSamplesDownload = function(samples) {
 	var sampleArray = [];
-	
+
 	//first row is the titles
 	var titles = [];
 	nodes.forEach(function(node) {
 		titles.push(node.title);
 	})
 	sampleArray.push(titles);
-	
+
 	//the actual samples
+	var newSum = new Array(6).fill(0);
 	samples.forEach(function(sample) {
-		var newRow = [];
+
 		for (var val in sample) {
 			// console.log(sample[val]);
 			if (sample[val] == 'yes')
 			{
-				newRow.push(1);
+				newSum[val] = newSum[val]+1
 			}
 		}
-		sampleArray.push(newRow);
 	})
-	
+	sampleArray.push(newSum);
 	//example used from http://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side
 	var csvData = "";
 	sampleArray.forEach(function(singleRow, index){
@@ -156,7 +156,7 @@ var formatSamplesDownload = function(samples) {
 	})
 
 	return csvData;
-	
+
 }
 
 var formatSamplesDownloadRaw = function(samples) {
@@ -198,7 +198,7 @@ var downloadSamples = function(filename, samples) {
 	//on empty input - give an alert message
 	if (!isEmptyString(filename)) {
 		filename = filename + ".csv";
-		saveAs(blob, filename);	
+		saveAs(blob, filename);
 	}
 	else {
 		bootbox.dialog({
@@ -209,7 +209,7 @@ var downloadSamples = function(filename, samples) {
 		      className: "btn-bayes-short",
 		    },
 		  }
-		});		
+		});
 	}
 }
 
@@ -220,7 +220,7 @@ var displaySamples = function(samples, noSample, fSample) {
 	var btnGroup = control.append("div")
 		   				  .attr("class", "btn-group")
 						  .attr("role", "group");
-	//sample again btn 	   
+	//sample again btn
 	btnGroup.append("button")
 		   .attr("class", "btn btn-default btn-bayes-grp")
 		   .attr("id", "resample")
@@ -245,7 +245,7 @@ var displaySamples = function(samples, noSample, fSample) {
 		   .html("Reset")
 		   .on("click", function(){
 		   	samplingSettings();
-		   });			   
+		   });
 
 	control.append("hr");
 
@@ -261,7 +261,7 @@ var displaySamples = function(samples, noSample, fSample) {
 		warningDiv.append("span")
 				  .attr("class", "sr-only")
 				  .text("Warning");
-		var text = warningDiv.html() + " Only the first 20 samples will be displayed. If you wish to view all the samples, download them by clicking the \'Download\' button."				  		  
+		var text = warningDiv.html() + " Only the first 20 samples will be displayed. If you wish to view all the samples, download them by clicking the \'Download\' button."
 		warningDiv.html(text);
 	}
 
@@ -304,10 +304,10 @@ var checkExistingCpts = function() {
 		      className: "btn-bayes-short",
 		    },
 		  }
-		});			
+		});
 		return false;
 	}
-	return true; 
+	return true;
 }
 
 // calculate in advance the time needed for 100 samples to inform the user
@@ -332,8 +332,8 @@ var estimatedSampling = function() {
 	infoDiv.append("span")
 			  .attr("class", "sr-only")
 			  .text("Info");
-	var text = infoDiv.html() + " Estimated time for sampling 100 samples is " + time + " seconds.";				  		  
-	infoDiv.html(text);	
+	var text = infoDiv.html() + " Estimated time for sampling 100 samples is " + time + " seconds.";
+	infoDiv.html(text);
 }
 
 var ancestralSampling = function(fSample) {
@@ -353,7 +353,7 @@ var ancestralSampling = function(fSample) {
 				.attr("class", "sr-only")
 				.text("Error");
 		var text = errorDiv.html() + " Enter a positive integer for a number of samples.";
-		errorDiv.html(text);			
+		errorDiv.html(text);
 		return;
 	}
 
@@ -382,7 +382,7 @@ var samplingSettings = function(){
 	clearDisplayField();
 	// deselect if there is a selected node
 	selectedNode = null;
-	refresh();	
+	refresh();
 
 	//keep the fixed values here
 	var fixedSamples = {};
@@ -441,7 +441,7 @@ var samplingSettings = function(){
 			  .attr("value", "none")
 			  .attr("selected", true)
 			  .text("Not fixed")//?
-		//all possible values for this node	  
+		//all possible values for this node
 		node.values.forEach(function(value) {
 			select.append("option")
 			      .attr("value", value)
