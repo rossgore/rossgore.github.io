@@ -149,6 +149,9 @@ var formatSamplesDownload = function(samples) {
 			sampleIndex = sampleIndex + 1;
 		}
 	})
+	for (var i = 0; i < newSum.length; i++) {
+		newSum[i] = (newSum[i] / samples.length) * 100
+	}
 	sampleArray.push(newSum);
 	//example used from http://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side
 	var csvData = "";
