@@ -16,7 +16,7 @@ var specifyDownloadName = function(mode, ext, samples) {
 	      callback: function() {
 	        filename = $('#filename').val();
 	        if(mode === 1) {
-		        downloadNetwork(filename);	
+		        downloadNetwork(filename);
 	        }
 	        else if(mode === 2) {
 	        	downloadSamples(filename, samples);
@@ -24,6 +24,9 @@ var specifyDownloadName = function(mode, ext, samples) {
 	        else if(mode === 3) {
 	        	downloadPNG(filename);
 	        }
+					else if(mode === 4) {
+						downloadSamplesRaw(filename, samples);
+					}
 	      }
 	    },
 	    cancel: {
@@ -51,10 +54,10 @@ var downloadNetwork = function(filename){
 
 	var blob = new Blob([netObject], {type:"text/plain;charset=utf-8"});
 
-	// console.log(filename);	
+	// console.log(filename);
 	if (!isEmptyString(filename)) {
 		filename = filename + ".json";
-		saveAs(blob, filename);	
+		saveAs(blob, filename);
 	}
 	else {
 		bootbox.dialog({
@@ -65,7 +68,7 @@ var downloadNetwork = function(filename){
 		      className: "btn-bayes-short",
 		    },
 		  }
-		});		
+		});
 	}
 }
 
@@ -75,7 +78,7 @@ var uploadNetwork = function(){
 		var fileReader = new FileReader();
 		var uploadFile = d3.select("#hidden-upload").node().files[0];
 
-		//check if it is the correct file type 
+		//check if it is the correct file type
 		if(!checkUploadFileExtension(uploadFile.type, "application/json")) {
 			bootbox.dialog({
 			  message: "The uploaded file needs to be .json",
@@ -85,7 +88,7 @@ var uploadNetwork = function(){
 			      className: "btn-bayes-short",
 			    },
 			  }
-			});					
+			});
 			return;
 		}
 
@@ -98,7 +101,7 @@ var uploadNetwork = function(){
 		d3.select("#p-struct").append("span")
 							  .attr("id", "glyphicon-struct")
 							  .attr("class", "glyphicon glyphicon-ban-circle glyphicon-navbar-ban")
-							  .attr("aria-hidden", "true");	
+							  .attr("aria-hidden", "true");
 		d3.select("#glyphicon-params").remove();
 		d3.select("#p-params").append("span")
 							  .attr("id", "glyphicon-params")
@@ -121,9 +124,9 @@ var uploadNetwork = function(){
 						return n.id === e.source.id;
 					})[0];
 					var tgt = nodes.filter(function(n) {
-						return n.id === e.target.id; 
-					})[0];	
-					rawEdges[index] = {source: src, target:tgt}; 
+						return n.id === e.target.id;
+					})[0];
+					rawEdges[index] = {source: src, target:tgt};
 				})
 				edges = rawEdges;
 				//find the max index in the nodes
@@ -146,7 +149,7 @@ var uploadNetwork = function(){
 				      className: "btn-bayes-short",
 				    },
 				  }
-				});					
+				});
 			}
 		}
 
@@ -162,7 +165,7 @@ var uploadNetwork = function(){
 		      className: "btn-bayes-short",
 		    },
 		  }
-		});			
+		});
 	}
 }
 
@@ -180,13 +183,13 @@ var loadDefaultNetwork = function(filepath, isInitial, val) {
 	  .classed("disabled", true);
 	d3.select("#learnParams")
 	  .classed("disabled", true);
-	  
+
 	// update glyphicons if changes have happened
 	d3.select("#glyphicon-struct").remove();
 	d3.select("#p-struct").append("span")
 						  .attr("id", "glyphicon-struct")
 						  .attr("class", "glyphicon glyphicon-ban-circle glyphicon-navbar-ban")
-						  .attr("aria-hidden", "true");	
+						  .attr("aria-hidden", "true");
 	d3.select("#glyphicon-params").remove();
 	d3.select("#p-params").append("span")
 						  .attr("id", "glyphicon-params")
@@ -206,9 +209,9 @@ var loadDefaultNetwork = function(filepath, isInitial, val) {
 	  		return n.id === e.source.id;
 	  	})[0];
 	  	var tgt = nodes.filter(function(n) {
-	  		return n.id === e.target.id; 
-	  	})[0];	
-	  	rawEdges[index] = {source: src, target:tgt}; 
+	  		return n.id === e.target.id;
+	  	})[0];
+	  	rawEdges[index] = {source: src, target:tgt};
 	  })
 	  edges = rawEdges;
 	  //find the max index in the nodes
@@ -216,7 +219,7 @@ var loadDefaultNetwork = function(filepath, isInitial, val) {
 	  //set the status to uploaded
 	  uploaded = true;
 
-	  //render  
+	  //render
 	  refresh();
 	  //set mode to default
 	  // setDefaultMode();
@@ -229,7 +232,7 @@ var loadDefaultNetwork = function(filepath, isInitial, val) {
 	  	loadExampleNetworks(val);
 	  };
 
-	  // start the force layout 
+	  // start the force layout
 	  forceLayout(nodes, edges);
 	});
 };
@@ -237,13 +240,13 @@ var loadDefaultNetwork = function(filepath, isInitial, val) {
 // local filepath to example network
 var identifyExampleNetFilepath = function(val) {
 	if(val === "rain") {
-		loadDefaultNetwork("files/nets/wetGrassNet.json", false, val)		
+		loadDefaultNetwork("files/nets/wetGrassNet.json", false, val)
 	}
 	else if(val === "burglary") {
 		loadDefaultNetwork("files/nets/burglaryNetFull.json", false, val)
 	}
 	else if(val === "cancer") {
-		loadDefaultNetwork("files/nets/cancerNet.json", false, val)		
+		loadDefaultNetwork("files/nets/cancerNet.json", false, val)
 	}
 	else if(val === "bronchitis") {
 		loadDefaultNetwork("files/nets/smokerBronchitis.json", false, val)
@@ -286,7 +289,7 @@ var loadExampleNetworks = function(selValue) {
 		  .text("Select Network:")
 	select.append("option")
 		  .attr("value", "alarm")
-		  .text("Alarm");	  
+		  .text("Alarm");
 	select.append("option")
 		  .attr("value", "asia")
 		  .text("Asia");
@@ -301,7 +304,7 @@ var loadExampleNetworks = function(selValue) {
 		  .text("Cancer");
 	select.append("option")
 		  .attr("value", "rain")
-		  .text("Rain");		  
+		  .text("Rain");
 
 	// control.append("hr");
 
@@ -321,7 +324,7 @@ var loadDataset = function(filepath, val) {
 	// update dataset header
 	d3.select("#dataset-name")
 		.html("Dataset: " + fileName)
-		.classed("notice-text", true);	
+		.classed("notice-text", true);
 
 	// load the data
 	d3.csv(filepath, function(data){
@@ -346,7 +349,7 @@ var loadDataset = function(filepath, val) {
 	d3.select("#p-struct").append("span")
 						  .attr("id", "glyphicon-struct")
 						  .attr("class", "glyphicon glyphicon-ban-circle glyphicon-navbar-ban")
-						  .attr("aria-hidden", "true");	
+						  .attr("aria-hidden", "true");
 	d3.select("#glyphicon-params").remove();
 	d3.select("#p-params").append("span")
 						  .attr("id", "glyphicon-params")
@@ -409,7 +412,7 @@ var loadExampleData = function(selected) {
 		  .text("Cancer");
 	select.append("option")
 		  .attr("value", "rain")
-		  .text("Rain");		  
+		  .text("Rain");
 
 	// used when the function is called after a dataset is loaded and we want to keep the select menu
 	// sets the select to the correct selected value
@@ -425,7 +428,7 @@ var loadExampleData = function(selected) {
 //download the canvas as png format
 var downloadPNG = function(filename) {
 	var filePngName = filename + ".png";
-	saveSvgAsPng(svg[0][0], filePngName);	
+	saveSvgAsPng(svg[0][0], filePngName);
 };
 
 // parse the bif file text to get the nodes, the connections and the cpt values
@@ -514,7 +517,7 @@ var parseBif = function(txtBif){
 					var pairsIdVal = [];
 					for(var pair=0; pair<parIDs.length; pair++) {
 						pairsIdVal.push(parIDs[pair] + "" + parentRowVals[pair]);
-					}					
+					}
 					// NOTE: JavaScript sorts lexicographically instead of numerically
 					// e.g. [8,35] will be sorted as [35, 8]
 					// parIDs.sort();
@@ -549,7 +552,7 @@ var uploadBif = function() {
 	if(window.File && window.FileReader && window.FileList && window.Blob) {
 		var fileReader = new FileReader();
 		var uploadFile = d3.select("#hidden-upload-3").node().files[0];
-		
+
 		//check if it is bif
 		var extension = uploadFile.name.split(".")[uploadFile.name.split(".").length-1];
 		if(!checkUploadFileExtension(extension, "bif")) {
@@ -561,7 +564,7 @@ var uploadBif = function() {
 			      className: "btn-bayes-short",
 			    },
 			  }
-			});					
+			});
 			return;
 		}
 
@@ -575,7 +578,7 @@ var uploadBif = function() {
 		d3.select("#p-struct").append("span")
 							  .attr("id", "glyphicon-struct")
 							  .attr("class", "glyphicon glyphicon-ban-circle glyphicon-navbar-ban")
-							  .attr("aria-hidden", "true");	
+							  .attr("aria-hidden", "true");
 		d3.select("#glyphicon-params").remove();
 		d3.select("#p-params").append("span")
 							  .attr("id", "glyphicon-params")
@@ -599,9 +602,9 @@ var uploadBif = function() {
 			      className: "btn-bayes-short",
 			    },
 			  }
-			});				
+			});
 		}
-		fileReader.readAsText(uploadFile);		
+		fileReader.readAsText(uploadFile);
 
 		//reset the value
 		document.getElementById("hidden-upload-3").value = "";
@@ -615,8 +618,8 @@ var uploadBif = function() {
 		      className: "btn-bayes-short",
 		    },
 		  }
-		});			
-	}	
+		});
+	}
 }
 
 // loading image when running function
@@ -646,7 +649,7 @@ var loader = function() {
     //                 .text("Loading...")
     //                 .attr("font-family", "sans-serif")
     //                 .attr("font-size", "20px")
-    //                 .attr("fill", "#CC0B7C");    
+    //                 .attr("fill", "#CC0B7C");
 
     // var background = loaderG.append("path")
     //         .datum({endAngle: 0.33*tau})

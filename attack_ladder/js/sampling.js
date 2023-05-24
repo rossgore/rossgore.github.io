@@ -131,7 +131,7 @@ var formatSamplesDownload = function(samples) {
 	//first row is the titles
 	var titles = [];
 	nodes.forEach(function(node) {
-		titles.push(node.title);
+		titles.push(node.title + "Rung Achieved");
 	})
 	var len = titles.length;
 	sampleArray.push(titles);
@@ -150,7 +150,7 @@ var formatSamplesDownload = function(samples) {
 		}
 	})
 	for (var i = 0; i < newSum.length; i++) {
-		newSum[i] = (newSum[i] / samples.length) * 100
+		newSum[i] = ((newSum[i] / samples.length) * 100) + "% of samples"
 	}
 	sampleArray.push(newSum);
 	//example used from http://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side
@@ -194,6 +194,30 @@ var formatSamplesDownloadRaw = function(samples) {
 	return csvData;
 }
 
+var downloadSamplesRaw = function(filename, samples) {
+	//format the data to be downloaded
+	var sampleData = formatSamplesDownloadRaw(samples);
+
+	var blob = new Blob([sampleData], {type:"text/csv;charset=utf-8"});
+
+	//on empty input - give an alert message
+	if (!isEmptyString(filename)) {
+		filename = filename + ".csv";
+		saveAs(blob, filename);
+	}
+	else {
+		bootbox.dialog({
+		  message: "Specify a name for the file.",
+		  buttons: {
+		    main: {
+		      label: "OK",
+		      className: "btn-bayes-short",
+		    },
+		  }
+		});
+	}
+}
+
 var downloadSamples = function(filename, samples) {
 	//format the data to be downloaded
 	var sampleData = formatSamplesDownload(samples);
@@ -234,15 +258,24 @@ var displaySamples = function(samples, noSample, fSample) {
 		   	resample(noSample, fSample);
 		   });
 
-	//download button
+	//download summary button
 	btnGroup.append("button")
 		   .attr("class", "btn btn-default btn-bayes-grp")
 		   .attr("id", "sampleDownloadBtn")
-		   .html("Download")
+		   .html("Download Sample Summary")
 		   .on("click", function() {
 		   	specifyDownloadName(2, ".csv", samples);
 		   	// downloadSamples(samples);
 		   });
+	//download button
+	btnGroup.append("button")
+	 		.attr("class", "btn btn-default btn-bayes-grp")
+	 		.attr("id", "sampleDownloadRawBtn")
+	 		.html("Download Samples ")
+	 		.on("click", function() {
+	 		 specifyDownloadName(4, ".csv", samples);
+	 		// downloadSamplesRaw(samples);
+	 	 });
 	//reset btn
 	btnGroup.append("button")
 		   .attr("class", "btn btn-default btn-bayes-grp")

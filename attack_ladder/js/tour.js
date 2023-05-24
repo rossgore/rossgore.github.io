@@ -1,13 +1,13 @@
 var startTour = function() {
- 
+
     var tour = new Tour({
         //TODO change to local storage??
         storage : false,
         onStart : function(tour) {
           loadDefaultNetwork("files/nets/burglaryNet.json", true);
-        }     
+        }
     });
- 
+
     tour.addSteps([
       {
         element: ".tour-step.tour-step-zero",
@@ -28,7 +28,7 @@ var startTour = function() {
         placement: "left",
         title: "Controls",
         content: "The text here shows the current dataset loaded in the tool."
-      },      
+      },
       {
         element: ".tour-step.tour-step-three",
         placement: "top",
@@ -50,7 +50,7 @@ var startTour = function() {
         onShow: function(tour) {
           d3.select("#zoom-scale")
             .classed("tour-step tour-step-zoom", true);
-        },                        
+        },
       },
       {
         element: ".tour-step.tour-step-six",
@@ -60,8 +60,8 @@ var startTour = function() {
         // reflex: true,
         // onShown: function(tour) {
         //   $(".popover.tour-tour .popover-navigation .btn-group .btn[data-role=next]").prop("disabled", true);
-        // },              
-      },     
+        // },
+      },
       {
         element: ".tour-step.tour-step-seven",
         placement: "left",
@@ -73,7 +73,7 @@ var startTour = function() {
           if (selection && selection[0][0].innerHTML === "New Node") {
             selection.classed("tour-step tour-step-seven", true);
           }
-        },                        
+        },
       },
       {
         element: ".tour-step.tour-step-eight",
@@ -88,8 +88,8 @@ var startTour = function() {
         },
         onShown: function(tour) {
           $(".popover.tour-tour .popover-navigation .btn-group .btn[data-role=next]").prop("disabled", true);
-        },                                 
-      },     
+        },
+      },
       {
         element: ".tour-step.tour-step-eight",
         placement: "top",
@@ -97,7 +97,7 @@ var startTour = function() {
         content: "Drag from the 'Attempted Reconnaissance' rung to 'Attempt to Execute Added Code' rung to add a connection between them.",
         onPrev: function(tour) {
           // setMode("");
-        }                      
+        }
       },
       {
         element: ".tour-step.tour-step-nine",
@@ -115,7 +115,7 @@ var startTour = function() {
         },
         onPrev: function(tour) {
           // setMode("");
-        }                           
+        }
       },
       {
         element: ".tour-step.tour-step-ten",
@@ -125,7 +125,7 @@ var startTour = function() {
         onShow: function(tour) {
           d3.select("#node-options")
             .classed("tour-step tour-step-ten", true);
-        },              
+        },
       },
       {
         element: ".tour-step.tour-step-ten",
@@ -135,7 +135,7 @@ var startTour = function() {
         onShow: function(tour) {
           d3.select("#node-options")
             .classed("tour-step tour-step-ten", true);
-        },              
+        },
       },
       {
         element: ".tour-step.tour-step-eleven",
@@ -145,7 +145,7 @@ var startTour = function() {
         onShow: function(tour) {
           d3.select(".cpt-table")
             .classed("tour-step tour-step-eleven", true);
-        },              
+        },
       },
       {
         element: ".tour-step.tour-step-twelve",
@@ -159,7 +159,7 @@ var startTour = function() {
         },
         onShown: function(tour) {
           $(".popover.tour-tour .popover-navigation .btn-group .btn[data-role=next]").prop("disabled", true);
-        },               
+        },
       },
       {
         element: ".tour-step.tour-step-success",
@@ -169,7 +169,7 @@ var startTour = function() {
         onShow: function(tour) {
           d3.select(".alert-text")
             .classed("tour-step tour-step-success", true);
-        },               
+        },
       },
       {
         element: ".tour-step.tour-step-dropdown",
@@ -177,7 +177,7 @@ var startTour = function() {
         backdrop:true ,
         title: "Sampling",
         content: "Click the dropdown menu and select 'Sample from Network' to start sampling."
-      },                 
+      },
       // {
       //   element: ".tour-step.tour-step-thirteen",
       //   placement: "right",
@@ -192,7 +192,7 @@ var startTour = function() {
       //     // if(!editNodeMode) {
       //     //   setMode("edit");
       //     // }
-      //   }                        
+      //   }
       // },
       {
         element: ".tour-step.tour-step-fourteen",
@@ -205,7 +205,7 @@ var startTour = function() {
         },
         onPrev: function(tour) {
           setMode("");
-        }               
+        }
       },
       {
         element: ".tour-step.tour-step-fifteen",
@@ -216,10 +216,10 @@ var startTour = function() {
         onShow: function(tour) {
           d3.select("#runSamplingBtn")
             .classed("tour-step tour-step-fifteen", true);
-        },         
+        },
         onShown: function(tour) {
           $(".popover.tour-tour .popover-navigation .btn-group .btn[data-role=next]").prop("disabled", true);
-        },              
+        },
       },
       {
         element: ".tour-step.tour-step-sixteen",
@@ -229,27 +229,27 @@ var startTour = function() {
         onShow: function(tour) {
           d3.select("#resample")
             .classed("tour-step tour-step-sixteen", true);
-        },                     
-      },      
+        },
+      },
       {
         element: ".tour-step.tour-step-seventeen",
         placement: "bottom",
         title: "Sampling from Network",
-        content: "Click 'Download' button to download the sample data in '.csv' format.",
+        content: "Click 'Download Sample Summary' button to download the summary of the sample data in '.csv' format.",
         onShow: function(tour) {
           d3.select("#sampleDownloadBtn")
             .classed("tour-step tour-step-seventeen", true);
-        },                      
+        },
       },
       // {
       //   element: ".tour-step.tour-step-eighteen",
       //   placement: "bottom",
       //   title: "Downloading Network",
       //   content: "Click 'Download Network' button to save the network for future use.",
-      //   // reflex: true,        
+      //   // reflex: true,
       //   // onShown: function(tour) {
       //   //   $(".popover.tour-tour .popover-navigation .btn-group .btn[data-role=next]").prop("disabled", true);
-      //   // },              
+      //   // },
       // },
       // {
       //   element: ".tour-step.tour-step-dropdown",
@@ -257,7 +257,7 @@ var startTour = function() {
       //   backdrop:true ,
       //   title: "Sampling",
       //   content: "Click the dropdown menu and select 'Sample from Network' to start sampling."
-      // },      
+      // },
       {
         element: ".tour-step.tour-step-nineteen-one",
         placement: "bottom",
@@ -273,7 +273,7 @@ var startTour = function() {
         onShow: function(tour) {
           d3.select("#example-dataset")
             .classed("tour-step tour-step-nineteen-two", true);
-        },         
+        },
       },
       {
         element: ".tour-step.tour-step-learning-one",
@@ -287,7 +287,7 @@ var startTour = function() {
         placement: "right",
         title: "Structure",
         content: "The structure has been learnt."
-      },      
+      },
       {
         element: ".tour-step.tour-step-learning-two",
         placement: "bottom",
@@ -308,7 +308,7 @@ var startTour = function() {
         },
         onShown: function(tour) {
           $(".popover.tour-tour .popover-navigation .btn-group .btn[data-role=next]").prop("disabled", true);
-        },                                 
+        },
       },
       {
         element: ".tour-step.tour-step-updated-cpt",
@@ -318,16 +318,16 @@ var startTour = function() {
         onShow: function(tour) {
           d3.select(".cpt-table.table-bayes")
           .classed("tour-step tour-step-updated-cpt", true);
-        },                                
-      },        
+        },
+      },
     ]);
- 
+
     // Initialize the tour
     tour.init();
- 
+
     // Start the tour
     tour.start();
- 
+
 };
 
 d3.select("#tutorial")
