@@ -131,7 +131,7 @@ var formatSamplesDownload = function(samples) {
 	//first row is the titles
 	var titles = [];
 	nodes.forEach(function(node) {
-		titles.push(node.title + "Rung Achieved");
+		titles.push(node.title + " Rung Achieved");
 	})
 	var len = titles.length;
 	sampleArray.push(titles);
