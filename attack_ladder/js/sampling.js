@@ -262,7 +262,7 @@ var displaySamples = function(samples, noSample, fSample) {
 	btnGroup.append("button")
 		   .attr("class", "btn btn-default btn-bayes-grp")
 		   .attr("id", "sampleDownloadBtn")
-		   .html("DL Summary")
+		   .html("Summary")
 		   .on("click", function() {
 		   	specifyDownloadName(2, ".csv", samples);
 		   	// downloadSamples(samples);
@@ -271,7 +271,7 @@ var displaySamples = function(samples, noSample, fSample) {
 	btnGroup.append("button")
 	 		.attr("class", "btn btn-default btn-bayes-grp")
 	 		.attr("id", "sampleDownloadRawBtn")
-	 		.html("DL Samples")
+	 		.html("Samples")
 	 		.on("click", function() {
 	 		 specifyDownloadName(4, ".csv", samples);
 	 		// downloadSamplesRaw(samples);
