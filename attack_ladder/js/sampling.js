@@ -125,24 +125,6 @@ var sampleTblColumnNames = function(){
 	  .html(columns);
 }
 
-var formatSamplesGraphDownload = function(samples)
-{
-
-	anychart.onDocumentReady(function() {
-    // the data
-    var data = {
-      header: ["Name", "Death toll"],
-      rows: [
-        ["San-Francisco (1906)", 1500],
-        ["Messina (1908)", 87000],
-        ["Ashgabat (1948)", 175000],
-        ["Chile (1960)", 10000],
-        ["Tian Shan (1976)", 242000],
-        ["Armenia (1988)", 25000],
-        ["Iran (1990)", 50000]
-    ]};
-});
-
 var formatSamplesDownload = function(samples) {
 	var sampleArray = [];
 
@@ -168,9 +150,7 @@ var formatSamplesDownload = function(samples) {
 		}
 	})
 	for (var i = 0; i < newSum.length; i++) {
-		newSum[i] = ((newSum[i] / samples.length) * 100);
-		newSum[i] = newSum[i].toFixed(2);
-		newSum[i] = newSum[i] + "% of samples";
+		newSum[i] = ((newSum[i] / samples.length) * 100) + "% of samples"
 	}
 	sampleArray.push(newSum);
 	//example used from http://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side
