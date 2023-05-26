@@ -150,7 +150,7 @@ var formatSamplesDownload = function(samples) {
 		}
 	})
 	for (var i = 0; i < newSum.length; i++) {
-		newSum[i] = ((newSum[i] / samples.length);
+		newSum[i] = (newSum[i] / samples.length);
 		newSum[i] = (newSum[i]*100).toFixed(2);
 		newSum[i] = (newSum[i]) + "% of samples";
 	}
