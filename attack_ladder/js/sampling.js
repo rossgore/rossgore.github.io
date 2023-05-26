@@ -325,19 +325,20 @@ var displaySamples = function(samples, noSample, fSample) {
 		sampleTblBody.append("tr").html(accumulator);
 		accumulator = "";
 	}
-	
-	//append the columns names
-	sampleTblColumnNames();
 
 	var sampleTblBody = sampleTbl.append("tbody");
 	var accumulator = "";
-	for (var s in samples.slice(0,2)) {
+	for (var s in samples.slice(0,1)) {
 		for (var val in samples[s]) {
-			accumulator += '<td>' + samples[s][val] + '</td>';
+			accumulator += '<td>' + '</td>';
 		}
 		sampleTblBody.append("tr").html(accumulator);
 		accumulator = "";
 	}
+	//append the columns names
+	sampleTblColumnNames();
+	
+	// prep for summary table
 	
 }
 
