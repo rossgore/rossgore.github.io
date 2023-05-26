@@ -289,7 +289,7 @@ var displaySamples = function(samples, noSample, fSample) {
 
 	control.append("hr");
 
-	//display the first 20 samples only
+	//display the first 10 samples only
 	//if more than that -> warn the users to download the rest
 	if(noSample > 20) {
 		//warning message
@@ -301,7 +301,7 @@ var displaySamples = function(samples, noSample, fSample) {
 		warningDiv.append("span")
 				  .attr("class", "sr-only")
 				  .text("Warning");
-		var text = warningDiv.html() + " Only the first 20 samples will be displayed. If you wish to view all the samples, download them by clicking the \'Download\' button."
+		var text = warningDiv.html() + " Only the first 10 samples will be displayed. If you wish to view all the samples, download them by clicking the \'Samples\' button."
 		warningDiv.html(text);
 	}
 
@@ -318,13 +318,27 @@ var displaySamples = function(samples, noSample, fSample) {
 
 	var sampleTblBody = sampleTbl.append("tbody");
 	var accumulator = "";
-	for (var s in samples.slice(0,20)) {
+	for (var s in samples.slice(0,10)) {
 		for (var val in samples[s]) {
 			accumulator += '<td>' + samples[s][val] + '</td>';
 		}
 		sampleTblBody.append("tr").html(accumulator);
 		accumulator = "";
 	}
+	
+	//append the columns names
+	sampleTblColumnNames();
+
+	var sampleTblBody = sampleTbl.append("tbody");
+	var accumulator = "";
+	for (var s in samples.slice(0,2)) {
+		for (var val in samples[s]) {
+			accumulator += '<td>' + samples[s][val] + '</td>';
+		}
+		sampleTblBody.append("tr").html(accumulator);
+		accumulator = "";
+	}
+	
 }
 
 var checkExistingCpts = function() {
