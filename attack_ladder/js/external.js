@@ -27,11 +27,6 @@ var specifyDownloadName = function(mode, ext, samples) {
 					else if(mode === 4) {
 						downloadSamplesRaw(filename, samples);
 					}
-					else if (model == 5) {
-						// create bar chart from samples
-						// save it as a png
-						// downloadPNG?
-					}
 	      }
 	    },
 	    cancel: {
