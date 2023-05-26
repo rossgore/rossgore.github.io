@@ -784,4 +784,4 @@ var init = function() {
 }();
 
 //Initialise
-loadDefaultNetwork("files/nets/attack_ladder.json", true);
+loadDefaultNetwork("files/nets/multiple_vulnerability_attack_ladder.json", true);
