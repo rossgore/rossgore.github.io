@@ -349,7 +349,7 @@ var displaySamples = function(samples, noSample, fSample) {
 
 	// prep for summary table
 
-	var newSum = new Array(len).fill(0);
+	var newSum = new Array(samples.len).fill(0);
 	samples.forEach(function(sample) {
 		var sampleIndex = 0;
 		for (var val in sample) {
