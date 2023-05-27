@@ -362,6 +362,7 @@ var displaySamples = function(samples, noSample, fSample) {
 		}
 	})
 	for (var i = 0; i < newSum.length; i++) {
+		console.log(newSum[i]);
 		newSum[i] = (newSum[i] / samples.length);
 		newSum[i] = (newSum[i]*100).toFixed(2);
 		newSum[i] = (newSum[i]) + "% of samples";
