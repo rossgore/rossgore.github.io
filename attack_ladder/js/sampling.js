@@ -134,12 +134,8 @@ var summaryTblColumnNames = function(){
 	}
 
 	for (var name in names) {
-		columns += '<th>' + names[name] + '</th>';
+		columns += '<th>' + names[name] + "Rung Achieved" + '</th>';
 	}
-	for (var name in names) {
-		columns += '<th>' + "Rung Achieved" + '</th>';
-	}
-
 	d3.select(".sample-tbl")
 	  .append("thead")
 	  .append("tr")
