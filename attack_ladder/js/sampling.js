@@ -368,7 +368,7 @@ var displaySamples = function(samples, noSample, fSample) {
 	}
 	var sampleTblBody = sampleTbl.append("tbody");
 	var accumulator = "";
-	for (var i in newSum) {
+	for (var i = 0; i < newSum.length; i++) {
 		accumulator += '<td>' + newSum[i] + '</td>';
 	}
 	sampleTblBody.append("tr").html(accumulator);
