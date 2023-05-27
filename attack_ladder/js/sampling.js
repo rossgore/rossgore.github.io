@@ -125,6 +125,27 @@ var sampleTblColumnNames = function(){
 	  .html(columns);
 }
 
+var summaryTblColumnNames = function(){
+	var names = [];
+	var columns = ""
+
+	for(var n in nodes) {
+		names.push(nodes[n].title);
+	}
+
+	for (var name in names) {
+		columns += '<th>' + names[name] + '</th>';
+	}
+	for (var name in names) {
+		columns += '<th>' + "Rung Achieved" + '</th>';
+	}
+
+	d3.select(".sample-tbl")
+	  .append("thead")
+	  .append("tr")
+	  .html(columns);
+}
+
 var formatSamplesDownload = function(samples) {
 	var sampleArray = [];
 
@@ -291,7 +312,7 @@ var displaySamples = function(samples, noSample, fSample) {
 
 	//display the first 10 samples only
 	//if more than that -> warn the users to download the rest
-	if(noSample > 20) {
+	if(noSample > 10) {
 		//warning message
 		var warningDiv = control.append("div")
 								.attr("class", "alert-text alert alert-warning")
@@ -326,20 +347,36 @@ var displaySamples = function(samples, noSample, fSample) {
 		accumulator = "";
 	}
 
+
+	//append the columns names
+	summaryTblColumnNames();
+
+	// prep for summary table
+
+	var newSum = new Array(len).fill(0);
+	samples.forEach(function(sample) {
+		var sampleIndex = 0;
+		for (var val in sample) {
+			// console.log(sample[val]);
+			if (sample[val] == 'yes')
+			{
+				newSum[sampleIndex] = newSum[sampleIndex] + 1;
+			}
+			sampleIndex = sampleIndex + 1;
+		}
+	})
+	for (var i = 0; i < newSum.length; i++) {
+		newSum[i] = (newSum[i] / samples.length);
+		newSum[i] = (newSum[i]*100).toFixed(2);
+		newSum[i] = (newSum[i]) + "% of samples";
+	}
 	var sampleTblBody = sampleTbl.append("tbody");
 	var accumulator = "";
-	for (var s in samples.slice(0,1)) {
-		for (var val in samples[s]) {
-			accumulator += '<td>' + '</td>';
-		}
-		sampleTblBody.append("tr").html(accumulator);
-		accumulator = "";
+	for (var i in newSum) {
+		accumulator += '<td>' + newSum[i] + '</td>';
 	}
-	//append the columns names
-	sampleTblColumnNames();
-	
-	// prep for summary table
-	
+	sampleTblBody.append("tr").html(accumulator);
+
 }
 
 var checkExistingCpts = function() {
