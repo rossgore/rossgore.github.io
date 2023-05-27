@@ -348,19 +348,17 @@ var displaySamples = function(samples, noSample, fSample) {
 	summaryTblColumnNames();
 
 	// prep for summary table
-
-	var newSum = new Array(samples.len).fill(0);
-	samples.forEach(function(sample) {
-		var sampleIndex = 0;
-		for (var val in sample) {
-			// console.log(sample[val]);
-			if (sample[val] == 'yes')
+	var newSum = new Array(samples[0].len).fill(0);
+	for (var s in samples.length) {
+		for (var val in samples[s]) {
+			if (samples[s][val] == 'yes')
 			{
-				newSum[sampleIndex] = newSum[sampleIndex] + 1;
+				newSum[val] = newSum[val] + 1;
 			}
-			sampleIndex = sampleIndex + 1;
 		}
-	})
+	}
+
+	// done prepping, start computing
 	for (var i = 0; i < newSum.length; i++) {
 		console.log(newSum[i]);
 		newSum[i] = (newSum[i] / samples.length);
