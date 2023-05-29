@@ -333,11 +333,14 @@ var displaySamples = function(samples, noSample, fSample) {
 	//append the columns names
 	sampleTblColumnNames();
 
+  var colCount = 0;
 	var sampleTblBody = sampleTbl.append("tbody");
 	var accumulator = "";
 	for (var s in samples.slice(0,10)) {
+		colCount = 0;
 		for (var val in samples[s]) {
 			accumulator += '<td>' + samples[s][val] + '</td>';
+			colCount = colCount + 1;
 		}
 		sampleTblBody.append("tr").html(accumulator);
 		accumulator = "";
@@ -346,22 +349,34 @@ var displaySamples = function(samples, noSample, fSample) {
 
 	//append the columns names
 	summaryTblColumnNames();
-
+	
+    console.log("colCount");
+    console.log(colCount);
 	// prep for summary table
-	var newSum = new Array(samples[0].len).fill(0);
-	for (var s in samples.length) {
+	
+	var newSum = new Array(colCount).fill(0);
+    console.log("newSum");
+	for (var i = 0; i < newSum.length; i++) {
+		console.log(newSum[i]);
+	}
+	
+	console.log("samples first ten rows when there is a yes");
+	for (var s in samples.slice(0,10)) { // needs to be updated
 		for (var val in samples[s]) {
 			if (samples[s][val] == 'yes')
 			{
+				console.log(samples[s][val]);
 				newSum[val] = newSum[val] + 1;
 			}
 		}
 	}
 
+    console.log("newSum");
 	// done prepping, start computing
 	for (var i = 0; i < newSum.length; i++) {
-		console.log(newSum[i]);
-		newSum[i] = (newSum[i] / samples.length);
+
+        console.log(newSum[i]);
+		newSum[i] = (newSum[i] / 10); // needs to be updated
 		newSum[i] = (newSum[i]*100).toFixed(2);
 		newSum[i] = (newSum[i]) + "% of samples";
 	}
