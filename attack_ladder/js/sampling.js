@@ -318,7 +318,7 @@ var displaySamples = function(samples, noSample, fSample) {
 		warningDiv.append("span")
 				  .attr("class", "sr-only")
 				  .text("Warning");
-		var text = warningDiv.html() + " Summary information for each rung of the attack ladder is shown below. Then the first 10 samples are displayed. If you wish to view all the samples, download them by clicking the \'Samples\' button."
+		var text = warningDiv.html() + " Summary information for each rung of the attack ladder is shown below. Then the first 10 samples are displayed. If you wish to view all the samples, download them by clicking the \'Samples\' button. If you wish to download the summary data, download by clicking the \'Summary\' button."
 		warningDiv.html(text);
 	}
 
@@ -328,16 +328,57 @@ var displaySamples = function(samples, noSample, fSample) {
 						   .attr("class", "table-responsive sample-table")
 						   .append("table")
 	  	   				   .attr("class", "table table-bayes sample-tbl");
+						   
+	// count the cols.
+	 var colCount = 0;
+     for (var s in samples.slice(0,1)) {
+		 colCount = 0;
+		 for (var val in samples[s]) {
+			 colCount = colCount + 1;
+		 }
+	 }
+	 
+ 	// prep for summary data
+ 	var newSum = new Array(colCount).fill(0);
+	
+ 	var samplesCount = 0;
+ 	for (var s in samples) {
+ 		var newSumIndex = 0;
+ 		for (var val in samples[s]) {
+ 			if (samples[s][val] == 'yes')
+ 			{
+ 				newSum[newSumIndex] = newSum[newSumIndex] + 1;
+ 			}
+ 			newSumIndex = newSumIndex + 1;
+ 		}
+ 		samplesCount = samplesCount + 1;
+ 	}
+	
+	// compute summary data
+	for (var i = 0; i < newSum.length; i++) {
 
+		newSum[i] = (newSum[i] / samplesCount);
+		newSum[i] = (newSum[i]*100).toFixed(2);
+		newSum[i] = (newSum[i]) + "% of samples";
+	}
+	 
+    //append the summary columns names
+	summaryTblColumnNames();
+	
+	var sampleTblBody = sampleTbl.append("tbody");
+	var accumulator = "";
+	for (var i = 0; i < newSum.length; i++) {
+		accumulator += '<td>' + newSum[i] + '</td>';
+	}
+	sampleTblBody.append("tr").html(accumulator);
 
-	//append the columns names
-	sampleTblColumnNames();
+    //append the columns names
+    sampleTblColumnNames();
 
-  var colCount = 0;
+    // print out first 10 cols
 	var sampleTblBody = sampleTbl.append("tbody");
 	var accumulator = "";
 	for (var s in samples.slice(0,10)) {
-		colCount = 0;
 		for (var val in samples[s]) {
 			accumulator += '<td>' + samples[s][val] + '</td>';
 			colCount = colCount + 1;
@@ -345,43 +386,6 @@ var displaySamples = function(samples, noSample, fSample) {
 		sampleTblBody.append("tr").html(accumulator);
 		accumulator = "";
 	}
-
-
-	//append the columns names
-	summaryTblColumnNames();
-	
-	// prep for summary table
-	
-	var newSum = new Array(colCount).fill(0);
-	
-	var samplesCount = 0;
-	for (var s in samples) {
-		var newSumIndex = 0;
-		for (var val in samples[s]) {
-			if (samples[s][val] == 'yes')
-			{
-				newSum[newSumIndex] = newSum[newSumIndex] + 1;
-			}
-			newSumIndex = newSumIndex + 1;
-		}
-		samplesCount = samplesCount + 1;
-	}
-
-    console.log("newSum");
-	// done prepping, start computing
-	for (var i = 0; i < newSum.length; i++) {
-
-        console.log(newSum[i]);
-		newSum[i] = (newSum[i] / samplesCount);
-		newSum[i] = (newSum[i]*100).toFixed(2);
-		newSum[i] = (newSum[i]) + "% of samples";
-	}
-	var sampleTblBody = sampleTbl.append("tbody");
-	var accumulator = "";
-	for (var i = 0; i < newSum.length; i++) {
-		accumulator += '<td>' + newSum[i] + '</td>';
-	}
-	sampleTblBody.append("tr").html(accumulator);
 
 }
 
