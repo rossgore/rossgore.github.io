@@ -354,9 +354,8 @@ var displaySamples = function(samples, noSample, fSample) {
 	
 	var newSum = new Array(colCount).fill(0);
 	
-	console.log("samples.length");
-	console.log(samples.len);
-	for (var s in samples.slice(0,10)) { // needs to be updated
+	var samplesCount = 0;
+	for (var s in samples)) {
 		var newSumIndex = 0;
 		for (var val in samples[s]) {
 			if (samples[s][val] == 'yes')
@@ -365,6 +364,7 @@ var displaySamples = function(samples, noSample, fSample) {
 			}
 			newSumIndex = newSumIndex + 1;
 		}
+		samplesCount = samplesCount + 1;
 	}
 
     console.log("newSum");
@@ -372,7 +372,7 @@ var displaySamples = function(samples, noSample, fSample) {
 	for (var i = 0; i < newSum.length; i++) {
 
         console.log(newSum[i]);
-		newSum[i] = (newSum[i] / 10); // needs to be updated
+		newSum[i] = (newSum[i] / samplesCount);
 		newSum[i] = (newSum[i]*100).toFixed(2);
 		newSum[i] = (newSum[i]) + "% of samples";
 	}
