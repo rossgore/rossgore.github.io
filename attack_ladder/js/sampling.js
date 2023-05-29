@@ -355,7 +355,7 @@ var displaySamples = function(samples, noSample, fSample) {
 	var newSum = new Array(colCount).fill(0);
 	
 	var samplesCount = 0;
-	for (var s in samples)) {
+	for (var s in samples) {
 		var newSumIndex = 0;
 		for (var val in samples[s]) {
 			if (samples[s][val] == 'yes')
