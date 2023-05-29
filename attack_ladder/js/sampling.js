@@ -318,7 +318,7 @@ var displaySamples = function(samples, noSample, fSample) {
 		warningDiv.append("span")
 				  .attr("class", "sr-only")
 				  .text("Warning");
-		var text = warningDiv.html() + " Only the first 10 samples will be displayed. If you wish to view all the samples, download them by clicking the \'Samples\' button."
+		var text = warningDiv.html() + " Summary information for each rung of the attack ladder is shown below. Then the first 10 samples are displayed. If you wish to view all the samples, download them by clicking the \'Samples\' button."
 		warningDiv.html(text);
 	}
 
