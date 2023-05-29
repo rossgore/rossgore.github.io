@@ -350,24 +350,20 @@ var displaySamples = function(samples, noSample, fSample) {
 	//append the columns names
 	summaryTblColumnNames();
 	
-    console.log("colCount");
-    console.log(colCount);
 	// prep for summary table
 	
 	var newSum = new Array(colCount).fill(0);
-    console.log("newSum");
-	for (var i = 0; i < newSum.length; i++) {
-		console.log(newSum[i]);
-	}
 	
-	console.log("samples first ten rows when there is a yes");
+	console.log("samples.length");
+	console.log(samples.len);
 	for (var s in samples.slice(0,10)) { // needs to be updated
+		var newSumIndex = 0;
 		for (var val in samples[s]) {
 			if (samples[s][val] == 'yes')
 			{
-				console.log(samples[s][val]);
-				newSum[val] = newSum[val] + 1;
+				newSum[newSumIndex] = newSum[newSumIndex] + 1;
 			}
+			newSumIndex = newSumIndex + 1;
 		}
 	}
 
