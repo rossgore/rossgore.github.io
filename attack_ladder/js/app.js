@@ -335,7 +335,6 @@ var displayResources = function(){
 };
 
 var refresh = function(){
-	console.log(selectedPath);
 	//data for the paths
 	paths = paths.data(edges);
 	
@@ -368,6 +367,7 @@ var refresh = function(){
 		 	}
 		 	else {
 		 		selectedPath = d;
+				console.log(selectedPath);
 		 	}
 
 		 	selectedNode = null;
