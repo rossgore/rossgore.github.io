@@ -41,6 +41,12 @@ var edgeMenu = [
 		action: function(elm, d, i) {
 			deleteEdge(d);
 		}
+	},
+	{
+		title: 'Hide Connection',
+		action: function(elm, d, i) {
+			deleteEdge(d);
+		}
 	}
 ]
 
