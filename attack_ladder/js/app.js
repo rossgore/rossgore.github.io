@@ -338,11 +338,13 @@ var refresh = function(){
 	//data for the paths
 	paths = paths.data(edges);
 
+    // hide selection
+    paths.classed("selected").attr("class", "conn.hidden") // ross change
+	
 	//update existing edges
 	paths.classed("selected", function(d){
 		    return d === selectedPath;
 		 })
-		 .attr("class", "conn.hidden") // ross change
 		//If a node has been dragged, update the associated paths' coordinates
 		 .attr("d", function(d){
 		 	return "M" + d.source.x + "," + d.source.y + "L" + d.target.x + "," + d.target.y;
