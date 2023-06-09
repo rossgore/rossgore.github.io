@@ -336,12 +336,12 @@ var displayResources = function(){
 };
 
 var refresh = function(){
-	console.log("actually trying to hide with hidden paths.");
 	
-	console.log(hidden_edges);
-	console.log(edges);
+	var visible_edges = [edges[0],edges[1], edges[2], edges[3], edges[4], edges[5], edges[6], edges[7], edges[8], edges[9]] ;
+	
+	
 	//data for the paths
-	paths = paths.data(edges);
+	paths = paths.data(visible_edges); // edges
 	
 	
 	//update existing edges
@@ -356,7 +356,7 @@ var refresh = function(){
 	//add new edges
 	paths.enter()
 		 .append("path")
-		 .attr("class", "conn")
+		 .attr("class", "conn.hidden")
 		 .classed("selected", function(d) {
 		 	return d === selectedPath;
 		 })
