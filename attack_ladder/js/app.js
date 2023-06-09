@@ -339,7 +339,7 @@ var refresh = function(){
 	paths = paths.data(edges);
 
     // hide selection
-    //paths.classed("selected").attr("class", "conn.hidden") // ross change
+    selectedPath.attr("class", "conn.hidden") // ross change
 	
 	//update existing edges
 	paths.classed("selected", function(d){
