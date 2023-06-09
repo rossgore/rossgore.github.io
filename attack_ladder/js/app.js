@@ -335,6 +335,8 @@ var displayResources = function(){
 };
 
 var refresh = function(){
+	console.log("attempt to hide with elm in call from menu.");
+	
 	//data for the paths
 	paths = paths.data(edges);
 	
