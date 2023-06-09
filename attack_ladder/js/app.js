@@ -514,6 +514,7 @@ var deleteNetwork = function(isConfirm, all) {
 	  		if(result) {
 				nodes = [];
 				edges = [];
+				hidden_edges = [];
 				lastID = 0;
 				refresh();
 				setDefaultMode();
@@ -526,6 +527,7 @@ var deleteNetwork = function(isConfirm, all) {
 	else {
 		nodes = [];
 		edges = [];
+		hidden_edges = [];
 		lastID = 0;
 		refresh();
 		setDefaultMode();
