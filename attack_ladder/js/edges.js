@@ -45,16 +45,11 @@ var edgeMenu = [
 	{
 		title: 'Hide Connection',
 		action: function(elm, d, i) {
-			console.log("called hide function");
+			console.log("trying to change element");
 			elm.attr("class", "conn.hidden");
 		}
 	}
 ]
-
-var hideEdge = function(element, path) {
-	//update the view
-	refresh();	
-}
 
 var deleteEdge = function(path) {
 	edges.splice(edges.indexOf(path), 1);

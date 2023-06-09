@@ -367,7 +367,6 @@ var refresh = function(){
 		 	}
 		 	else {
 		 		selectedPath = d;
-				console.log(selectedPath);
 		 	}
 
 		 	selectedNode = null;
