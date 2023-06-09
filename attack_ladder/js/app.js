@@ -339,12 +339,23 @@ var refresh = function(){
 	
 	var visible_edges = [];
 	
-	for (var i=0; i<hidden_edges.length; i++){
-		if (hidden_edges[i] < (edges.length-1))
+	for (var i=0; i<edges.length; i++){
+		var is_hidden = false;
+		for (var j=0; j<hidden_edges.length; j++)
 		{
-			console.log(edges[hidden_edges[i]]);
-			visible_edges.push(edges[hidden_edges[i]]);
+			if (i == hidden_edges[j])
+			{
+				is_hidden = true;
+			}
 		}
+		if (is_hidden == false)
+		{
+			visible_edges.push(edges[i]);
+		}
+	}
+	
+	for (var i=0; i<visible_edges.length; i++){
+		console.log(visible_edges[i]);
 	}
 	
 	//data for the paths
