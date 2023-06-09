@@ -342,6 +342,7 @@ var refresh = function(){
 	paths.classed("selected", function(d){
 		    return d === selectedPath;
 		 })
+		 .attr("class", "conn.hidden") // ross change
 		//If a node has been dragged, update the associated paths' coordinates
 		 .attr("d", function(d){
 		 	return "M" + d.source.x + "," + d.source.y + "L" + d.target.x + "," + d.target.y;

@@ -47,14 +47,15 @@ var edgeMenu = [
 	{
 		title: 'Hide Connection',
 		action: function(elm, d, i) {
-			console.log(elm);
-			console.log(d);
-			elm.style.display = "none";
-			console.log(elm);
-			console.log(d);
+			console.log("called hide function");
 		}
 	}
 ]
+
+var deleteEdge = function(path) {
+	//update the view
+	refresh();	
+}
 
 var deleteEdge = function(path) {
 	edges.splice(edges.indexOf(path), 1);
