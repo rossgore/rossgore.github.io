@@ -16,7 +16,6 @@ var nodes,
 
 var graph,
 	paths,
-	hidden_paths,
 	circles,
 	dragline;
 
@@ -339,12 +338,11 @@ var displayResources = function(){
 var refresh = function(){
 	console.log("actually trying to hide with hidden paths.");
 	
-	hidden_paths = hidden_paths.data(hidden_edges);
+	console.log(hidden_edges);
+	console.log(edges);
 	//data for the paths
 	paths = paths.data(edges);
 	
-	let visible_paths = paths.filter(x => !hidden_paths.includes(x));
-	console.log(visible_paths);
 	
 	//update existing edges
 	paths.classed("selected", function(d){
@@ -679,7 +677,6 @@ var init = function() {
 	//graph group, paths, circles
 	graph = svg.append("g").attr("id", "graph");
 	paths = graph.append("g").selectAll("path");
-	hidden_paths = graph.append("g").selectAll("path");
     circles = graph.append("g").selectAll("g");
 
 	//dragline
