@@ -337,7 +337,7 @@ var displayResources = function(){
 };
 
 var refresh = function(){
-	console.log("attempt to hide with hidden paths.");
+	console.log("actually trying to hide with hidden paths.");
 	
 	hidden_paths = hidden_paths.data(hidden_edges);
 	console.log(hidden_paths);
@@ -379,7 +379,10 @@ var refresh = function(){
 		 	refresh();
 		 })
 		 .on("contextmenu", d3.contextMenu(edgeMenu));
-
+	
+	// hide paths
+	hidden_paths.attr("class", "conn.hidden")
+	
     //remove old paths
     paths.exit().remove();
 
