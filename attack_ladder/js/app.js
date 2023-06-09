@@ -368,6 +368,8 @@ var refresh = function(){
 		 	else {
 		 		selectedPath = d;
 				console.log(selectedPath);
+				selectedPath.classed("selected", true)
+				.attr("class", "conn.hidden")
 		 	}
 
 		 	selectedNode = null;
