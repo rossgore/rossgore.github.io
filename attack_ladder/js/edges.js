@@ -31,7 +31,7 @@ var removeIncidentEdges = function(node) {
 
 	edgesToDelete.map(function(e) {
 		edges.splice(edges.indexOf(e), 1);
-		edges_to_draw.splice(edges.indexOf(e), 1);
+		edges_to_draw.splice(edges_to_draw.indexOf(e), 1);
 	});
 
 	return edgesToDelete;
@@ -50,13 +50,14 @@ var edgeMenu = [
 			console.log(elm);
 			console.log(d);
 			console.log(i);
+			hideEdge(d);
 		}
 	}
 ]
 
 // unclear if this works
 var hideEdge = function(path) {
-	edges_to_draw.splice(edges.indexOf(path), 1);
+	edges_to_draw.splice(edges_to_draw.indexOf(path), 1);
 	//recalculate the cpt of the target node of this edge
 	//recalculateCPT([path], path.source);
 	//update the view
@@ -65,7 +66,7 @@ var hideEdge = function(path) {
 
 var deleteEdge = function(path) {
 	edges.splice(edges.indexOf(path), 1);
-	edges_to_draw.splice(edges.indexOf(path), 1);
+	edges_to_draw.splice(edges_to_draw.indexOf(path), 1);
 	//recalculate the cpt of the target node of this edge
 	recalculateCPT([path], path.source);
 	//update the view
