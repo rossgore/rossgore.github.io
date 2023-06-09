@@ -45,16 +45,19 @@ var edgeMenu = [
 	{
 		title: 'Hide Connection',
 		action: function(elm, d, i) {
-			console.log("elm");
-			console.log(elm);
-			console.log("d");
-			console.log(d);
-			console.log("i");
-			console.log(i);
-			
+			hideEdge(d);
 		}
 	}
 ]
+
+// unclear if this works
+var hideEdge = function(path) {
+	edges.splice(edges.indexOf(path), 1);
+	//recalculate the cpt of the target node of this edge
+	//recalculateCPT([path], path.source);
+	//update the view
+	refresh();
+}
 
 var deleteEdge = function(path) {
 	edges.splice(edges.indexOf(path), 1);
