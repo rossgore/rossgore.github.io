@@ -610,6 +610,7 @@ var init = function() {
 
 	nodes = [];
 	edges = [];
+	hidden_edges = [];
 	lastID=1;
 
 	// initialise force layout
@@ -673,6 +674,7 @@ var init = function() {
 	//graph group, paths, circles
 	graph = svg.append("g").attr("id", "graph");
 	paths = graph.append("g").selectAll("path");
+	hidden_paths = graph.append("g").selectAll("path");
     circles = graph.append("g").selectAll("g");
 
 	//dragline
