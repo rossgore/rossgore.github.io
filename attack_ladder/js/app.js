@@ -337,13 +337,14 @@ var displayResources = function(){
 
 var refresh = function(){
 	
-	var hidden_paths = [];
+	var visible_edges = [];
 	
-	for(var i=0; i<edges.length; i++) {
-		console.log(i);
-	}
-	for (vari=0; i<hidden_edges.length; i++){
-		console.log(hidden_edges[i]);
+	for (var i=0; i<hidden_edges.length; i++){
+		if (hidden_edges[i] < (edges.length-1))
+		{
+			console.log(edges[hidden_edges[i]]);
+			visible_edges.push(edges[hidden_edges[i]]);
+		}
 	}
 	
 	//data for the paths
