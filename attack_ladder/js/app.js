@@ -337,11 +337,14 @@ var displayResources = function(){
 
 var refresh = function(){
 	
-	var visible_edges = [edges[0],edges[1], edges[2], edges[3], edges[4], edges[5], edges[6], edges[7], edges[8], edges[9]] ;
+	var visible_edges = [edges[0],edges[1], edges[2], edges[3], 
+	edges[4], edges[5], edges[6], edges[7], edges[8], edges[9],
+	edges[10], edges[11], edges[12], edges[13], edges[14], edges[15],
+	edges[16], edges[17]];
 	
 	
 	//data for the paths
-	paths = paths.data(visible_edges); // edges
+	paths = paths.data(edges);
 	
 	
 	//update existing edges
