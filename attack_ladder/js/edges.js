@@ -45,12 +45,15 @@ var edgeMenu = [
 	{
 		title: 'Hide Connection',
 		action: function(elm, d, i) {
-			console.log("trying to change element");
-			elm.attr("class", "conn.hidden");
+			hideEdge(d);
 		}
 	}
 ]
 
+var hideEdge = function(path) {
+	hidden_edges.push(edges.indexOf(path));
+	refresh();
+}
 var deleteEdge = function(path) {
 	edges.splice(edges.indexOf(path), 1);
 	//recalculate the cpt of the target node of this edge

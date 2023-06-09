@@ -11,10 +11,12 @@ var	svg,
 
 var nodes,
 	edges,
+	hidden_edges,
 	lastID;
 
 var graph,
 	paths,
+	hidden_paths,
 	circles,
 	dragline;
 
@@ -335,8 +337,10 @@ var displayResources = function(){
 };
 
 var refresh = function(){
-	console.log("attempt to hide with elm in call from menu.");
+	console.log("attempt to hide with hidden paths.");
 	
+	hidden_paths = hidden_paths.data(hidden_edges);
+	console.log(hidden_paths);
 	//data for the paths
 	paths = paths.data(edges);
 	
