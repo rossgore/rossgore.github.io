@@ -340,9 +340,11 @@ var refresh = function(){
 	console.log("actually trying to hide with hidden paths.");
 	
 	hidden_paths = hidden_paths.data(hidden_edges);
-	console.log(hidden_paths);
 	//data for the paths
 	paths = paths.data(edges);
+	
+	let visible_paths = paths.filter(x => !hidden_paths.includes(x));
+	console.log(visible_paths);
 	
 	//update existing edges
 	paths.classed("selected", function(d){
@@ -380,9 +382,7 @@ var refresh = function(){
 		 })
 		 .on("contextmenu", d3.contextMenu(edgeMenu));
 	
-	// hide paths
-	hidden_paths.attr("class", "conn.hidden")
-	
+		 
     //remove old paths
     paths.exit().remove();
 
