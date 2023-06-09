@@ -11,7 +11,6 @@ var	svg,
 
 var nodes,
 	edges,
-	edges_to_draw,
 	lastID;
 
 var graph,
@@ -337,7 +336,7 @@ var displayResources = function(){
 
 var refresh = function(){
 	//data for the paths
-	paths = paths.data(edges_to_draw);
+	paths = paths.data(edges);
 
 	//update existing edges
 	paths.classed("selected", function(d){
@@ -509,7 +508,6 @@ var deleteNetwork = function(isConfirm, all) {
 	  		if(result) {
 				nodes = [];
 				edges = [];
-				edges_to_draw = [];
 				lastID = 0;
 				refresh();
 				setDefaultMode();
@@ -522,7 +520,6 @@ var deleteNetwork = function(isConfirm, all) {
 	else {
 		nodes = [];
 		edges = [];
-		edges_to_draw = [];
 		lastID = 0;
 		refresh();
 		setDefaultMode();
@@ -607,7 +604,6 @@ var init = function() {
 
 	nodes = [];
 	edges = [];
-	edges_to_draw = [];
 	lastID=1;
 
 	// initialise force layout

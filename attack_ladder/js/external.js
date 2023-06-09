@@ -214,7 +214,6 @@ var loadDefaultNetwork = function(filepath, isInitial, val) {
 	  	rawEdges[index] = {source: src, target:tgt};
 	  })
 	  edges = rawEdges;
-	  edges_to_draw = edges;
 	  //find the max index in the nodes
 	  lastID = maxNodeId();
 	  //set the status to uploaded
