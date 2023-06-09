@@ -17,6 +17,7 @@ var createNewEdge = function(sourceNode, targetNode) {
 	//add the new edge to the set of edges only if there are no identical edges
 	if(!duplicates[0]) {
 		edges.push(newEdge);
+		edges_to_draw.push(newEdge);
 		recalculateCPT([newEdge], newEdge.source);
 		refresh();
 	}
@@ -30,6 +31,7 @@ var removeIncidentEdges = function(node) {
 
 	edgesToDelete.map(function(e) {
 		edges.splice(edges.indexOf(e), 1);
+		edges_to_draw.splice(edges.indexOf(e), 1);
 	});
 
 	return edgesToDelete;
@@ -54,7 +56,7 @@ var edgeMenu = [
 
 // unclear if this works
 var hideEdge = function(path) {
-	edges.splice(edges.indexOf(path), 1);
+	edges_to_draw.splice(edges.indexOf(path), 1);
 	//recalculate the cpt of the target node of this edge
 	//recalculateCPT([path], path.source);
 	//update the view
@@ -63,6 +65,7 @@ var hideEdge = function(path) {
 
 var deleteEdge = function(path) {
 	edges.splice(edges.indexOf(path), 1);
+	edges_to_draw.splice(edges.indexOf(path), 1);
 	//recalculate the cpt of the target node of this edge
 	recalculateCPT([path], path.source);
 	//update the view
