@@ -344,7 +344,7 @@ var refresh = function(){
 	
 	
 	//data for the paths
-	paths = paths.data(edges);
+	paths = paths.data(visible_edges);
 	
 	
 	//update existing edges
@@ -359,7 +359,7 @@ var refresh = function(){
 	//add new edges
 	paths.enter()
 		 .append("path")
-		 .attr("class", "conn.hidden")
+		 .attr("class", "conn")
 		 .classed("selected", function(d) {
 		 	return d === selectedPath;
 		 })
