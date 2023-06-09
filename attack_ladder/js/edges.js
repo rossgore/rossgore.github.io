@@ -49,7 +49,7 @@ var edgeMenu = [
 		action: function(elm, d, i) {
 			console.log(elm);
 			console.log(d);
-			elm.className = "path.conn.hidden";
+			elm.style.display = "none";
 			console.log(elm);
 			console.log(d);
 		}
