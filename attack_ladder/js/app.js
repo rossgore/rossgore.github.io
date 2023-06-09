@@ -363,9 +363,7 @@ var refresh = function(){
 
 		    //select/deselect the path
 		 	if(d === selectedPath) {
-			    console.log(selectedPath);
 			    // hide selection
-			    d.attr("class", "conn.hidden") // ross change
 		 		selectedPath = null;
 		 	}
 		 	else {
@@ -375,6 +373,7 @@ var refresh = function(){
 		 	selectedNode = null;
 		 	refresh();
 		 })
+		 .attr("class", "conn.hidden") // ross change
 		 .on("contextmenu", d3.contextMenu(edgeMenu));
 
     //remove old paths
