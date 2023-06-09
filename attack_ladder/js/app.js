@@ -337,8 +337,18 @@ var displayResources = function(){
 
 var refresh = function(){
 	
+	var hidden_paths = [];
+	
+	for(var i=0; i<edges.length; i++) {
+		console.log(i);
+	}
+	for (vari=0; i<hidden_edges.length; i++){
+		console.log(hidden_edges[i]);
+	}
+	
 	//data for the paths
 	paths = paths.data(edges);
+	
 	
 	
 	//update existing edges
@@ -377,7 +387,6 @@ var refresh = function(){
 		 })
 		 .on("contextmenu", d3.contextMenu(edgeMenu));
 	
-	paths[0].attr("class", "conn.hidden")
     //remove old paths
     paths.exit().remove();
 
