@@ -48,9 +48,10 @@ var edgeMenu = [
 		title: 'Hide Connection',
 		action: function(elm, d, i) {
 			console.log(elm);
-			elm.style.visbility = "hidden";
+			console.log(d);
+			elm.className = "path.conn.hidden";
 			console.log(elm);
-			
+			console.log(d);
 		}
 	}
 ]
