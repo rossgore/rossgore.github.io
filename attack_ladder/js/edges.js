@@ -46,7 +46,6 @@ var edgeMenu = [
 		title: 'Hide Connection',
 		action: function(elm, d, i) {
 			console.log("called hide function");
-			hideEdge();
 		}
 	}
 ]

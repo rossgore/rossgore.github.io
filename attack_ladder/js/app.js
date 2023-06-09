@@ -337,9 +337,6 @@ var displayResources = function(){
 var refresh = function(){
 	//data for the paths
 	paths = paths.data(edges);
-
-    // hide selection
-    selectedPath.attr("class", "conn.hidden") // ross change
 	
 	//update existing edges
 	paths.classed("selected", function(d){
@@ -366,6 +363,9 @@ var refresh = function(){
 
 		    //select/deselect the path
 		 	if(d === selectedPath) {
+			    console.log(selectedPath);
+			    // hide selection
+			    d.attr("class", "conn.hidden") // ross change
 		 		selectedPath = null;
 		 	}
 		 	else {
