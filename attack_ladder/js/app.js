@@ -353,11 +353,7 @@ var refresh = function(){
 			visible_edges.push(edges[i]);
 		}
 	}
-	console.log("visible_edges_start");
-	for (var i=0; i<visible_edges.length; i++){
-		console.log(visible_edges[i]);
-	}
-	console.log("visible_edges_stop");
+
 	//data for the paths
 	paths = paths.data(visible_edges);
 	
