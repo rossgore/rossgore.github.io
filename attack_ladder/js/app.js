@@ -147,7 +147,7 @@ var displayHelp = function() {
 		  .classed("da-slide", true)
 		  .append("p")
 		  .attr("class", "instructions-text text-justified")
-		  .html("<span class='instructions-text-title'> Sample Data: </span> Select <span class='instructions-text-control'>\'Sample from Network\'</span> option from <span class='instructions-text-control'>\'My Network\'</span> control. In the settings menu that will appear on the right side of the screen select any values that you want to be fixed and the number of samples and click <span class='instructions-text-control'>\'Run\'</span>.");
+		  .html("<span class='instructions-text-title'> Sample Data: </span> Select <span class='instructions-text-control'>\'Sample from Attack Ladder\'</span> option from <span class='instructions-text-control'>\'Attack Ladder\'</span> control. In the settings menu that will appear on the right side of the screen select any values that you want to be fixed and the number of samples and click <span class='instructions-text-control'>\'Run\'</span>.");
 	//slider.append("div")
 	//	  .classed("da-slide", true)
 	//	  .append("p")
