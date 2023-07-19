@@ -181,6 +181,15 @@
 		<script src="js/learnCpts.js"></script>
 		<script src="js/learnStruct.js"></script>
 		<script src="js/tour.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $('.dropdown-submenu a.test').on("click", function(e){
+		    $(this).next('ul').toggle();
+		    e.stopPropagation();
+		    e.preventDefault();
+		  });
+		});
+		</script>
 
 	</body>
 </html>
