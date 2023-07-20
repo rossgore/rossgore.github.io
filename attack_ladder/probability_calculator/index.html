@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>ODU/VMASC Attack Ladder Node Success Rate Calculator</title>
+    <title>CVSS 3.1 Rung Probability Calculator</title>
 <link rel="icon"
       type="image/png"
       href="favicon.png">
@@ -47,13 +47,13 @@
 
 <body>
     <hgroup>
-    <h3>ODU/VMASC Attack Ladder Node Success Rate Calculator</h3></hgroup>
+    <h3>CVSS 3.1 Rung Probability Calculator</h3></hgroup>
     <div id="cvssboard">
     </div>
 	<div id='myDiv'></div>
     <br>
     <footer id="footer">
-<br/>The Attack Ladder Node Success Rate Calculator is based on the Common Vulnerability Scoring System (CVSS). CVSS is a free and open standard. It is owned and managed by <a href="http://www.first.org/cvss">FIRST.Org</a>.</footer>
+<br/>The calculator is based on the Common Vulnerability Scoring System Version 3.1 (CVSS 3.1). CVSS is a free and open standard. It is owned and managed by <a href="http://www.first.org/cvss">FIRST.Org</a>.</footer>
     <script>
         var c = new CVSS("cvssboard", {
             onchange: function() {
