@@ -157,7 +157,7 @@ var displayHelp = function() {
 		  .classed("da-slide", true)
 		  .append("p")
 		  .attr("class", "instructions-text text-justified")
-		  .html("<span class='instructions-text-title'> Learn Network Structure: </span> After loading a dataset, select <span class='instructions-text-control'>\'Learn Structure\'</span> option from <span class='instructions-text-control'>\'My Network\'</span> menu.");
+		  .html("<span class='instructions-text-title'> Learn Attack Ladder Structure: </span> After loading a dataset, select <span class='instructions-text-control'>\'Learn Structure\'</span> option from <span class='instructions-text-control'>\'My Network\'</span> menu.");
 	slider.append("div")
 		  .classed("da-slide", true)
 		  .append("p")

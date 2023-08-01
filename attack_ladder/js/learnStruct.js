@@ -69,7 +69,7 @@ var learnStructure = function() {
 			successDiv.append("span")
 						.attr("class", "sr-only")
 						.text("Success");
-			var text = successDiv.html() + " Network structure has been successfully learnt.";
+			var text = successDiv.html() + " Attack Laddder has been successfully learnt.";
 			successDiv.html(text);
 		}, 1000);
 			
