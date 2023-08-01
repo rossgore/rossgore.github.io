@@ -194,7 +194,7 @@ var createNodes = function(fdata) {
 	warningDiv.append("span")
 			  .attr("class", "glyphicon glyphicon-info-sign")
 			  .attr("aria-hidden", "true");
-	var text = warningDiv.html() + " Learning the structure of a network is an NP algorithm. An attempt to learn the structure of a network bigger than 10 nodes might crash your browser."				  		  
+	var text = warningDiv.html() + " Learning the structure of an attack ladder is a computationally complex problem. An attempt to learn the structure of an attack ladder bigger than 10 nodes might crash your browser."				  		  
 	warningDiv.html(text);
 	//remove after 3 seconds
 	setTimeout(removeSuccessMsg, 5000);	
