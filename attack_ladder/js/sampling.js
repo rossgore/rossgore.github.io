@@ -450,14 +450,12 @@ var ancestralSamplingForCompromise = function(fSample) {
 		return;
 	}
 
-	console.time("mytimer");
 	var samples = [];
 	for (var i=0; i< noOfSamples; i++) {
 		// console.log(fSample);
 		var sample = singleSample(fSample);
 		samples.push(sample);
 	}
-	console.timeEnd("mytimer");
 
 	//get nodes status back to false
 	setSamplingStatus();
@@ -558,9 +556,9 @@ var compromiseRungSettings = function(){
 		select.append("option")
 			  .attr("value", "none")
 			  .attr("selected", true)
-			  .text("Select Value To Be Compromised")//?
+			  .text("Compromised?")//?
 		//all possible nodes
-		node.forEach(function(value) {
+		node.values.forEach(function(value) {
 			select.append("option")
 			      .attr("value", "yes")
 			      .text("yes");
