@@ -438,6 +438,33 @@ var estimatedSampling = function() {
 	infoDiv.html(text);
 }
 
+var ancestralSamplingForCompromise = function(fSample) {
+	//remove previous error messages
+	d3.selectAll(".alert-text").remove();
+
+	//get the number of samples to be made
+	var noOfSamples = 1000;
+
+	var success = checkExistingCpts();
+	if (!success) {
+		return;
+	}
+
+	console.time("mytimer");
+	var samples = [];
+	for (var i=0; i< noOfSamples; i++) {
+		// console.log(fSample);
+		var sample = singleSample(fSample);
+		samples.push(sample);
+	}
+	console.timeEnd("mytimer");
+
+	//get nodes status back to false
+	setSamplingStatus();
+	//display the samples
+	displaySamples(samples, noOfSamples, fSample);
+}
+
 var ancestralSampling = function(fSample) {
 	//remove previous error messages
 	d3.selectAll(".alert-text").remove();
@@ -492,24 +519,13 @@ var compromiseRungSettings = function(){
 		fixedSamples[node.id] = "none";
 	})
 
-	// estimated time for sampling
-	estimatedSampling();
-
 	//number of samples
-	control.append("label")
-		.attr("for", "num-samples-input")
-		.attr("class", "label-text")
-		.text("Choose number of samples:")
-	control.append("input")
-	  	   .attr("id", "num-samples-input")
-		   .attr("type", "number")
-		   .attr("min", "1");
 	control.append("button")
 		   .attr("class", "btn btn-default btn-bayes-short margin-btn")
 		   .attr("id", "runSamplingBtn")
 		   .html("Run")
 		   .on("click", function(){
-				ancestralSampling(fixedSamples);
+				ancestralSamplingForCompromise(fixedSamples);
 		   });
 
 	//fixed ancestral sampling
@@ -517,7 +533,7 @@ var compromiseRungSettings = function(){
 	control.append("label")
 		   .attr("for", "fixed-sampling-div")
 		   .attr("class", "label-text")
-		   .text("Fix the values of any of the nodes:");
+		   .text("Specify any compromised rungs:");
 	var fixedTbl = control.append("div")
 		   .attr("class", "table-responsive sample-table")
 		   .attr("id", "fixed-sampling-div")
@@ -542,12 +558,12 @@ var compromiseRungSettings = function(){
 		select.append("option")
 			  .attr("value", "none")
 			  .attr("selected", true)
-			  .text("Not fixed")//?
-		//all possible values for this node
-		node.values.forEach(function(value) {
+			  .text("Select Value To Be Compromised")//?
+		//all possible nodes
+		node.forEach(function(value) {
 			select.append("option")
-			      .attr("value", value)
-			      .text(value);
+			      .attr("value", "yes")
+			      .text("yes");
 		});
 	})
 }
