@@ -556,7 +556,7 @@ var compromiseRungSettings = function(){
 		select.append("option")
 			  .attr("value", "none")
 			  .attr("selected", true)
-			  .text("Not fixed")//?
+			  .text("Compromised?")//?
 		//all possible nodes
 		node.values.forEach(function(value) {
 			if (value == "yes")
