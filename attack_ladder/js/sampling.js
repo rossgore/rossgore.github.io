@@ -272,7 +272,7 @@ var displayCompromisedSimResults = function(samples, noSample, fSample) {
 	btnGroup.append("button")
 		   .attr("class", "btn btn-default btn-bayes-grp")
 		   .attr("id", "resample")
-		   .html("Rerun Simulation")
+		   .html("Rerun Sim")
 		   .on("click", function(){
 		   	resample(noSample, fSample);
 		   });
@@ -281,7 +281,7 @@ var displayCompromisedSimResults = function(samples, noSample, fSample) {
 	btnGroup.append("button")
 		   .attr("class", "btn btn-default btn-bayes-grp")
 		   .attr("id", "sampleDownloadBtn")
-		   .html("Simulation Results")
+		   .html("Results")
 		   .on("click", function() {
 		   	specifyDownloadName(2, ".csv", samples);
 		   	// downloadSamples(samples);
@@ -290,7 +290,7 @@ var displayCompromisedSimResults = function(samples, noSample, fSample) {
 	btnGroup.append("button")
 		   .attr("class", "btn btn-default btn-bayes-grp")
 		   .attr("id", "reset")
-		   .html("Clear Simulation")
+		   .html("Clear")
 		   .on("click", function(){
 		   	samplingSettings();
 		   });
@@ -306,7 +306,7 @@ var displayCompromisedSimResults = function(samples, noSample, fSample) {
 		warningDiv.append("span")
 				  .attr("class", "sr-only")
 				  .text("Warning");
-		var text = warningDiv.html() + "Simulation information given the compromised rungs of the attack ladder is shown below. If you wish to download the simulation results, download by clicking the \'Simulation Results\' button."
+		var text = warningDiv.html() + "Simulation information given the compromised rungs of the attack ladder is shown below. If you wish to download the simulation results, download by clicking the \'Results\' button."
 		warningDiv.html(text);
 
 	// append table for the results
