@@ -261,6 +261,106 @@ var downloadSamples = function(filename, samples) {
 	}
 }
 
+var displayCompromisedSimResults = function(samples, noSample, fSample) {
+	//clear the display space
+	clearDisplayField();
+
+	var btnGroup = control.append("div")
+		   				  .attr("class", "btn-group")
+						  .attr("role", "group");
+	//sample again btn
+	btnGroup.append("button")
+		   .attr("class", "btn btn-default btn-bayes-grp")
+		   .attr("id", "resample")
+		   .html("Rerun Simulation")
+		   .on("click", function(){
+		   	resample(noSample, fSample);
+		   });
+
+	//download summary button
+	btnGroup.append("button")
+		   .attr("class", "btn btn-default btn-bayes-grp")
+		   .attr("id", "sampleDownloadBtn")
+		   .html("Simulation Results")
+		   .on("click", function() {
+		   	specifyDownloadName(2, ".csv", samples);
+		   	// downloadSamples(samples);
+		   });
+	//reset btn
+	btnGroup.append("button")
+		   .attr("class", "btn btn-default btn-bayes-grp")
+		   .attr("id", "reset")
+		   .html("Clear Simulation")
+		   .on("click", function(){
+		   	samplingSettings();
+		   });
+
+	control.append("hr");
+
+		//warning message
+		var warningDiv = control.append("div")
+								.attr("class", "alert-text alert alert-warning")
+		warningDiv.append("span")
+				  .attr("class", "glyphicon glyphicon-info-sign")
+				  .attr("aria-hidden", "true");
+		warningDiv.append("span")
+				  .attr("class", "sr-only")
+				  .text("Warning");
+		var text = warningDiv.html() + "Simulation information given the compromised rungs of the attack ladder is shown below. If you wish to download the simulation results, download by clicking the \'Simulation Results\' button."
+		warningDiv.html(text);
+
+	// append table for the results
+	var sampleTbl;
+	sampleTbl = control.append("div")
+						   .attr("class", "table-responsive sample-table")
+						   .append("table")
+	  	   				   .attr("class", "table table-bayes sample-tbl");
+						   
+	// count the cols.
+	 var colCount = 0;
+     for (var s in samples.slice(0,1)) {
+		 colCount = 0;
+		 for (var val in samples[s]) {
+			 colCount = colCount + 1;
+		 }
+	 }
+	 
+ 	// prep for summary data
+ 	var newSum = new Array(colCount).fill(0);
+	
+ 	var samplesCount = 0;
+ 	for (var s in samples) {
+ 		var newSumIndex = 0;
+ 		for (var val in samples[s]) {
+ 			if (samples[s][val] == 'yes')
+ 			{
+ 				newSum[newSumIndex] = newSum[newSumIndex] + 1;
+ 			}
+ 			newSumIndex = newSumIndex + 1;
+ 		}
+ 		samplesCount = samplesCount + 1;
+ 	}
+	
+	// compute summary data
+	for (var i = 0; i < newSum.length; i++) {
+
+		newSum[i] = (newSum[i] / samplesCount);
+		newSum[i] = (newSum[i]*100).toFixed(2);
+		newSum[i] = (newSum[i]) + "% of sims";
+	}
+	 
+    //append the summary columns names
+	summaryTblColumnNames();
+	
+	var sampleTblBody = sampleTbl.append("tbody");
+	var accumulator = "";
+	for (var i = 0; i < newSum.length; i++) {
+		accumulator += '<td>' + newSum[i] + '</td>';
+	}
+	sampleTblBody.append("tr").html(accumulator);
+
+}
+
 var displaySamples = function(samples, noSample, fSample) {
 	//clear the display space
 	clearDisplayField();
@@ -460,7 +560,7 @@ var ancestralSamplingForCompromise = function(fSample) {
 	//get nodes status back to false
 	setSamplingStatus();
 	//display the samples
-	displaySamples(samples, noOfSamples, fSample);
+	displayCompromisedSimResults(samples, noOfSamples, fSample);
 }
 
 var ancestralSampling = function(fSample) {
