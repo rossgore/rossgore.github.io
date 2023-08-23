@@ -556,12 +556,15 @@ var compromiseRungSettings = function(){
 		select.append("option")
 			  .attr("value", "none")
 			  .attr("selected", true)
-			  .text("Compromised?")//?
+			  .text("Not fixed")//?
 		//all possible nodes
 		node.values.forEach(function(value) {
-			select.append("option")
-			      .attr("value", "yes")
-			      .text("yes");
+			if (value == "yes")
+			{
+		select.append("option")
+		      .attr("value", "yes")
+		      .text("yes");
+			}
 		});
 	})
 }
