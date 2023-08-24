@@ -292,7 +292,7 @@ var displayCompromisedSimResults = function(samples, noSample, fSample) {
 		   .attr("id", "reset")
 		   .html("Clear")
 		   .on("click", function(){
-		   	samplingSettings();
+		   	compromiseRungSettings();
 		   });
 
 	control.append("hr");
