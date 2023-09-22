@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hardness Adjusted Probability Calculator</title>
+</head>
+<body>
+	
+<form>
+  Numbers:  <input type="text" name="numbers" size="100"> <br>
+	
+  Maximum: <output id="max"></output>	<br> <!-- output should not be in input type elements  -->
+  Mean: <output id="avg"></output>	<br> <!-- output should not be in input type elements  -->
+  Median: <output id="med"></output>	<br> <!-- output should not be in input type elements  -->
+  Minimum: <output id="min"></output>	<br> <!-- output should not be in input type elements  -->
+  <br><br>
+</form>		
+<button type="button" id="calc">Calculate</button>
+
+<script>
+  // Get references to the elements just once
+  var numbers = document.querySelector("[name='numbers']");
+
+  var max = document.getElementById("max");
+  var avg = document.getElementById("avg");
+  var min = document.getElementById("min"); 
+  var med = document.getElementById("med"); 
+  var btn = document.getElementById("calc");
+  
+  // Set up your event handler(s) in JavaScript, not with HTML attributes
+  btn.addEventListener("click", function(){
+    maximum();
+    average();
+    minimum();
+	median();
+  });
+
+  function maximum() {
+	  var temp = new Array();
+	  // This will return an array with strings "1", "2", etc.
+	  temp = numbers.value.split(",");
+	  for (a in temp ) {
+	      temp[a] = parseFloat(temp[a], 10); // Explicitly include base as per Álvaro's comment
+	  }
+	  local_max = 0;
+	  for (a in temp)
+	  {
+		  if (temp[a] > local_max)
+		  {
+			  local_max = temp[a];
+		  }
+	  }
+    // You can't just set an element to a value. You have to set the content of the 
+    // element to a value. Also, JavaScript provides a built-in Math object that
+    // can get you the maximum number from a set of numbers. No if/then needed.
+    max.textContent = Math.max(local_max);  
+  }
+		
+  function average() {
+	  var temp = new Array();
+	  // This will return an array with strings "1", "2", etc.
+	  temp = numbers.value.split(",");
+	  for (a in temp ) {
+	      temp[a] = parseFloat(temp[a], 10); // Explicitly include base as per Álvaro's comment
+	  }
+	  sum = 0;
+	  for (a in temp)
+	  {
+		  sum = sum + temp[a];
+	  }
+	  var local_average = sum / temp.length;
+	  avg.textContent = local_average;
+  }
+  
+  function median(){
+	  var temp = new Array();
+	  // This will return an array with strings "1", "2", etc.
+	  temp = numbers.value.split(",");
+	  for (a in temp ) {
+	      temp[a] = parseFloat(temp[a], 10); // Explicitly include base as per Álvaro's comment
+	  }
+	  const sorted = Array.from(temp).sort((a, b) => a - b);
+	      const middle = Math.floor(sorted.length / 2);
+
+	      if (sorted.length % 2 === 0) {
+	           med.textContent = ((sorted[middle - 1] + sorted[middle]) / 2);
+	      }
+	      if (sorted.length % 2 != 0) {
+	          med.textContent =  sorted[middle];
+	      }
+		  
+
+	      
+  }
+	
+  function minimum() {
+	  var temp = new Array();
+	  // This will return an array with strings "1", "2", etc.
+	  temp = numbers.value.split(",");
+	  for (a in temp ) {
+	      temp[a] = parseFloat(temp[a], 10); // Explicitly include base as per Álvaro's comment
+	  }
+	  local_min = 99999999;
+	  for (a in temp)
+	  {
+		  if (temp[a] < local_min)
+		  {
+			  local_min = temp[a];
+		  }
+	  }
+    // You can't just set an element to a value. You have to set the content of the 
+    // element to a value. Also, JavaScript provides a built-in Math object that
+    // can get you the maximum number from a set of numbers. No if/then needed.
+    min.textContent = Math.min(local_min);
+  }
+</script>
+</body>
+</html>
