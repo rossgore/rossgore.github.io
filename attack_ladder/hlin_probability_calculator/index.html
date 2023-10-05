@@ -4,16 +4,18 @@
   <title>Hardness Adjusted Probability Calculator</title>
 </head>
 <body>
-	
+
 <form>
-  Numbers:  <input type="text" name="numbers" size="100"> <br>
-	
+  HLIN Hardness Adjusted Probabilities: <br>
+  <textarea id="numbers" name="numbers" rows="4" cols="50"></textarea>
+  <!-- HLIN Hardness Adjusted Probabilities:  <input type="text" name="numbers" size="100"> <br> -->
+  <br>
   Maximum: <output id="max"></output>	<br> <!-- output should not be in input type elements  -->
   Mean: <output id="avg"></output>	<br> <!-- output should not be in input type elements  -->
   Median: <output id="med"></output>	<br> <!-- output should not be in input type elements  -->
   Minimum: <output id="min"></output>	<br> <!-- output should not be in input type elements  -->
   <br><br>
-</form>		
+</form>
 <button type="button" id="calc">Calculate</button>
 
 <script>
@@ -22,16 +24,16 @@
 
   var max = document.getElementById("max");
   var avg = document.getElementById("avg");
-  var min = document.getElementById("min"); 
-  var med = document.getElementById("med"); 
+  var min = document.getElementById("min");
+  var med = document.getElementById("med");
   var btn = document.getElementById("calc");
-  
+
   // Set up your event handler(s) in JavaScript, not with HTML attributes
   btn.addEventListener("click", function(){
     maximum();
     average();
     minimum();
-	median();
+	  median();
   });
 
   function maximum() {
@@ -49,12 +51,12 @@
 			  local_max = temp[a];
 		  }
 	  }
-    // You can't just set an element to a value. You have to set the content of the 
+    // You can't just set an element to a value. You have to set the content of the
     // element to a value. Also, JavaScript provides a built-in Math object that
     // can get you the maximum number from a set of numbers. No if/then needed.
-    max.textContent = Math.max(local_max);  
+    max.textContent = Math.max(local_max);
   }
-		
+
   function average() {
 	  var temp = new Array();
 	  // This will return an array with strings "1", "2", etc.
@@ -69,8 +71,9 @@
 	  }
 	  var local_average = sum / temp.length;
 	  avg.textContent = local_average;
+    avg.textContent = parseFloat(avg.textContent).toFixed(4);
   }
-  
+
   function median(){
 	  var temp = new Array();
 	  // This will return an array with strings "1", "2", etc.
@@ -87,11 +90,11 @@
 	      if (sorted.length % 2 != 0) {
 	          med.textContent =  sorted[middle];
 	      }
-		  
 
-	      
+     med.textContent = parseFloat(med.textContent).toFixed(4);
+
   }
-	
+
   function minimum() {
 	  var temp = new Array();
 	  // This will return an array with strings "1", "2", etc.
@@ -107,7 +110,7 @@
 			  local_min = temp[a];
 		  }
 	  }
-    // You can't just set an element to a value. You have to set the content of the 
+    // You can't just set an element to a value. You have to set the content of the
     // element to a value. Also, JavaScript provides a built-in Math object that
     // can get you the maximum number from a set of numbers. No if/then needed.
     min.textContent = Math.min(local_min);
