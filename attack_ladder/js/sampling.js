@@ -701,7 +701,7 @@ var samplingSettings = function(){
 		   .on("click", function(){
 				ancestralSampling(fixedSamples);
 		   });
-/**
+		   
 	//fixed ancestral sampling
 	control.append("hr");
 	control.append("label")
@@ -740,5 +740,4 @@ var samplingSettings = function(){
 			      .text(value);
 		});
 	})
-		   **/
 }
