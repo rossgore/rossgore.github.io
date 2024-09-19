@@ -990,8 +990,8 @@ var init = function() {
 	  .append("img")
 	  .attr("id", "zoom-scale")
 	  .attr("class", "pull-left responsive-img")
-	  .attr("src", "../img/legend.png");
+	  .attr("src", "img/legend.png");
 }();
 
 //Initialise
-loadDefaultNetwork("files/nets/Turbine-Compromise.json", true);
+loadDefaultNetwork("files/nets/empty_attack_ladder.json", true);
