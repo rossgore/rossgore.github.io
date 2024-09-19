@@ -30,3 +30,5 @@ Service is an important component of our profession and an activity that grounds
 ## [Teaching](teaching/teaching.md)
 
 A university encourages students to appreciate profound ideas from different cultures and disciplines and to use them in new, creative and interesting ways. As a professor I encourage every student I teach to embrace this appreciation and innovation. An overview of my teaching experience, awards, evaluations and student / colleague testimonials is available [here](teaching/teaching.md). [This document](teaching/TeachingStatement_RossJGore.pdf) provides a description of my teaching philosophy.
+
+## [Wind](WindCRAFT/index.html)
