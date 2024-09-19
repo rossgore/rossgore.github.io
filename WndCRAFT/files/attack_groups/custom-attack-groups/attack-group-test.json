@@ -1,0 +1,4 @@
+{"description": "Example attack group", "name": "Example", 
+"domain": "enterprise-attack", "versions": {"layer": "4.4", "attack": "14", "navigator": "4.8.1"}, 
+"techniques": [{"techniqueID": "T1059","score":5.0, "showSubtechniques": true}] 
+, "gradient": {"colors": ["#ffffff", "#66b1ff"], "minValue": 0, "maxValue": 1}, "legendItems": [{"label": "used by Ke3chang", "color": "#66b1ff"}]}

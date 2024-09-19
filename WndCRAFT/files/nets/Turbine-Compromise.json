@@ -1,0 +1,1541 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "title": "Phish Office User",
+      "functionalities": [
+        "Modify Configuration",
+        " Create Account"
+      ],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": -11,
+      "y": 14,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "1yes": 0.5,
+        "1no": 0.5
+      }
+    },
+    {
+      "id": 2,
+      "orderId": 2,
+      "title": "Compromise WAN Firewall",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 4,
+      "y": 149,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "2yes": 0.5,
+        "2no": 0.5
+      }
+    },
+    {
+      "id": 3,
+      "orderId": 3,
+      "title": "Exploit Removable Media",
+      "functionalities": [],
+      "vulnerabilities": [
+        " Unrestricted File Upload",
+        " Deserialization of Untrusted Data"
+      ],
+      "attack_techniques": [],
+      "x": 14,
+      "y": 267,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "3yes": 0.5,
+        "3no": 0.5
+      }
+    },
+    {
+      "id": 4,
+      "orderId": 4,
+      "title": "Physically Access Substation",
+      "functionalities": [
+        " Create Account",
+        " Obtain sensitive information: Credentials"
+      ],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 21,
+      "y": 375,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "4yes": 0.5,
+        "4no": 0.5
+      }
+    },
+    {
+      "id": 5,
+      "orderId": 5,
+      "title": "Compromise System Vector",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 11,
+      "y": 482,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "5yes": 0.5,
+        "5no": 0.5
+      }
+    },
+    {
+      "id": 6,
+      "orderId": 6,
+      "title": "Compromise Office LAN Workstation",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 183,
+      "y": 26,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "1yes": {
+          "2yes": {
+            "6yes": 0.85,
+            "6no": 0.15
+          },
+          "2no": {
+            "6yes": 0.55,
+            "6no": 0.45
+          }
+        },
+        "1no": {
+          "2yes": {
+            "6yes": 0.45,
+            "6no": 0.55
+          },
+          "2no": {
+            "6yes": 0,
+            "6no": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "orderId": 7,
+      "title": "Compromise Mobile Workstation",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 189,
+      "y": 273,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "3yes": {
+          "7yes": 0.38,
+          "7no": 0.62
+        },
+        "3no": {
+          "7yes": 0,
+          "7no": 1
+        }
+      }
+    },
+    {
+      "id": 8,
+      "orderId": 8,
+      "title": "Compromise Substation LAN Workstation",
+      "functionalities": [],
+      "vulnerabilities": [
+        " XML External Entity (XXE)",
+        " XML Entity Expansion (XEE)"
+      ],
+      "attack_techniques": [],
+      "x": 192,
+      "y": 379,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "4yes": {
+          "8yes": 0.62,
+          "8no": 0.38
+        },
+        "4no": {
+          "8yes": 0,
+          "8no": 1
+        }
+      }
+    },
+    {
+      "id": 9,
+      "orderId": 9,
+      "title": "Compromise IED",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 195,
+      "y": 482,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "5yes": {
+          "9yes": 0.77,
+          "9no": 0.23
+        },
+        "5no": {
+          "9yes": 0,
+          "9no": 1
+        }
+      }
+    },
+    {
+      "id": 10,
+      "orderId": 10,
+      "title": "Compromise App Servers",
+      "functionalities": [
+        " Restart/Reboot",
+        " Read files",
+        " Delete files",
+        " Create/Upload file"
+      ],
+      "vulnerabilities": [
+        "Authentication Bypass by Capture-replay",
+        " Use of Password Hash Instead of Password for Authentication",
+        " Hard-coded Credentials"
+      ],
+      "attack_techniques": [
+        "T1037.001",
+        "T1037.005"
+      ],
+      "x": 334,
+      "y": 135,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "6yes": {
+          "7yes": {
+            "10yes": 0.85,
+            "10no": 0.15
+          },
+          "7no": {
+            "10yes": 0.38,
+            "10no": 0.62
+          }
+        },
+        "6no": {
+          "7yes": {
+            "10yes": 0.55,
+            "10no": 0.45
+          },
+          "7no": {
+            "10yes": 0,
+            "10no": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 11,
+      "orderId": 11,
+      "title": "Compromise Operator Workstation",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 338,
+      "y": 276,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "8yes": {
+          "9yes": {
+            "11yes": 0.77,
+            "11no": 0.23
+          },
+          "9no": {
+            "11yes": 0.45,
+            "11no": 0.55
+          }
+        },
+        "8no": {
+          "9yes": {
+            "11yes": 0.25,
+            "11no": 0.75
+          },
+          "9no": {
+            "11yes": 0,
+            "11no": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "orderId": 12,
+      "title": "Compromise SCADA Server",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 439,
+      "y": 135,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "10yes": {
+          "11yes": {
+            "12yes": 0.65,
+            "12no": 0.35
+          },
+          "11no": {
+            "12yes": 0.55,
+            "12no": 0.45
+          }
+        },
+        "10no": {
+          "11yes": {
+            "12yes": 0.35,
+            "12no": 0.65
+          },
+          "11no": {
+            "12yes": 0,
+            "12no": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 13,
+      "orderId": 13,
+      "title": "SD App Server",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 449,
+      "y": 339,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "10yes": {
+          "13yes": 0.27,
+          "13no": 0.73
+        },
+        "10no": {
+          "13yes": 0,
+          "13no": 1
+        }
+      }
+    },
+    {
+      "id": 14,
+      "orderId": 14,
+      "title": "SD IED Comms",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 437,
+      "y": 478,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "9yes": {
+          "14yes": 0.41,
+          "14no": 0.59
+        },
+        "9no": {
+          "14yes": 0,
+          "14no": 1
+        }
+      }
+    },
+    {
+      "id": 15,
+      "orderId": 15,
+      "title": "Compromise Turbine",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 638,
+      "y": 140.1484375,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "12yes": {
+          "13yes": {
+            "14yes": {
+              "15yes": 0.85,
+              "15no": 0.15
+            },
+            "14no": {
+              "15yes": 0.75,
+              "15no": 0.25
+            }
+          },
+          "13no": {
+            "14yes": {
+              "15yes": 0.5,
+              "15no": 0.5
+            },
+            "14no": {
+              "15yes": 0.25,
+              "15no": 0.75
+            }
+          }
+        },
+        "12no": {
+          "13yes": {
+            "14yes": {
+              "15yes": 0.65,
+              "15no": 0.35
+            },
+            "14no": {
+              "15yes": 0.35,
+              "15no": 0.65
+            }
+          },
+          "13no": {
+            "14yes": {
+              "15yes": 0.45,
+              "15no": 0.55
+            },
+            "14no": {
+              "15yes": 0,
+              "15no": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": {
+        "id": 1,
+        "orderId": 1,
+        "title": "Phish Office User",
+        "functionalities": [
+          "Modify Configuration",
+          " Create Account"
+        ],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": -11,
+        "y": 14,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": 0.5,
+          "1no": 0.5
+        }
+      },
+      "target": {
+        "id": 6,
+        "orderId": 6,
+        "title": "Compromise Office LAN Workstation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 183,
+        "y": 26,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": {
+            "2yes": {
+              "6yes": 0.85,
+              "6no": 0.15
+            },
+            "2no": {
+              "6yes": 0.55,
+              "6no": 0.45
+            }
+          },
+          "1no": {
+            "2yes": {
+              "6yes": 0.45,
+              "6no": 0.55
+            },
+            "2no": {
+              "6yes": 0,
+              "6no": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 2,
+        "orderId": 2,
+        "title": "Compromise WAN Firewall",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 4,
+        "y": 149,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": 0.5,
+          "2no": 0.5
+        }
+      },
+      "target": {
+        "id": 6,
+        "orderId": 6,
+        "title": "Compromise Office LAN Workstation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 183,
+        "y": 26,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": {
+            "2yes": {
+              "6yes": 0.85,
+              "6no": 0.15
+            },
+            "2no": {
+              "6yes": 0.55,
+              "6no": 0.45
+            }
+          },
+          "1no": {
+            "2yes": {
+              "6yes": 0.45,
+              "6no": 0.55
+            },
+            "2no": {
+              "6yes": 0,
+              "6no": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 3,
+        "orderId": 3,
+        "title": "Exploit Removable Media",
+        "functionalities": [],
+        "vulnerabilities": [
+          " Unrestricted File Upload",
+          " Deserialization of Untrusted Data"
+        ],
+        "attack_techniques": [],
+        "x": 14,
+        "y": 267,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "3yes": 0.5,
+          "3no": 0.5
+        }
+      },
+      "target": {
+        "id": 7,
+        "orderId": 7,
+        "title": "Compromise Mobile Workstation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 189,
+        "y": 273,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "3yes": {
+            "7yes": 0.38,
+            "7no": 0.62
+          },
+          "3no": {
+            "7yes": 0,
+            "7no": 1
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 4,
+        "orderId": 4,
+        "title": "Physically Access Substation",
+        "functionalities": [
+          " Create Account",
+          " Obtain sensitive information: Credentials"
+        ],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 21,
+        "y": 375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "4yes": 0.5,
+          "4no": 0.5
+        }
+      },
+      "target": {
+        "id": 8,
+        "orderId": 8,
+        "title": "Compromise Substation LAN Workstation",
+        "functionalities": [],
+        "vulnerabilities": [
+          " XML External Entity (XXE)",
+          " XML Entity Expansion (XEE)"
+        ],
+        "attack_techniques": [],
+        "x": 192,
+        "y": 379,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "4yes": {
+            "8yes": 0.62,
+            "8no": 0.38
+          },
+          "4no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 5,
+        "orderId": 5,
+        "title": "Compromise System Vector",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 11,
+        "y": 482,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "5yes": 0.5,
+          "5no": 0.5
+        }
+      },
+      "target": {
+        "id": 9,
+        "orderId": 9,
+        "title": "Compromise IED",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 195,
+        "y": 482,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "5yes": {
+            "9yes": 0.77,
+            "9no": 0.23
+          },
+          "5no": {
+            "9yes": 0,
+            "9no": 1
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 6,
+        "orderId": 6,
+        "title": "Compromise Office LAN Workstation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 183,
+        "y": 26,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": {
+            "2yes": {
+              "6yes": 0.85,
+              "6no": 0.15
+            },
+            "2no": {
+              "6yes": 0.55,
+              "6no": 0.45
+            }
+          },
+          "1no": {
+            "2yes": {
+              "6yes": 0.45,
+              "6no": 0.55
+            },
+            "2no": {
+              "6yes": 0,
+              "6no": 1
+            }
+          }
+        }
+      },
+      "target": {
+        "id": 10,
+        "orderId": 10,
+        "title": "Compromise App Servers",
+        "functionalities": [
+          " Restart/Reboot",
+          " Read files",
+          " Delete files",
+          " Create/Upload file"
+        ],
+        "vulnerabilities": [
+          "Authentication Bypass by Capture-replay",
+          " Use of Password Hash Instead of Password for Authentication",
+          " Hard-coded Credentials"
+        ],
+        "attack_techniques": [
+          "T1037.001",
+          "T1037.005"
+        ],
+        "x": 334,
+        "y": 135,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "7yes": {
+              "10yes": 0.85,
+              "10no": 0.15
+            },
+            "7no": {
+              "10yes": 0.38,
+              "10no": 0.62
+            }
+          },
+          "6no": {
+            "7yes": {
+              "10yes": 0.55,
+              "10no": 0.45
+            },
+            "7no": {
+              "10yes": 0,
+              "10no": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 7,
+        "orderId": 7,
+        "title": "Compromise Mobile Workstation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 189,
+        "y": 273,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "3yes": {
+            "7yes": 0.38,
+            "7no": 0.62
+          },
+          "3no": {
+            "7yes": 0,
+            "7no": 1
+          }
+        }
+      },
+      "target": {
+        "id": 10,
+        "orderId": 10,
+        "title": "Compromise App Servers",
+        "functionalities": [
+          " Restart/Reboot",
+          " Read files",
+          " Delete files",
+          " Create/Upload file"
+        ],
+        "vulnerabilities": [
+          "Authentication Bypass by Capture-replay",
+          " Use of Password Hash Instead of Password for Authentication",
+          " Hard-coded Credentials"
+        ],
+        "attack_techniques": [
+          "T1037.001",
+          "T1037.005"
+        ],
+        "x": 334,
+        "y": 135,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "7yes": {
+              "10yes": 0.85,
+              "10no": 0.15
+            },
+            "7no": {
+              "10yes": 0.38,
+              "10no": 0.62
+            }
+          },
+          "6no": {
+            "7yes": {
+              "10yes": 0.55,
+              "10no": 0.45
+            },
+            "7no": {
+              "10yes": 0,
+              "10no": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 8,
+        "orderId": 8,
+        "title": "Compromise Substation LAN Workstation",
+        "functionalities": [],
+        "vulnerabilities": [
+          " XML External Entity (XXE)",
+          " XML Entity Expansion (XEE)"
+        ],
+        "attack_techniques": [],
+        "x": 192,
+        "y": 379,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "4yes": {
+            "8yes": 0.62,
+            "8no": 0.38
+          },
+          "4no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        }
+      },
+      "target": {
+        "id": 11,
+        "orderId": 11,
+        "title": "Compromise Operator Workstation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 338,
+        "y": 276,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "8yes": {
+            "9yes": {
+              "11yes": 0.77,
+              "11no": 0.23
+            },
+            "9no": {
+              "11yes": 0.45,
+              "11no": 0.55
+            }
+          },
+          "8no": {
+            "9yes": {
+              "11yes": 0.25,
+              "11no": 0.75
+            },
+            "9no": {
+              "11yes": 0,
+              "11no": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 9,
+        "orderId": 9,
+        "title": "Compromise IED",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 195,
+        "y": 482,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "5yes": {
+            "9yes": 0.77,
+            "9no": 0.23
+          },
+          "5no": {
+            "9yes": 0,
+            "9no": 1
+          }
+        }
+      },
+      "target": {
+        "id": 11,
+        "orderId": 11,
+        "title": "Compromise Operator Workstation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 338,
+        "y": 276,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "8yes": {
+            "9yes": {
+              "11yes": 0.77,
+              "11no": 0.23
+            },
+            "9no": {
+              "11yes": 0.45,
+              "11no": 0.55
+            }
+          },
+          "8no": {
+            "9yes": {
+              "11yes": 0.25,
+              "11no": 0.75
+            },
+            "9no": {
+              "11yes": 0,
+              "11no": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 9,
+        "orderId": 9,
+        "title": "Compromise IED",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 195,
+        "y": 482,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "5yes": {
+            "9yes": 0.77,
+            "9no": 0.23
+          },
+          "5no": {
+            "9yes": 0,
+            "9no": 1
+          }
+        }
+      },
+      "target": {
+        "id": 14,
+        "orderId": 14,
+        "title": "SD IED Comms",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 437,
+        "y": 478,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "9yes": {
+            "14yes": 0.41,
+            "14no": 0.59
+          },
+          "9no": {
+            "14yes": 0,
+            "14no": 1
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 10,
+        "orderId": 10,
+        "title": "Compromise App Servers",
+        "functionalities": [
+          " Restart/Reboot",
+          " Read files",
+          " Delete files",
+          " Create/Upload file"
+        ],
+        "vulnerabilities": [
+          "Authentication Bypass by Capture-replay",
+          " Use of Password Hash Instead of Password for Authentication",
+          " Hard-coded Credentials"
+        ],
+        "attack_techniques": [
+          "T1037.001",
+          "T1037.005"
+        ],
+        "x": 334,
+        "y": 135,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "7yes": {
+              "10yes": 0.85,
+              "10no": 0.15
+            },
+            "7no": {
+              "10yes": 0.38,
+              "10no": 0.62
+            }
+          },
+          "6no": {
+            "7yes": {
+              "10yes": 0.55,
+              "10no": 0.45
+            },
+            "7no": {
+              "10yes": 0,
+              "10no": 1
+            }
+          }
+        }
+      },
+      "target": {
+        "id": 12,
+        "orderId": 12,
+        "title": "Compromise SCADA Server",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 439,
+        "y": 135,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "10yes": {
+            "11yes": {
+              "12yes": 0.65,
+              "12no": 0.35
+            },
+            "11no": {
+              "12yes": 0.55,
+              "12no": 0.45
+            }
+          },
+          "10no": {
+            "11yes": {
+              "12yes": 0.35,
+              "12no": 0.65
+            },
+            "11no": {
+              "12yes": 0,
+              "12no": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 11,
+        "orderId": 11,
+        "title": "Compromise Operator Workstation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 338,
+        "y": 276,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "8yes": {
+            "9yes": {
+              "11yes": 0.77,
+              "11no": 0.23
+            },
+            "9no": {
+              "11yes": 0.45,
+              "11no": 0.55
+            }
+          },
+          "8no": {
+            "9yes": {
+              "11yes": 0.25,
+              "11no": 0.75
+            },
+            "9no": {
+              "11yes": 0,
+              "11no": 1
+            }
+          }
+        }
+      },
+      "target": {
+        "id": 12,
+        "orderId": 12,
+        "title": "Compromise SCADA Server",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 439,
+        "y": 135,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "10yes": {
+            "11yes": {
+              "12yes": 0.65,
+              "12no": 0.35
+            },
+            "11no": {
+              "12yes": 0.55,
+              "12no": 0.45
+            }
+          },
+          "10no": {
+            "11yes": {
+              "12yes": 0.35,
+              "12no": 0.65
+            },
+            "11no": {
+              "12yes": 0,
+              "12no": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 10,
+        "orderId": 10,
+        "title": "Compromise App Servers",
+        "functionalities": [
+          " Restart/Reboot",
+          " Read files",
+          " Delete files",
+          " Create/Upload file"
+        ],
+        "vulnerabilities": [
+          "Authentication Bypass by Capture-replay",
+          " Use of Password Hash Instead of Password for Authentication",
+          " Hard-coded Credentials"
+        ],
+        "attack_techniques": [
+          "T1037.001",
+          "T1037.005"
+        ],
+        "x": 334,
+        "y": 135,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "7yes": {
+              "10yes": 0.85,
+              "10no": 0.15
+            },
+            "7no": {
+              "10yes": 0.38,
+              "10no": 0.62
+            }
+          },
+          "6no": {
+            "7yes": {
+              "10yes": 0.55,
+              "10no": 0.45
+            },
+            "7no": {
+              "10yes": 0,
+              "10no": 1
+            }
+          }
+        }
+      },
+      "target": {
+        "id": 13,
+        "orderId": 13,
+        "title": "SD App Server",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 449,
+        "y": 339,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "10yes": {
+            "13yes": 0.27,
+            "13no": 0.73
+          },
+          "10no": {
+            "13yes": 0,
+            "13no": 1
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 12,
+        "orderId": 12,
+        "title": "Compromise SCADA Server",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 439,
+        "y": 135,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "10yes": {
+            "11yes": {
+              "12yes": 0.65,
+              "12no": 0.35
+            },
+            "11no": {
+              "12yes": 0.55,
+              "12no": 0.45
+            }
+          },
+          "10no": {
+            "11yes": {
+              "12yes": 0.35,
+              "12no": 0.65
+            },
+            "11no": {
+              "12yes": 0,
+              "12no": 1
+            }
+          }
+        }
+      },
+      "target": {
+        "id": 15,
+        "orderId": 15,
+        "title": "Compromise Turbine",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 638,
+        "y": 140.1484375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "12yes": {
+            "13yes": {
+              "14yes": {
+                "15yes": 0.85,
+                "15no": 0.15
+              },
+              "14no": {
+                "15yes": 0.75,
+                "15no": 0.25
+              }
+            },
+            "13no": {
+              "14yes": {
+                "15yes": 0.5,
+                "15no": 0.5
+              },
+              "14no": {
+                "15yes": 0.25,
+                "15no": 0.75
+              }
+            }
+          },
+          "12no": {
+            "13yes": {
+              "14yes": {
+                "15yes": 0.65,
+                "15no": 0.35
+              },
+              "14no": {
+                "15yes": 0.35,
+                "15no": 0.65
+              }
+            },
+            "13no": {
+              "14yes": {
+                "15yes": 0.45,
+                "15no": 0.55
+              },
+              "14no": {
+                "15yes": 0,
+                "15no": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 13,
+        "orderId": 13,
+        "title": "SD App Server",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 449,
+        "y": 339,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "10yes": {
+            "13yes": 0.27,
+            "13no": 0.73
+          },
+          "10no": {
+            "13yes": 0,
+            "13no": 1
+          }
+        }
+      },
+      "target": {
+        "id": 15,
+        "orderId": 15,
+        "title": "Compromise Turbine",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 638,
+        "y": 140.1484375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "12yes": {
+            "13yes": {
+              "14yes": {
+                "15yes": 0.85,
+                "15no": 0.15
+              },
+              "14no": {
+                "15yes": 0.75,
+                "15no": 0.25
+              }
+            },
+            "13no": {
+              "14yes": {
+                "15yes": 0.5,
+                "15no": 0.5
+              },
+              "14no": {
+                "15yes": 0.25,
+                "15no": 0.75
+              }
+            }
+          },
+          "12no": {
+            "13yes": {
+              "14yes": {
+                "15yes": 0.65,
+                "15no": 0.35
+              },
+              "14no": {
+                "15yes": 0.35,
+                "15no": 0.65
+              }
+            },
+            "13no": {
+              "14yes": {
+                "15yes": 0.45,
+                "15no": 0.55
+              },
+              "14no": {
+                "15yes": 0,
+                "15no": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "id": 14,
+        "orderId": 14,
+        "title": "SD IED Comms",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 437,
+        "y": 478,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "9yes": {
+            "14yes": 0.41,
+            "14no": 0.59
+          },
+          "9no": {
+            "14yes": 0,
+            "14no": 1
+          }
+        }
+      },
+      "target": {
+        "id": 15,
+        "orderId": 15,
+        "title": "Compromise Turbine",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 638,
+        "y": 140.1484375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "12yes": {
+            "13yes": {
+              "14yes": {
+                "15yes": 0.85,
+                "15no": 0.15
+              },
+              "14no": {
+                "15yes": 0.75,
+                "15no": 0.25
+              }
+            },
+            "13no": {
+              "14yes": {
+                "15yes": 0.5,
+                "15no": 0.5
+              },
+              "14no": {
+                "15yes": 0.25,
+                "15no": 0.75
+              }
+            }
+          },
+          "12no": {
+            "13yes": {
+              "14yes": {
+                "15yes": 0.65,
+                "15no": 0.35
+              },
+              "14no": {
+                "15yes": 0.35,
+                "15no": 0.65
+              }
+            },
+            "13no": {
+              "14yes": {
+                "15yes": 0.45,
+                "15no": 0.55
+              },
+              "14no": {
+                "15yes": 0,
+                "15no": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

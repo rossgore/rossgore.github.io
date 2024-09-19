@@ -1,0 +1,1096 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "title": "1-Phishing",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [
+        "T1660"
+      ],
+      "x": 120,
+      "y": 100,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "1yes": 0.77,
+        "1no": 0.23
+      },
+      "sampled": false
+    },
+    {
+      "id": 2,
+      "orderId": 2,
+      "title": "2-User Execution",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [
+        "T1204.002"
+      ],
+      "x": 240,
+      "y": 100,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "1yes": {
+          "2yes": 0.65,
+          "2no": 0.35
+        },
+        "1no": {
+          "2yes": 0,
+          "2no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 3,
+      "orderId": 3,
+      "title": "3-Exploitation for Privilege Escalation",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [
+        "T1068"
+      ],
+      "x": 360,
+      "y": 100,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "2yes": {
+          "8yes": {
+            "3yes": 0.1,
+            "3no": 0.9
+          },
+          "8no": {
+            "3yes": 0.72,
+            "3no": 0.28
+          }
+        },
+        "2no": {
+          "8yes": {
+            "3yes": 0,
+            "3no": 1
+          },
+          "8no": {
+            "3yes": 0,
+            "3no": 1
+          }
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 4,
+      "orderId": 4,
+      "title": "4-Hide Artifacts",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [
+        "T1564.003"
+      ],
+      "x": 480,
+      "y": 100,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "3yes": {
+          "8yes": {
+            "4yes": 0.1,
+            "4no": 0.9
+          },
+          "8no": {
+            "4yes": 0.72,
+            "4no": 0.28
+          }
+        },
+        "3no": {
+          "8yes": {
+            "4yes": 0,
+            "4no": 1
+          },
+          "8no": {
+            "4yes": 0,
+            "4no": 1
+          }
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 5,
+      "orderId": 5,
+      "title": "5-Exploitation for Client Execution",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [
+        "T1203"
+      ],
+      "x": 600,
+      "y": 100,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "4yes": {
+          "8yes": {
+            "5yes": 0.1,
+            "5no": 0.9
+          },
+          "8no": {
+            "5yes": 0.85,
+            "5no": 0.15
+          }
+        },
+        "4no": {
+          "8yes": {
+            "5yes": 0,
+            "5no": 1
+          },
+          "8no": {
+            "5yes": 0,
+            "5no": 1
+          }
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 6,
+      "orderId": 6,
+      "title": "6-Exploitation for Privilege Escalation",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [
+        "T1068"
+      ],
+      "x": 720,
+      "y": 100,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "5yes": {
+          "8yes": {
+            "6yes": 0.1,
+            "6no": 0.9
+          },
+          "8no": {
+            "6yes": 0.85,
+            "6no": 0.15
+          }
+        },
+        "5no": {
+          "8yes": {
+            "6yes": 0,
+            "6no": 1
+          },
+          "8no": {
+            "6yes": 0,
+            "6no": 1
+          }
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 7,
+      "orderId": 7,
+      "title": "7-Valid Accounts",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [
+        "T1078.001"
+      ],
+      "x": 847.357177734375,
+      "y": 101.64935302734375,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "6yes": {
+          "8yes": {
+            "7yes": 0.1,
+            "7no": 0.9
+          },
+          "8no": {
+            "7yes": 0.65,
+            "7no": 0.35
+          }
+        },
+        "6no": {
+          "8yes": {
+            "7yes": 0,
+            "7no": 1
+          },
+          "8no": {
+            "7yes": 0,
+            "7no": 1
+          }
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 8,
+      "orderId": 8,
+      "title": "Detection Via CM2020 - Application Specific Monitoring",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 239.7285614013672,
+      "y": 401.9178771972656,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "2yes": {
+          "8yes": 0.9,
+          "8no": 0.1
+        },
+        "2no": {
+          "8yes": 0,
+          "8no": 1
+        }
+      },
+      "sampled": false
+    }
+  ],
+  "edges": [
+    {
+      "source": {
+        "id": 1,
+        "orderId": 1,
+        "title": "1-Phishing",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1660"
+        ],
+        "x": 120,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": 0.77,
+          "1no": 0.23
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 2,
+        "orderId": 2,
+        "title": "2-User Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1204.002"
+        ],
+        "x": 240,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": {
+            "2yes": 0.65,
+            "2no": 0.35
+          },
+          "1no": {
+            "2yes": 0,
+            "2no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 2,
+        "orderId": 2,
+        "title": "2-User Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1204.002"
+        ],
+        "x": 240,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": {
+            "2yes": 0.65,
+            "2no": 0.35
+          },
+          "1no": {
+            "2yes": 0,
+            "2no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 3,
+        "orderId": 3,
+        "title": "3-Exploitation for Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1068"
+        ],
+        "x": 360,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "8yes": {
+              "3yes": 0.1,
+              "3no": 0.9
+            },
+            "8no": {
+              "3yes": 0.72,
+              "3no": 0.28
+            }
+          },
+          "2no": {
+            "8yes": {
+              "3yes": 0,
+              "3no": 1
+            },
+            "8no": {
+              "3yes": 0,
+              "3no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 3,
+        "orderId": 3,
+        "title": "3-Exploitation for Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1068"
+        ],
+        "x": 360,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "8yes": {
+              "3yes": 0.1,
+              "3no": 0.9
+            },
+            "8no": {
+              "3yes": 0.72,
+              "3no": 0.28
+            }
+          },
+          "2no": {
+            "8yes": {
+              "3yes": 0,
+              "3no": 1
+            },
+            "8no": {
+              "3yes": 0,
+              "3no": 1
+            }
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 4,
+        "orderId": 4,
+        "title": "4-Hide Artifacts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1564.003"
+        ],
+        "x": 480,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "3yes": {
+            "8yes": {
+              "4yes": 0.1,
+              "4no": 0.9
+            },
+            "8no": {
+              "4yes": 0.72,
+              "4no": 0.28
+            }
+          },
+          "3no": {
+            "8yes": {
+              "4yes": 0,
+              "4no": 1
+            },
+            "8no": {
+              "4yes": 0,
+              "4no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 4,
+        "orderId": 4,
+        "title": "4-Hide Artifacts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1564.003"
+        ],
+        "x": 480,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "3yes": {
+            "8yes": {
+              "4yes": 0.1,
+              "4no": 0.9
+            },
+            "8no": {
+              "4yes": 0.72,
+              "4no": 0.28
+            }
+          },
+          "3no": {
+            "8yes": {
+              "4yes": 0,
+              "4no": 1
+            },
+            "8no": {
+              "4yes": 0,
+              "4no": 1
+            }
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 5,
+        "orderId": 5,
+        "title": "5-Exploitation for Client Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1203"
+        ],
+        "x": 600,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "4yes": {
+            "8yes": {
+              "5yes": 0.1,
+              "5no": 0.9
+            },
+            "8no": {
+              "5yes": 0.85,
+              "5no": 0.15
+            }
+          },
+          "4no": {
+            "8yes": {
+              "5yes": 0,
+              "5no": 1
+            },
+            "8no": {
+              "5yes": 0,
+              "5no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 5,
+        "orderId": 5,
+        "title": "5-Exploitation for Client Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1203"
+        ],
+        "x": 600,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "4yes": {
+            "8yes": {
+              "5yes": 0.1,
+              "5no": 0.9
+            },
+            "8no": {
+              "5yes": 0.85,
+              "5no": 0.15
+            }
+          },
+          "4no": {
+            "8yes": {
+              "5yes": 0,
+              "5no": 1
+            },
+            "8no": {
+              "5yes": 0,
+              "5no": 1
+            }
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 6,
+        "orderId": 6,
+        "title": "6-Exploitation for Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1068"
+        ],
+        "x": 720,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "5yes": {
+            "8yes": {
+              "6yes": 0.1,
+              "6no": 0.9
+            },
+            "8no": {
+              "6yes": 0.85,
+              "6no": 0.15
+            }
+          },
+          "5no": {
+            "8yes": {
+              "6yes": 0,
+              "6no": 1
+            },
+            "8no": {
+              "6yes": 0,
+              "6no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 6,
+        "orderId": 6,
+        "title": "6-Exploitation for Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1068"
+        ],
+        "x": 720,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "5yes": {
+            "8yes": {
+              "6yes": 0.1,
+              "6no": 0.9
+            },
+            "8no": {
+              "6yes": 0.85,
+              "6no": 0.15
+            }
+          },
+          "5no": {
+            "8yes": {
+              "6yes": 0,
+              "6no": 1
+            },
+            "8no": {
+              "6yes": 0,
+              "6no": 1
+            }
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 7,
+        "orderId": 7,
+        "title": "7-Valid Accounts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1078.001"
+        ],
+        "x": 847.357177734375,
+        "y": 101.64935302734375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "8yes": {
+              "7yes": 0.1,
+              "7no": 0.9
+            },
+            "8no": {
+              "7yes": 0.65,
+              "7no": 0.35
+            }
+          },
+          "6no": {
+            "8yes": {
+              "7yes": 0,
+              "7no": 1
+            },
+            "8no": {
+              "7yes": 0,
+              "7no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 2,
+        "orderId": 2,
+        "title": "2-User Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1204.002"
+        ],
+        "x": 240,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": {
+            "2yes": 0.65,
+            "2no": 0.35
+          },
+          "1no": {
+            "2yes": 0,
+            "2no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 8,
+        "orderId": 8,
+        "title": "Detection Via CM2020 - Application Specific Monitoring",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 239.7285614013672,
+        "y": 401.9178771972656,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "8yes": 0.9,
+            "8no": 0.1
+          },
+          "2no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 8,
+        "orderId": 8,
+        "title": "Detection Via CM2020 - Application Specific Monitoring",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 239.7285614013672,
+        "y": 401.9178771972656,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "8yes": 0.9,
+            "8no": 0.1
+          },
+          "2no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 3,
+        "orderId": 3,
+        "title": "3-Exploitation for Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1068"
+        ],
+        "x": 360,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "8yes": {
+              "3yes": 0.1,
+              "3no": 0.9
+            },
+            "8no": {
+              "3yes": 0.72,
+              "3no": 0.28
+            }
+          },
+          "2no": {
+            "8yes": {
+              "3yes": 0,
+              "3no": 1
+            },
+            "8no": {
+              "3yes": 0,
+              "3no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 8,
+        "orderId": 8,
+        "title": "Detection Via CM2020 - Application Specific Monitoring",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 239.7285614013672,
+        "y": 401.9178771972656,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "8yes": 0.9,
+            "8no": 0.1
+          },
+          "2no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 4,
+        "orderId": 4,
+        "title": "4-Hide Artifacts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1564.003"
+        ],
+        "x": 480,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "3yes": {
+            "8yes": {
+              "4yes": 0.1,
+              "4no": 0.9
+            },
+            "8no": {
+              "4yes": 0.72,
+              "4no": 0.28
+            }
+          },
+          "3no": {
+            "8yes": {
+              "4yes": 0,
+              "4no": 1
+            },
+            "8no": {
+              "4yes": 0,
+              "4no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 8,
+        "orderId": 8,
+        "title": "Detection Via CM2020 - Application Specific Monitoring",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 239.7285614013672,
+        "y": 401.9178771972656,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "8yes": 0.9,
+            "8no": 0.1
+          },
+          "2no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 5,
+        "orderId": 5,
+        "title": "5-Exploitation for Client Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1203"
+        ],
+        "x": 600,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "4yes": {
+            "8yes": {
+              "5yes": 0.1,
+              "5no": 0.9
+            },
+            "8no": {
+              "5yes": 0.85,
+              "5no": 0.15
+            }
+          },
+          "4no": {
+            "8yes": {
+              "5yes": 0,
+              "5no": 1
+            },
+            "8no": {
+              "5yes": 0,
+              "5no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 8,
+        "orderId": 8,
+        "title": "Detection Via CM2020 - Application Specific Monitoring",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 239.7285614013672,
+        "y": 401.9178771972656,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "8yes": 0.9,
+            "8no": 0.1
+          },
+          "2no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 6,
+        "orderId": 6,
+        "title": "6-Exploitation for Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1068"
+        ],
+        "x": 720,
+        "y": 100,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "5yes": {
+            "8yes": {
+              "6yes": 0.1,
+              "6no": 0.9
+            },
+            "8no": {
+              "6yes": 0.85,
+              "6no": 0.15
+            }
+          },
+          "5no": {
+            "8yes": {
+              "6yes": 0,
+              "6no": 1
+            },
+            "8no": {
+              "6yes": 0,
+              "6no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 8,
+        "orderId": 8,
+        "title": "Detection Via CM2020 - Application Specific Monitoring",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 239.7285614013672,
+        "y": 401.9178771972656,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "8yes": 0.9,
+            "8no": 0.1
+          },
+          "2no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 7,
+        "orderId": 7,
+        "title": "7-Valid Accounts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1078.001"
+        ],
+        "x": 847.357177734375,
+        "y": 101.64935302734375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "8yes": {
+              "7yes": 0.1,
+              "7no": 0.9
+            },
+            "8no": {
+              "7yes": 0.65,
+              "7no": 0.35
+            }
+          },
+          "6no": {
+            "8yes": {
+              "7yes": 0,
+              "7no": 1
+            },
+            "8no": {
+              "7yes": 0,
+              "7no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    }
+  ]
+}

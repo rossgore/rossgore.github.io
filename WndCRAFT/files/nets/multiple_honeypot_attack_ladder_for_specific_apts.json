@@ -1,0 +1,1143 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "title": "1-Phishing",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 104,
+      "y": 194.1484375,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "1yes": 0.7,
+        "1no": 0.3
+      },
+      "sampled": false
+    },
+    {
+      "id": 2,
+      "orderId": 2,
+      "title": "2-User Execution",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 196,
+      "y": 196.1484375,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "1yes": {
+          "2yes": 0.7,
+          "2no": 0.3
+        },
+        "1no": {
+          "2yes": 0,
+          "2no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 3,
+      "orderId": 3,
+      "title": "2a - China APT Diversion Exploitation For Privilege Escalation",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [
+        "T1134"
+      ],
+      "x": 201.7784881591797,
+      "y": 332.0250244140625,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "2yes": {
+          "3yes": 0,
+          "3no": 1
+        },
+        "2no": {
+          "3yes": 0,
+          "3no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 4,
+      "orderId": 4,
+      "title": "2b - China APT Diversion Hide Artifacts",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 198.70252990722656,
+      "y": 493.48712158203125,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "3yes": {
+          "4yes": 0.9,
+          "4no": 0.1
+        },
+        "3no": {
+          "4yes": 0,
+          "4no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 5,
+      "orderId": 5,
+      "title": "2c - China APT Diversion Exploitation For Client Execution",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 195.31329345703125,
+      "y": 639.2244873046875,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "4yes": {
+          "5yes": 0.9,
+          "5no": 0.1
+        },
+        "4no": {
+          "5yes": 0,
+          "5no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 6,
+      "orderId": 6,
+      "title": "2d - China APT Diversion Exploitation For Privilege Escalation",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 203.2215118408203,
+      "y": 786.0916748046875,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "5yes": {
+          "6yes": 0.9,
+          "6no": 0.1
+        },
+        "5no": {
+          "6yes": 0,
+          "6no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 7,
+      "orderId": 7,
+      "title": "3-Exploitation For Privilege Escalation",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 325.2342224121094,
+      "y": 194.10411071777344,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "2yes": {
+          "7yes": 0.77,
+          "7no": 0.23
+        },
+        "2no": {
+          "7yes": 0,
+          "7no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 8,
+      "orderId": 8,
+      "title": "4-Hide Artifacts",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 448.97674560546875,
+      "y": 190.7694091796875,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "7yes": {
+          "8yes": 0.73,
+          "8no": 0.27
+        },
+        "7no": {
+          "8yes": 0,
+          "8no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 9,
+      "orderId": 9,
+      "title": "4a - North Korea APT Diversion Exploitation For Client Execution",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [
+        "T1548.002"
+      ],
+      "x": 446.5821533203125,
+      "y": 335.6839904785156,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "8yes": {
+          "9yes": 0,
+          "9no": 1
+        },
+        "8no": {
+          "9yes": 0,
+          "9no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 10,
+      "orderId": 10,
+      "title": "5-Exploitation For Client Execution",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 572.4701538085938,
+      "y": 186.27249145507812,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "8yes": {
+          "10yes": 0.8,
+          "10no": 0.2
+        },
+        "8no": {
+          "10yes": 0,
+          "10no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 11,
+      "orderId": 11,
+      "title": "6-Exploitation For Privilege Escalation",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 709.5371704101562,
+      "y": 185.14898681640625,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "10yes": {
+          "11yes": 0.77,
+          "11no": 0.23
+        },
+        "10no": {
+          "11yes": 0,
+          "11no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 12,
+      "orderId": 12,
+      "title": "Accounts Honeypot",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 297.2126770019531,
+      "y": 972.7223815917969,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "6yes": {
+          "9yes": {
+            "12yes": 1,
+            "12no": 0
+          },
+          "9no": {
+            "12yes": 1,
+            "12no": 0
+          }
+        },
+        "6no": {
+          "9yes": {
+            "12yes": 1,
+            "12no": 0
+          },
+          "9no": {
+            "12yes": 0,
+            "12no": 1
+          }
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 13,
+      "orderId": 13,
+      "title": "7-Valid Accounts",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 880.30908203125,
+      "y": 185.14898681640625,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "11yes": {
+          "12yes": {
+            "13yes": 0,
+            "13no": 1
+          },
+          "12no": {
+            "13yes": 0.5,
+            "13no": 0.5
+          }
+        },
+        "11no": {
+          "12yes": {
+            "13yes": 0,
+            "13no": 1
+          },
+          "12no": {
+            "13yes": 0,
+            "13no": 1
+          }
+        }
+      },
+      "sampled": false
+    }
+  ],
+  "edges": [
+    {
+      "source": {
+        "id": 1,
+        "orderId": 1,
+        "title": "1-Phishing",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 104,
+        "y": 194.1484375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": 0.7,
+          "1no": 0.3
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 2,
+        "orderId": 2,
+        "title": "2-User Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 196,
+        "y": 196.1484375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": {
+            "2yes": 0.7,
+            "2no": 0.3
+          },
+          "1no": {
+            "2yes": 0,
+            "2no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 2,
+        "orderId": 2,
+        "title": "2-User Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 196,
+        "y": 196.1484375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": {
+            "2yes": 0.7,
+            "2no": 0.3
+          },
+          "1no": {
+            "2yes": 0,
+            "2no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 7,
+        "orderId": 7,
+        "title": "3-Exploitation For Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 325.2342224121094,
+        "y": 194.10411071777344,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "7yes": 0.77,
+            "7no": 0.23
+          },
+          "2no": {
+            "7yes": 0,
+            "7no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 7,
+        "orderId": 7,
+        "title": "3-Exploitation For Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 325.2342224121094,
+        "y": 194.10411071777344,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "7yes": 0.77,
+            "7no": 0.23
+          },
+          "2no": {
+            "7yes": 0,
+            "7no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 8,
+        "orderId": 8,
+        "title": "4-Hide Artifacts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 448.97674560546875,
+        "y": 190.7694091796875,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "7yes": {
+            "8yes": 0.73,
+            "8no": 0.27
+          },
+          "7no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 8,
+        "orderId": 8,
+        "title": "4-Hide Artifacts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 448.97674560546875,
+        "y": 190.7694091796875,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "7yes": {
+            "8yes": 0.73,
+            "8no": 0.27
+          },
+          "7no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 10,
+        "orderId": 10,
+        "title": "5-Exploitation For Client Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 572.4701538085938,
+        "y": 186.27249145507812,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "8yes": {
+            "10yes": 0.8,
+            "10no": 0.2
+          },
+          "8no": {
+            "10yes": 0,
+            "10no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 10,
+        "orderId": 10,
+        "title": "5-Exploitation For Client Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 572.4701538085938,
+        "y": 186.27249145507812,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "8yes": {
+            "10yes": 0.8,
+            "10no": 0.2
+          },
+          "8no": {
+            "10yes": 0,
+            "10no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 11,
+        "orderId": 11,
+        "title": "6-Exploitation For Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 709.5371704101562,
+        "y": 185.14898681640625,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "10yes": {
+            "11yes": 0.77,
+            "11no": 0.23
+          },
+          "10no": {
+            "11yes": 0,
+            "11no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 11,
+        "orderId": 11,
+        "title": "6-Exploitation For Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 709.5371704101562,
+        "y": 185.14898681640625,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "10yes": {
+            "11yes": 0.77,
+            "11no": 0.23
+          },
+          "10no": {
+            "11yes": 0,
+            "11no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 13,
+        "orderId": 13,
+        "title": "7-Valid Accounts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 880.30908203125,
+        "y": 185.14898681640625,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "11yes": {
+            "12yes": {
+              "13yes": 0,
+              "13no": 1
+            },
+            "12no": {
+              "13yes": 0.5,
+              "13no": 0.5
+            }
+          },
+          "11no": {
+            "12yes": {
+              "13yes": 0,
+              "13no": 1
+            },
+            "12no": {
+              "13yes": 0,
+              "13no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 2,
+        "orderId": 2,
+        "title": "2-User Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 196,
+        "y": 196.1484375,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "1yes": {
+            "2yes": 0.7,
+            "2no": 0.3
+          },
+          "1no": {
+            "2yes": 0,
+            "2no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 3,
+        "orderId": 3,
+        "title": "2a - China APT Diversion Exploitation For Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1134"
+        ],
+        "x": 201.7784881591797,
+        "y": 332.0250244140625,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "3yes": 0,
+            "3no": 1
+          },
+          "2no": {
+            "3yes": 0,
+            "3no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 3,
+        "orderId": 3,
+        "title": "2a - China APT Diversion Exploitation For Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1134"
+        ],
+        "x": 201.7784881591797,
+        "y": 332.0250244140625,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "3yes": 0,
+            "3no": 1
+          },
+          "2no": {
+            "3yes": 0,
+            "3no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 4,
+        "orderId": 4,
+        "title": "2b - China APT Diversion Hide Artifacts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 198.70252990722656,
+        "y": 493.48712158203125,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "3yes": {
+            "4yes": 0.9,
+            "4no": 0.1
+          },
+          "3no": {
+            "4yes": 0,
+            "4no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 4,
+        "orderId": 4,
+        "title": "2b - China APT Diversion Hide Artifacts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 198.70252990722656,
+        "y": 493.48712158203125,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "3yes": {
+            "4yes": 0.9,
+            "4no": 0.1
+          },
+          "3no": {
+            "4yes": 0,
+            "4no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 5,
+        "orderId": 5,
+        "title": "2c - China APT Diversion Exploitation For Client Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 195.31329345703125,
+        "y": 639.2244873046875,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "4yes": {
+            "5yes": 0.9,
+            "5no": 0.1
+          },
+          "4no": {
+            "5yes": 0,
+            "5no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 5,
+        "orderId": 5,
+        "title": "2c - China APT Diversion Exploitation For Client Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 195.31329345703125,
+        "y": 639.2244873046875,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "4yes": {
+            "5yes": 0.9,
+            "5no": 0.1
+          },
+          "4no": {
+            "5yes": 0,
+            "5no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 6,
+        "orderId": 6,
+        "title": "2d - China APT Diversion Exploitation For Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 203.2215118408203,
+        "y": 786.0916748046875,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "5yes": {
+            "6yes": 0.9,
+            "6no": 0.1
+          },
+          "5no": {
+            "6yes": 0,
+            "6no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 8,
+        "orderId": 8,
+        "title": "4-Hide Artifacts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 448.97674560546875,
+        "y": 190.7694091796875,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "7yes": {
+            "8yes": 0.73,
+            "8no": 0.27
+          },
+          "7no": {
+            "8yes": 0,
+            "8no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 9,
+        "orderId": 9,
+        "title": "4a - North Korea APT Diversion Exploitation For Client Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1548.002"
+        ],
+        "x": 446.5821533203125,
+        "y": 335.6839904785156,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "8yes": {
+            "9yes": 0,
+            "9no": 1
+          },
+          "8no": {
+            "9yes": 0,
+            "9no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 9,
+        "orderId": 9,
+        "title": "4a - North Korea APT Diversion Exploitation For Client Execution",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [
+          "T1548.002"
+        ],
+        "x": 446.5821533203125,
+        "y": 335.6839904785156,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "8yes": {
+            "9yes": 0,
+            "9no": 1
+          },
+          "8no": {
+            "9yes": 0,
+            "9no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 12,
+        "orderId": 12,
+        "title": "Accounts Honeypot",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 297.2126770019531,
+        "y": 972.7223815917969,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "9yes": {
+              "12yes": 1,
+              "12no": 0
+            },
+            "9no": {
+              "12yes": 1,
+              "12no": 0
+            }
+          },
+          "6no": {
+            "9yes": {
+              "12yes": 1,
+              "12no": 0
+            },
+            "9no": {
+              "12yes": 0,
+              "12no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 6,
+        "orderId": 6,
+        "title": "2d - China APT Diversion Exploitation For Privilege Escalation",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 203.2215118408203,
+        "y": 786.0916748046875,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "5yes": {
+            "6yes": 0.9,
+            "6no": 0.1
+          },
+          "5no": {
+            "6yes": 0,
+            "6no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 12,
+        "orderId": 12,
+        "title": "Accounts Honeypot",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 297.2126770019531,
+        "y": 972.7223815917969,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "9yes": {
+              "12yes": 1,
+              "12no": 0
+            },
+            "9no": {
+              "12yes": 1,
+              "12no": 0
+            }
+          },
+          "6no": {
+            "9yes": {
+              "12yes": 1,
+              "12no": 0
+            },
+            "9no": {
+              "12yes": 0,
+              "12no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 12,
+        "orderId": 12,
+        "title": "Accounts Honeypot",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 297.2126770019531,
+        "y": 972.7223815917969,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "9yes": {
+              "12yes": 1,
+              "12no": 0
+            },
+            "9no": {
+              "12yes": 1,
+              "12no": 0
+            }
+          },
+          "6no": {
+            "9yes": {
+              "12yes": 1,
+              "12no": 0
+            },
+            "9no": {
+              "12yes": 0,
+              "12no": 1
+            }
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 13,
+        "orderId": 13,
+        "title": "7-Valid Accounts",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 880.30908203125,
+        "y": 185.14898681640625,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "11yes": {
+            "12yes": {
+              "13yes": 0,
+              "13no": 1
+            },
+            "12no": {
+              "13yes": 0.5,
+              "13no": 0.5
+            }
+          },
+          "11no": {
+            "12yes": {
+              "13yes": 0,
+              "13no": 1
+            },
+            "12no": {
+              "13yes": 0,
+              "13no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    }
+  ]
+}
