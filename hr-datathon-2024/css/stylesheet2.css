@@ -1,6 +1,8 @@
 body {
 	/*background-color: #F9F9F9;*/
-	background-color: white;
+	/*background-color: white;*/
+	background: linear-gradient(135deg, #B0E0E6 25%, #87CEEB 25%, #87CEEB 50%, #B0E0E6 50%, #B0E0E6 75%, #87CEEB 75%, #87CEEB 100%);
+	background-size: 25px 25px; /* Adjust for pattern scale */
 }
 
 .navbar-main {
@@ -11,10 +13,11 @@ body {
 .navbar-title {
 	/*change to color of the left menu text?*/
 	/*color: #0489B1 !important;*/
-	color: #F1F4F5 !important;
+	/*color: #F1F4F5 !important;*/ /*soft grayist-white*/
+	color: #E0F7F9 !important; /*white with teal undertone*/
 	font-size: 24px;
 	padding-left: 28px;
-	font-weight: 500;
+	font-weight: 750;
 	/*margin-top: 20px;*/
 }
 
@@ -146,7 +149,7 @@ hr {
 }
 
 .btn-bayes-grp:focus {
-	background-color: #63CEED;	
+	background-color: #63CEED;
 	color:gray;
 }
 
@@ -265,21 +268,23 @@ g.node circle{
 	/*fill: #01A9DB;*/
 	fill: #f8f8f8;
 	stroke:#0489B1;
-	stroke-width:1px;
+	stroke-width:3px;
 }
 
 g.node:hover circle {
 	fill: #C5DEE4;
+	stroke-width: 5px;
 }
 
 g.node.selected circle{
 	/*fill:#D265A5 !important; */
 	stroke:#CC0B7C;
-	stroke-width:2px !important;
+	stroke-width:5px !important;
 }
 
 g.node.selected:hover circle {
 	fill: #EFC9DF !important;
+	stroke-width: 5px;
 }
 
 g.node circle.link-node{
@@ -299,6 +304,7 @@ g.node.selected circle.link-node{
 
 g.node.selected:hover circle.link-node{
 	fill:#CC0B7C !important;
+	stroke-width: 5px;
 }
 
 path.conn{
@@ -310,7 +316,7 @@ path.conn{
 
 path.conn:hover {
 	/*stroke: #C5DEE4;*/
-	stroke-width:6px;
+	stroke-width:8px;
 }
 
 path.conn.hidden{
@@ -339,11 +345,12 @@ path.conn.orientated {
 
 /*Text */
 .node-title {
-	font-size:16px;
+	font-size:20px;
 	font-family: sans-serif;
 	/*fill : rgb(76, 69, 69);*/
-	fill:black;
-	font-weight:300;	
+	fill: #008080; /*bold teal*/
+	font-weight:300;
+	line-height: 1.5;	
 }
 
 .node-label {
@@ -433,6 +440,7 @@ path.conn.orientated {
 /*Dataset on toggle*/
 .navbar-text {
 	margin-left: 15px;
+	color: #008080; /*bold teal*/
 }
 
 /* CSV dialog box*/
