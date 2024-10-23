@@ -1,0 +1,178 @@
+body {
+    background-color: white;
+}
+
+.navbar-main {
+    background-color: #008080; /* Teal */
+    margin-bottom: 0 !important;
+}
+
+.navbar-title {
+    color: #F1F4F5 !important;
+    font-size: 24px;
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+.container-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nav-sidebar > li > a.selected {
+    background-color: #00A86B; /* Sea Green */
+    color: #F9F9F9;
+}
+
+.navbar-nav > li > a {
+    color: #F1F4F5 !important;
+    text-decoration: none !important;
+}
+
+.dropdown-menu {
+    min-width: 200px;
+}
+
+li > a.control {
+    color: #008080 !important; /* Teal */
+    text-decoration: none !important;
+    white-space: inherit !important;
+}
+
+li > a.control:hover, li > a.control:focus {
+    background-color: #e7e7e7 !important;
+}
+
+.btn-bayes {
+    color: white;
+    background-color: #00A86B; /* Sea Green */
+    width: 120px;
+}
+
+.btn-bayes:hover, .btn-bayes:focus {
+    background-color: #20B2AA; /* Light Sea Green */
+    color: gray;
+}
+
+.btn-bayes-short {
+    color: white;
+    background-color: #00A86B; /* Sea Green */
+    width: 70px;
+}
+
+.btn-bayes-grp {
+    color: white;
+    background-color: #00A86B; /* Sea Green */
+    width: 100px;
+}
+
+.btn-bayes-grp2 {
+    color: white;
+    background-color: #00A86B; /* Sea Green */
+    width: 200px;
+}
+
+.btn-bayes[disabled] {
+    background-color: #777 !important;
+}
+
+.small-btn {
+    background-color: #999;
+    width: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+.table-bayes {
+    border-radius: 2px;
+}
+
+.cpt-table {
+    border: 1px solid #DDDDDD;
+}
+
+g.node circle {
+    fill: #f8f8f8;
+    stroke: #008080; /* Teal */
+    stroke-width: 1px;
+}
+
+g.node:hover circle {
+    fill: #E0F0F0; /* Light Teal */
+}
+
+g.node.selected circle {
+    stroke: #006400; /* Dark Green */
+    stroke-width: 2px !important;
+}
+
+g.node.selected:hover circle {
+    fill: #C1FFC1 !important; /* Light Green */
+}
+
+g.node circle.link-node {
+    fill: #008080; /* Teal */
+    stroke: #008080; /* Teal */
+}
+
+g.node.selected circle.link-node {
+    fill: #006400; /* Dark Green */
+    stroke: #006400; /* Dark Green */
+}
+
+path.conn {
+    stroke: #00A86B; /* Sea Green */
+    stroke-width: 5px;
+}
+
+path.conn.selected {
+    stroke: #006400 !important; /* Dark Green */
+}
+
+path.conn.selected:hover {
+    stroke: #008000 !important; /* Green */
+}
+
+path.arrow {
+    fill: #00A86B; /* Sea Green */
+}
+
+.node-label {
+    color: #008080; /* Teal */
+}
+
+.node-label:hover {
+    color: #00A86B !important; /* Sea Green */
+}
+
+.node-input {
+    color: #008080; /* Teal */
+}
+
+.instructions-text-title {
+    color: #006400; /* Dark Green */
+}
+
+.instructions-text-control {
+    color: #008080; /* Teal */
+}
+
+.zoom-text {
+    color: #008080; /* Teal */
+}
+
+.footer-text {
+    color: #008080; /* Teal */
+}
+
+.notice-text {
+    color: #006400 !important; /* Dark Green */
+}
+
+.csv-settings-text {
+    color: #008080; /* Teal */
+}
+
+input.csv-header {
+    color: #008080; /* Teal */
+}

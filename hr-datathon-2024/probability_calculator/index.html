@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>CVSS 3.1 Rung Probability Calculator</title>
+<link rel="icon"
+      type="image/png"
+      href="favicon.png">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Easy to use graphical Vulnerability Exploit Success Rate Calculator with tooltips"/>
+   <meta name="keywords" content="Vulnerability Exploit Probability Calculator,ATTACK VECTOR,Network,Adjacent,Local,Physical,ATTACK COMPLEXITY,Low,High,PRIVILEGES REQUIRE,None,Low,High,USER INTERACTION,None,Required,SCOPE,Changed,Unchanged,CONFIDENTIALITY,High,Low,None,INTEGRITY,High,Low,None,AVAILABILITY,High,Low,None,RISK LEVEL,PROBABILITY,VECTOR"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="cvss-calculator-screenshot.png" />
+    <meta name="og:title" property="og:title" content="Vulnerability Exploit Success Rate Calculator"/>
+    <meta name="twitter:title" content="Attack Ladder Node Success Rate Calculator"/>
+    <meta name="og:description" property="og:description" content="Easy to use graphical Attack Ladder Node Success Rate Calculator with tooltips">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="cvss.css">
+    <script src="cvssmod.js"></script>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: arial;
+            padding: 1em;
+            text-align: center;
+            align-content: center;
+        }
+        #footer {
+            font-size: small;
+        }
+        #cvssboard {
+            text-align: center;
+            align-content: center;
+        }
+        #footer, H3 {
+            color: gray;
+        }
+@media screen and (min-width: 720px) {
+        #cvssboard {
+            width: 640px;
+            align-content: center;
+            display: inline-block;
+        }
+}
+    </style>
+	<script src='https://cdn.plot.ly/plotly-2.20.0.min.js'></script>
+</head>
+
+<body>
+    <hgroup>
+    <h3>CVSS 3.1 Rung Probability Calculator</h3></hgroup>
+	<hr>
+	<h4>Enter CVSS 3.1 vector for the rung here:</h4>
+	<h4>Looking up a CVSS 3.1 vector for a CVE may be useful in choosing probabilities. CVSS 3.1 vectors for CVEs can be found at <a href="https://www.cvedetails.com/" target="_blank">CVEDetails.com</a> </h4>
+	<form><input type="text" id="uservector" name="uservector" size="50"></form>
+	<button type="button" id="calc">Calculate From CVSS Vector</button>
+	<hr>
+	<h4>Alternatively you can describe the attributes of the rung using the system below:</h4>
+    <div id="cvssboard">
+    </div>
+	<div id='myDiv'></div>
+	<br>
+    <footer id="footer">
+<br/>The calculator is based on the Common Vulnerability Scoring System Version 3.1 (CVSS 3.1). CVSS is a free and open standard. It is owned and managed by <a href="http://www.first.org/cvss">FIRST.Org</a>.</footer>
+    <script>
+        var c = new CVSS("cvssboard", {
+            onchange: function() {
+                window.location.hash = c.get().vector;
+                c.vector.setAttribute('href', '#' + c.get().vector)
+            }
+        });
+
+		var btn = document.getElementById("calc");
+		var vector = document.querySelector("[name='uservector']");
+		// Set up your event handler(s) in JavaScript, not with HTML attributes
+		btn.addEventListener("click", function(){
+		   window.location.hash = vector.value;
+		   c.vector.setAttribute('href', '#' + vector.value);
+		   window.location.reload();
+	    });
+        if (window.location.hash.substring(1).length > 0) {
+            c.set(decodeURIComponent(window.location.hash.substring(1)));
+        }
+    </script>
+
+</body>
+
+</html>

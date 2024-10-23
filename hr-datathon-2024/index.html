@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<title>2024 Hampton Roads Datathon</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-tour.min.css">
+		<link rel="stylesheet" href="lib/d3-context-menu-master/css/d3-context-menu.css">
+        <link rel="stylesheet" type="text/css" href="lib/ParallaxContentSlider/css/style2.css" />
+		<!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+		<link rel="stylesheet" href="css/datathon_2024.css">
+		<link rel="stylesheet" href="css/my-slider.css">
+		<script type="text/javascript" src="lib/ParallaxContentSlider/js/modernizr.custom.28468.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-main" role="navigation">
+			<div class="container-fluid container-header">
+				<div class="navbar-header">
+					<!-- TODO add toggle button ??-->
+					<a class="navbar-title navbar-brand tour-step tour-step-one" href="#">2024 Hampton Roads Datathon: Measuring Hurricane Evacuation Route Resilience</a>
+				</div>
+			</div>
+		</nav>
+		<nav class="navbar navbar-default navbar-controls" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<!-- TODO toggles -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            		<span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+        		    <span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+          			</button>
+				</div>
+				<div class="navbar-collapse collapse"> <!-- id=menu? -->
+					<ul class="nav navbar-nav tour-step tour-step-two">
+						<!-- Load/Save -->
+						<li class="dropdown tour-step tour-step-nineteen-one">
+							<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Load/Save<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><input type="file" id="hidden-upload-2" class="hidden-upload"> </li>
+	<!--
+								<li><a href='#' id='loadData' class="control">Use Toy Dataset
+            						<span class="glyphicon glyphicon-list pull-right" aria-hidden="true"></span>
+								</a></li>
+            					<li><a href='#' id='loadNet' class="control">Use Toy Network
+            						<span class="glyphicon glyphicon-gift pull-right" aria-hidden="true"></span>
+            					</a></li>
+								<li role="separator" class="divider"></li>
+								<li><input type="file" id="hidden-upload-3" class="hidden-upload"> </li>
+            					<li><a href='#' id='uploadBif' class="control">Import BIF
+            						<span class="glyphicon glyphicon-upload pull-right" aria-hidden="true"></span>
+            					</a></li>
+								<li><a href='#' id='uploadSample' class="control">Import Observations (CSV)
+									<span class="glyphicon glyphicon-file pull-right" aria-hidden="true"></span>
+								</a></li>-->
+								<li><input type="file" id="hidden-upload" class="hidden-upload"> </li>
+            					<li><a href='#' id='uploadNet' class="control">Load Map of Evacuation Routes (JSON)
+            						<span class="glyphicon glyphicon-upload pull-right" aria-hidden="true"></span>
+            					</a></li>
+								<!--<li><input type="file" id="hidden-upload-mitre" class="hidden-upload-mitre"> </li>
+            					<li><a href='#' id='uploadMitre' class="control">Import MITRE ATT&CK Group (JSON)
+            						<span class="glyphicon glyphicon-upload pull-right" aria-hidden="true"></span>
+            					</a></li>-->
+								<!--
+								<li><input type="file" id="hidden-upload-4" class="hidden-upload-4"> </li>
+            					<li><a href='#' id='uploadMiMir' class="control">Import MiMir Scoring (XLSX)
+            						<span class="glyphicon glyphicon-upload pull-right" aria-hidden="true"></span>
+            					</a></li>-->
+            					<li role="separator" class="divider"></li>
+								<li><a href='#' id='downloadNet' class="control tour-step tour-step-eighteen">Save Map of Evacuation Routes (JSON)
+									<span class="glyphicon glyphicon-download pull-right" aria-hidden="true"></span>
+								</a></li>
+								<!--
+								<li><a href='#' id='downloadImg' class="control">Export Image of Attack Ladder (PNG)
+									<span class="glyphicon glyphicon-picture pull-right" aria-hidden="true"></span>
+								</a></li>
+								<li>
+									<a href="#" id="downloadDocx" class="control disabled tour-step-eighteen">Generate Attack Ladder Report (DOCX)
+										<span class="glyphicon glyphicon-download pull-right" aria-hidden="true"></span>
+									</a>
+									<script src="https://unpkg.com/docx@7.1.0/build/index.js"></script>
+								</li>-->
+							</ul>
+						</li>
+						<!-- My Network -->
+						<li class="dropdown tour-step tour-step-dropdown tour-step-learning-one tour-step-learning-two">
+							<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Simulate<span class="caret"></span></a>
+          					<ul class="dropdown-menu">
+								<li><a href='#' id='sample-net'>Sample Evacuation Route
+								</a></li>
+          						<!-- ><li><a href='#' id='sim-compromised-net'>Sim Compromised Rungs</a></li> -->
+            					<li role="separator" class="divider"></li>
+            					<!--<li><a href='#' id='deleteAttackGroup' class="control">Clear ATT&CK Group
+        							<span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span>-->
+		        				</a></li> <!-- end other items here. -->
+            					<li><a href='#' id='deleteNet' class="control">Clear All
+        							<span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span>
+		        				</a></li> <!-- end other items here. -->
+          					</ul>
+						</li>
+						<!-- Help -->
+						<li class="dropdown">
+							<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href='#' id='about' class='control'>About the Tool
+									<span class="glyphicon glyphicon-user pull-right" aria-hidden="true"></span>
+								</a></li>
+								<!--
+								<li><a href='#' id='info' class='control'>Bayesian Nets Information
+									<span class="glyphicon glyphicon-info-sign pull-right" aria-hidden="true"></span>
+								</a></li>
+								<li><a href='#' id='help' class='control'>Help
+									<span class="glyphicon glyphicon-question-sign pull-right" aria-hidden="true"></span>
+								</a></li>
+							<li><a href='#' id='resources' class='control'>Resources
+									<span class="glyphicon glyphicon-paperclip pull-right" aria-hidden="true"></span>
+								</a></li>
+								<li><a href='#' id='tutorial' class='control'>Tutorial
+									<span class="glyphicon glyphicon-bell pull-right" aria-hidden="true"></span>
+								</a></li> -->
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+					<!-- change the text on data upload 
+						<p id="dataset-name" class="navbar-text tour-step tour-step-two-one">Dataset: (none)</p>
+						<p id="attackgroup-name" class="navbar-text">MITRE ATT&CK Group: (none)</p> -->
+					<!-- update if the structure and the parameters have been learnt
+						<p id="p-struct" class="navbar-text">Structure:
+							<span id="glyphicon-struct" class="glyphicon glyphicon-ban-circle glyphicon-navbar-ban" aria-hidden="true"></span>
+						</p>
+						<p id="p-params" class="navbar-text">Parameters:
+							<span id="glyphicon-params" class="glyphicon glyphicon-ban-circle glyphicon-navbar-ban" aria-hidden="true"></span>
+						</p>-->
+
+					</ul>
+				</div>
+			</div> <!-- container-fluid -->
+		</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Workfield -->
+				<!-- col-sm-6 col-md-7 -->
+				<div class="col-sm-8 col-md-8 tour-step tour-step-three tour-step-structure-learnt" id="workspace"> </div>
+				<!-- Control Field -->
+				<!-- col-sm-3 col-md-3 -->
+				<div class="col-sm-4 col-md-4 tour-step tour-step-four" id="outer-control">
+					<div id="control"> </div>
+				</div>
+				<!-- Sample field -->
+				<!-- <div class="col-sm-9 col-md-10 pull-right" id="long-sample"> </div> -->
+			</div>
+		</div>
+		<footer id="footer">
+			<!-- <div class="row"> -->
+				<hr/>
+				<p id="author" class="pull-right footer-text"> Virginia Zamponi, Jessica O'Brien, Kevin O'Brien, Erik Jensen, Christopher Lynch, and Ross Gore -  OERI/VMASC at ODU.</p>
+			<!-- </div>  -->
+		</footer>
+
+		<script src="lib/underscore.js"></script>
+		<script src="lib/d3.min.js"> </script>
+		<script src="lib/jquery-1.11.1.min.js"></script>
+		<script src="lib/bootstrap.min.js"></script>
+		<script src="lib/FileSaver.min.js"></script>
+		<script src="lib/bootbox.min.js"></script>
+		<script src="lib/bootstrap-tour.min.js"></script>
+		<script src="lib/saveSvgAsPng.js"></script>
+		<script src="lib/d3-context-menu-master/js/d3-context-menu.js"></script>
+		<script src="lib/math-1.7.0.min.js"></script>
+		<script src="lib/combinations.js"></script>
+		<script src="lib/statistics-distributions.js"></script>
+		<script type="text/javascript" src="lib/ParallaxContentSlider/js/jquery.cslider.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+
+		<script src="js/external.js"></script>
+		<script src="js/cpts.js"></script>
+		<script src="js/edges.js"></script>
+		<script src="js/nodes.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/sampling.js"></script>
+		<script src="js/learnCpts.js"></script>
+		<script src="js/learnStruct.js"></script>
+		<script src="js/tour.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $('.dropdown-submenu a.test').on("click", function(e){
+		    $(this).next('ul').toggle();
+		    e.stopPropagation();
+		    e.preventDefault();
+		  });
+		});
+		</script>
+
+	</body>
+</html>
