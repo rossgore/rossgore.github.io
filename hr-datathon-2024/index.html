@@ -106,24 +106,24 @@
 						</li>
 						<!-- Help -->
 						<li class="dropdown">
-							<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
+							<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download Scenarios<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href='files/nets/blue-sky-scenario-baseline.json' id='blue-sky-scenario' class='control'>Blue Sky Baseline Scenario
+								<li><a href='files/nets/blue-sky-scenario-baseline.json' target="_blank" id='blue-sky-scenario' class='control'>Baseline Scenario (JSON)
 									<span class="glyphicon" aria-hidden="true"></span>
 								</a></li>
-								<li><a href='files/nets/traffic-collision-scenario.json' id='traffic-scenario' class='control'>Traffic Scenario
+								<li><a href='files/nets/traffic-collision-scenario.json' target="_blank" id='traffic-scenario' class='control'>Traffic Collision Scenario (JSON)
 									<span class="glyphicon" aria-hidden="true"></span>
 								</a></li>
-								<li><a href='files/nets/flooding-resilience-scenario.json' id='flooding-scenario' class='control'>Flooding Scenario
+								<li><a href='files/nets/flooding-resilience-scenario.json' target="_blank" id='flooding-scenario' class='control'>Flooding Scenario (JSON)
 									<span class="glyphicon" aria-hidden="true"></span>
 								</a></li>
-								<li><a href='files/nets/cyber-threat-on-bridges-scenario.json' id='cyber-attack-scenario' class='control'>Cyber Attack Scenario
+								<li><a href='files/nets/cyber-threat-on-bridges-scenario.json' target="_blank" id='cyber-attack-scenario' class='control'>Cyber Attack Scenario (JSON)
 									<span class="glyphicon" aria-hidden="true"></span>
-								</a></li>
-								<li><a href='#' id='about' class='control'>About the Tool
-									<span class="glyphicon glyphicon-user pull-right" aria-hidden="true"></span>
 								</a></li>
 								<!--
+									<li><a href='#' id='about' class='control'>About the Tool
+										<span class="glyphicon glyphicon-user pull-right" aria-hidden="true"></span>
+									</a></li>
 								<li><a href='#' id='info' class='control'>Bayesian Nets Information
 									<span class="glyphicon glyphicon-info-sign pull-right" aria-hidden="true"></span>
 								</a></li>
@@ -138,6 +138,40 @@
 								</a></li> -->
 							</ul>
 						</li>
+							<li class="dropdown">
+								<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Sources<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="https://odu-gis.maps.arcgis.com/apps/Embed/index.html?webmap=d1607cbdcb8b4d2a803d77a763411729&extent=-78.0079,36.3444,-74.4208,38.1653&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&disable_scroll=true&theme=light" target="_blank" id='arc-gis-map' class='control'>ARC GIS Map of VDEM Evacuation Routes, Zones, and Bridges
+								<span class="glyphicon" aria-hidden="true"></span>
+							</a></li>
+							<li><a href="img/nodes_evac_zones_drawio.pdf" target="_blank" id='bn-with-evac-zones' class='control'>Bayseian Network Showing VDEM Evacuation Zones
+								<span class="glyphicon" aria-hidden="true"></span>
+							</a></li>
+							<li><a href="https://attack.mitre.org/groups/G0034/" target="_blank" id='mitre-sandword' class='control'>MITRE ATT&CK Report on Sandworm
+								<span class="glyphicon" aria-hidden="true"></span>
+							</a></li>
+							<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-1161" target="_blank" id='cve-data' class='control'>Common Vulnerabilities and Exposures: CVE-2022-1161
+								<span class="glyphicon" aria-hidden="true"></span>
+							</a></li>
+							<li><a href="https://www.first.org/cvss/v3.1/specification-document" target="_blank" id='cvss-data' class='control'>Common Vulnerability Scoring System
+								<span class="glyphicon" aria-hidden="true"></span>
+							</a></li>
+							<li><a href="img/road_closure_probabilities_gpt.xlsx" target="_blank" id='gpt-traffic-data' class='control'>GPT4o Responses on Collision Probabilities
+								<span class="glyphicon" aria-hidden="true"></span>
+							</a></li>
+						</ul>		
+							</li>
+								<li class="dropdown">
+									<a href="#" class="control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#" id='about' class='control'> Overview
+									<span class="glyphicon" aria-hidden="true"></span>
+								</a></li>
+								<li><a href="https://rossgore.github.io/datathon/datathon.html" target="_blank" id='blue-sky-scenario' class='control'>Detailed Description of Project
+									<span class="glyphicon" aria-hidden="true"></span>
+								</a></li>
+							</ul>		
+								</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 					<!-- change the text on data upload 
