@@ -458,12 +458,12 @@ CVSS.prototype.update = function(newVec) {
 	  };
 	var data = [trace];
 	var layout = {
-	  title: 'Histogram of Success Rates for Attack Ladder Node Given Characterization',
+	  title: 'Histogram of Success Rates for an Attacker Whose Techniques Target This Type of Vulnerability',
 	  plot_bgcolor:"#f7f7f4",
 	  paper_bgcolor: "#f7f7f4",
 	  xaxis: {
 		title: {
-		            text: "Rate of Success for Attack Ladder Node"
+		            text: "Rate of Success for an Attacker"
 		},
 	    autotick: false,
 	    ticks: 'outside',

@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>CVSS 3.1 Rung Probability Calculator</title>
+    <title>CVSS 3.1 Cyber Vulnerability Probability Calculator</title>
 <link rel="icon"
       type="image/png"
       href="favicon.png">
@@ -47,14 +47,14 @@
 
 <body>
     <hgroup>
-    <h3>CVSS 3.1 Rung Probability Calculator</h3></hgroup>
+    <h3>CVSS 3.1 Cyber Vulnerability Calculator</h3></hgroup>
 	<hr>
-	<h4>Enter CVSS 3.1 vector for the rung here:</h4>
-	<h4>Looking up a CVSS 3.1 vector for a CVE may be useful in choosing probabilities. CVSS 3.1 vectors for CVEs can be found at <a href="https://www.cvedetails.com/" target="_blank">CVEDetails.com</a> </h4>
-	<form><input type="text" id="uservector" name="uservector" size="50"></form>
+	<h4>Enter CVSS 3.1 vector for the cyber vulnerability here:</h4>
+	<h5>Calculator has been prefilled for CVSS vector for CVE-2022-1161 for demonstration purposes.</h5>
+	<form><input type="text" id="uservector" value="	CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H" name="uservector" size="50"></form>
 	<button type="button" id="calc">Calculate From CVSS Vector</button>
 	<hr>
-	<h4>Alternatively you can describe the attributes of the rung using the system below:</h4>
+	<h4>Alternatively you can describe the attributes of the vulnerability using the system below:</h4>
     <div id="cvssboard">
     </div>
 	<div id='myDiv'></div>
