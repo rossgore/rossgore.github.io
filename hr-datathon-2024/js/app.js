@@ -968,4 +968,4 @@ var init = function() {
 }();
 
 //Initialise
-loadDefaultNetwork("files/nets/HR-Hurricane-Evacuation-Map.json", true);
+loadDefaultNetwork("files/nets/blue-sky-scenario-baseline.json", true);
