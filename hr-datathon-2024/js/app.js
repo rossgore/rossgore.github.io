@@ -964,7 +964,7 @@ var init = function() {
 	  .append("img")
 	  .attr("id", "zoom-scale")
 	  .attr("class", "pull-left responsive-img")
-	  .attr("src", "../img/legend.png");
+	  .attr("src", "img/legend.png");
 }();
 
 //Initialise
