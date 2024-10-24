@@ -1,114 +1,42 @@
-## Attack Ladder User Guide
-Attack Ladders are graphical models for reasoning about the uncertainty related to multistage cyber attacks. Attack ladders are directed acyclic graphs (DAGs). Attack ladders designed by the user should not contain cycles. Attack Ladders are represented by rungs and arcs, where the rungs are random variables and an arc shows a direct causal connections between a parent rung and a child rung. Each rung will have 2 values. The default values for each rung are 1 and 0 (True and False). However, for all sampling analysis to work users should change the value from '1' to 'yes' and '0' to 'no'.
+# Hampton Roads Hurricane Evacuation Route Resilience Analysis
 
-Users interact with the canvas to add and delete attack ladder rungs and arcs. Users can click on the created elements to edit their properties.
+**Authors:** Virginia Zamponi, Kevin O'Brien, Jessica O'Brien, Erik Jensen, Christopher Lynch, and Ross Gore | OERI / VMASC @ ODU
 
-## Installation
+## Background
 
-Easiest way to run Attack Ladder is to first try opening index.html in your browser. If something is not working right continue with installation instructions below.
+Resilient hurricane evacuation routes are crucial for protecting lives and ensuring public safety. They must withstand challenges such as flooding from fast-moving storms, cyber-attacks that could compromise bridge accessibility, and traffic disruptions due to collisions. We offer an interactive online platform for decision-makers to evaluate the resilience of the Hampton Roads Hurricane Evacuation Routes against these scenarios.
 
-**Run attack ladders locally**
-From within the attack ladders folder
+Our project utilizes local data on FEMA evacuation zones, potential cyber threats to bridges, and traffic patterns from accidents to create a Bayesian network representation of the evacuation routes. This allows us to simulate and quantify how well the routes can remain operational under different hazards.
 
-- first install http-server globally
-```
-npm install -g http-server
-```
+The insights gained from this analysis are actionable; they enable emergency responders to strategically position resources based on identified vulnerabilities and direct funding towards strengthening critical infrastructure, ultimately enhancing the overall evacuation strategy.
 
-- then run http-server from attack ladders folder
-```
-http-server
-```
+## Data and Definitions
 
-- this will start the webserver pointing to the index.html file in attack ladders defaults to localhost:3000
+The evacuation route system's resilience is defined as the percentage of simulations where all four Hampton Roads areas maintain at least one completely unobstructed evacuation route.
+
+**Key data sources include:**
+- Hampton Roads Evacuation Zones and Routes GIS files
+- CVE and CVSS data on cyber exploit probabilities
+- MITRE ATT&CK data on known threat group capabilities
+- ChatGPT-generated conditional probabilities of traffic disruptions within the route system
+
+This method enables comparison of three hurricane evacuation scenarios against a baseline, quantifying changes in route resilience.
+
+## Methods
+
+1. Using the VDEM Hampton Roads Hurricane Evacuation Route Map, we constructed a Bayesian Network.
+2. The network is built on a web-accessible platform we created to enable decision-makers in the area to rapidly modify and review changes to the evacuation routes.
+3. We simulated a baseline scenario for the resilience of the routes.
+4. Using the collected data, we simulated three different scenarios:
+   - Possible flooding
+   - A cyber-attack on draw, swing, and lift bridges
+   - Possible traffic break during the evacuation due to automobile collisions
 
 
-## Attack Ladder Rung Manipulation
+## Results
+![This figure shows the transition from the Hampton Roads Evacuation Route (left), to our Bayesian Network with a 'Blue Sky' scenario simulated (center), to a simulation of a potential cyber attack from a known threat group targeting the draw, swing, and lift bridges along the evacuation routes](datathon-cyber-overview.png)
+The figure demonstrates how evacuation route resilience can be drastically reduced when considering cyber threats, particularly those targeting draw, swing, and lift bridges. Our model examines a potential attack by Russian state-sponsored Sandworm exploiting CVE-2022-1161, a vulnerability in bridge control system PLCs.
 
-**Add a Rung**
-Double-click on the canvas. Each rung will have 2 values. The default values for each rung are 1 and 0 (True and False). However, for all sampling analysis to work users should change the value from '1' to 'yes' and '0' to 'no'. Each rung that is generated will have a
-Conditional Probability Table that must be filled in with probabilities. The Conditional Probability Table (CPT) is a set of yes/no dependencies of directly incoming attack ladder rungs and to specify the conditional probabilities of an attack ladder rung with respect to the others (i.e., the probability of each possible yes/no of one attack ladder rung if we know the values taken on by the other directly incoming rungs).
+This scenario is plausible given Sandworm's history of targeting industrial control systems and the overlap between their techniques and the technical expertise required to exploit CVE-2022-1161. Combining the cyber data sources, we estimate an 83% chance of success on a given bridge.
 
-**Calculate Rung Probability**
-Select 'Calculate Rung Probability' option from the 'Attack Ladder' menu. A pop-up window will open up that will guide users through describing the Attack Ladder Rung with using the CVSS exploit scoring. Once a description is provided the window will generate a histogram of probabilities for the rung and provide users with the mean probability for the rung.
-
-**Edit a Rung**
-Click on the rung and edit its name, Conditional Probability Value (CPT) or values it can take from the menu on the right.
-
-**Delete Rung**
-Right-click on the node and select 'Remove Node'.
-
-## Attack Ladder Arc Manipulation
-
-**Add Arc:**
-Select a rung and click on it simultaneously dragging to the rung you want to connect it to.
-
-**Delete Arc:**
-Right-click on the link and select 'Remove Connection'.
-
-## Attack Ladder Sampling
-Select 'Sample Attack Ladder' option from the 'Attack Ladder' menu. In the settings menu that will appear on the right side of the screen identify the number of samples you would like to generate and select any values that you want to be fixed and the number of samples and click 'Run'.
-
-**Exploring Sampling Results:**
-In the sample results display that will appear on the right side of the screen  users can see the summary statistics resulting from sampling the attack ladder. Below the summary statistics the first 10 samples of the attack ladder are also shown. These can be useful in understanding in debugging any errors made while the user was specifyng the attack ladder. In addition, users can choose among the following:
-
-*Resample:*
-Generate another set of samples from the attack ladder.
-
-*Reset:*
-Go back to the settings menu that will appear on the right side of the screen identify the number of samples you would like to generate and select any values that you want to be fixed and the number of samples and click 'Run'.
-
-*Summary:*
-Download the summary statistics resulting from sampling the attack ladder as a .csv file.
-
-*Samples:*
-Download the samples generated for the attack ladder as a .csv file.
-
-## Load/Export Attack Ladders
-
-**Load an Attack Ladder:**
-From the 'Load\Save' menu option - select 'Import JSON' option to import a .json file representing an attack ladder.
-
-**Export an Attack Ladder:**  
-From the 'Load\Save' menu option - select 'Export JSON' option to export a .json file representing an attack ladder. From the 'Load\Save' menu option - select 'Export PNG' option to export a .png image representing an attack ladder.
-
-## Zoom(ing) Scale
-The zooming scale indicator shows if the user has zoomed in or out on the canvas. The zoom in/out limits are 0.5 - 2.0.
-
-## Dependencies for ODU / VMASC Attack Ladder Browser Based Tool
-
-The ODU / VMASC Attack Ladder Browser Based Tool uses  node package `http-server` (https://github.com/http-party/http-server) which has these dependencies:
-
- - basic-auth: 2.0.1
- - chalk:  4.1.2   
- - corser: 2.0.1   
- - he:  1.2.0
- - html-encoding-sniffer: 3.0.0
- - http-proxy: 1.18.1
- - mime:  1.6.0
- - minimist:  1.2.6
- - opener:  1.5.1
- - portfinder:  1.0.28
- - secure-compare:  3.0.1
- - union:  0.5.0
- - url-join:  4.0.1
-
-In addition the following packages and javascript libraries are used:
- - bootbox.min.js
- - d3-context-menu-master
- - jquery-1.11.1.min.js
- - statistics-distributions.js  
- - bootstrap.js
- - d3.js
- - jquery.csv-0.71.min.js
- - underscore.js  
- - bootstrap.min.js
- - d3.min.js
- - math-1.7.0.min.js
- - underscore-min.map  
- - bootstrap-tour.min.js
- - FileSaver.min.js
- - ParallaxContentSlider  
- - combinations.js
- - jasmine-2.1.3
- - saveSvgAsPng.js
+The figure shows the attack decreases evacuation system resilience from 100 (extremely resilient) to 30.30 (significantly compromised resilience) due to increased likelihood of impassable bridges in Norfolk/VA Beach and Peninsula routes. To mitigate risks, alternative routes or nearby shelters should be identified and publicized.
