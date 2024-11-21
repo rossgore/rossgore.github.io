@@ -24,8 +24,8 @@ author:
   avatar           : "profile.png"
   name             : "Dr. Ross Gore"
   pronouns         : # example: "he/his"  
-  bio              : "I am Research Associate Professor at Old Dominion University (ODU). He holds a Doctorate of Philosophy (Ph.D.) and a Master's degree in Computer Science from the University of Virginia (UVA) and a Bachelor's degree in Computer Science from the University of Richmond (UR). My work focuses on data science and predictive analytics. I am is passionate about extracting useful information from new and diverse data sources to help inform decision making."
-  location         : "1030 University Blvd. Suffolk, VA 23435"
+  bio              : "I am Research Associate Professor at Old Dominion University My work focuses on data science and predictive analytics. I am is passionate about extracting useful information from new and diverse data sources to help inform decision making."
+  location         : "Suffolk, VA 23435"
   employer         : "Old Dominion University"
   uri              : # URL
   email            : "rgore@odu.edu" 
