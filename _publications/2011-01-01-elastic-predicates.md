@@ -1,7 +1,7 @@
 ---
 title: "Statistical debugging with elastic predicates"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2011-elastic-predicates
 excerpt: 'This paper is about statistical debugging with elastic predicates. These predicates adapt to interesting value ranges of numeric variables in scientific software to help automatically find the location of bugs.'
 date: 2011-01-01
