@@ -3,7 +3,7 @@ title: "Explanation exploration: Exploring emergent behavior"
 collection: publications
 category: manuscripts
 permalink: /publication/2007-explanation-exploration
-excerpt: 'This paper is about exploring emergent behavior through explanation exploration. A case study with agent-based modeling is presented.'
+excerpt: 'This paper is about exploring emergent behavior through explanation exploration. A case study with agent-based modeling is presented to demonstrate the application of the process in detail.'
 date: 2007-01-01
 venue: '2007 Principles of Advanced and Distributed Simulation Workshop (PADS'07)'
 paperurl: 'http://rossgore.github.io/files/explanation_exploration.pdf'
