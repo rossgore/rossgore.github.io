@@ -1,7 +1,7 @@
 ---
 title: "Explanation exploration: Exploring emergent behavior"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2007-explanation-exploration
 excerpt: 'This paper is about exploring emergent behavior through explanation exploration. A case study with agent-based modeling is presented to demonstrate the application of the process in detail.'
 date: 2007-01-01
