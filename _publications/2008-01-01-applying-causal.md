@@ -1,7 +1,7 @@
 ---
 title: "Applying causal inference to understand emergent behavior"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2008-applying-causal
 excerpt: 'This paper is about applying causal inference to simulation trace data to understand emergent behavior. A case study highlighting how the technique can identify differences in the causal dynamics of agent-based simulation vs a differential equation-based simulation of flu spread is presented.'
 date: 2008-01-01
