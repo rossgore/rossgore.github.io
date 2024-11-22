@@ -1,0 +1,12 @@
+---
+title: "Statistical debugging for simulations"
+collection: publications
+category: manuscripts
+permalink: /publication/2015-statistical-debugging-simulations
+excerpt: 'This paper discusses statistical debugging techniques specifically applied to simulations, addressing methods for identifying and resolving issues in simulation models.'
+date: 2015-01-01
+venue: 'ACM Transactions on Modeling and Computer Simulation (TOMACS)'
+paperurl: 'http://rossgore.github.io/files/statistical_debugging_simulations.pdf'
+citation: 'Gore, Ross; Reynolds Jr, Paul F; Kamensky, David; Diallo, Saikou; Padilla, Jose. (2015). "Statistical debugging for simulations". <i>ACM Transactions on Modeling and Computer Simulation (TOMACS)</i>. 25(3), 1-26.'
+---
+The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
