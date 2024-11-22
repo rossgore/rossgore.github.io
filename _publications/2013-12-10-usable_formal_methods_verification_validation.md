@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2013-usable-formal-methods-verification-validation
 excerpt: 'This paper discusses the importance of developing usable formal methods for verification and validation in simulation and modeling.'
-date: 2013-12-010
+date: 2013-12-10
 venue: '2013 Winter Simulations Conference (WSC)'
 paperurl: 'http://rossgore.github.io/files/usable_formal_methods_verification_validation.pdf'
 citation: 'Gore, Ross; Diallo, Saikou. (2013). "The need for usable formal methods in verification and validation". <i>2013 Winter Simulations Conference (WSC)</i>, 1257-1268.'
