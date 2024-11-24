@@ -25,10 +25,10 @@ CS 216: **Data Structures and Algorithms** at Gettysburg College is a course tha
   - Graphs
   - Arrays
   - Tables
-  - Files[1][3]
+  - Files
 
-- String processing techniques[3]
-- Introduction to algorithm analysis[1]
+- String processing techniques
+- Introduction to algorithm analysis
 
 ## Course Objectives
 
@@ -40,4 +40,4 @@ The course aims to:
 
 ## Significance
 
-CS 216 is a crucial course for computer science majors, as it provides the fundamental knowledge of data organization that is essential for advanced programming and software development. It serves as a bridge between introductory programming courses and more specialized upper-level computer science courses[1].
+CS 216 is a crucial course for computer science majors, as it provides the fundamental knowledge of data organization that is essential for advanced programming and software development. It serves as a bridge between introductory programming courses and more specialized upper-level computer science courses.

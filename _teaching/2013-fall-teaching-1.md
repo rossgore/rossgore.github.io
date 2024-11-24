@@ -35,12 +35,12 @@ Students who complete CS 111 should be able to:
 
 ## Significance
 
-CS 111 is a crucial first step for prospective CS majors, typically taken in the first year along with CS 112 and Math 111. It provides the foundation for more advanced courses in the computer science curriculum[1].
+CS 111 is a crucial first step for prospective CS majors, typically taken in the first year along with CS 112 and Math 111. It provides the foundation for more advanced courses in the computer science curriculum.
 
 ## Additional Notes
 
 - Students with AP Computer Science scores of 4 or 5 can receive credit for CS 111 and place directly into CS 112
 - The course may have lab components where students apply concepts through practical programming exercises
-- Success in CS 111 is vital for progression in the CS major, as it leads to CS 112 and eventually CS 216 (Data Structures)[1]
+- Success in CS 111 is vital for progression in the CS major, as it leads to CS 112 and eventually CS 216 (Data Structures)
 
 CS 111 is designed to give students a solid grounding in programming and computational thinking, preparing them for more advanced study in computer science.

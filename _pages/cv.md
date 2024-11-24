@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-My CV is listed below. You can also find a downloadable pdf version [here](https://rossgore.github.io/files/fullCV.pdf).
+My CV is listed below. You can also find a downloadable pdf version [here](https://rossgore.github.io/files/fullcv_RossJGore.pdf).
 
 Education
 ======
@@ -23,7 +23,7 @@ Work experience
   * Old Dominion University | Office of Enterprise Research and Innovation | Center for Secure and Intelligent Critical Systems
 
 * Summer 2014: Research Assistant Professor
-  * Old Dominion University | Virginia Modeling Analysis and Simulation Center
+  * Old Dominion University | Virginia Modeling Analysis and Simulation Center | 
 
 - Lead research on data science and predictive analytics in areas ranging including the obesity epidemic in the USA, improving risk communication, and religiosity and extremism in the Middle East. In total this work has yielded $698,869 ($330,130 of Credit) in externally funded research with me serving as principal investigator.
 
@@ -32,11 +32,11 @@ Work experience
 - Conduct research on simulation validation and debugging. Support simulation platforms are testing grounds for these methods with partial funding from principal investigator and co-principal investigator efforts (7 journal publications, 14 peer-reviewed conference papers and 3 book chapters).
 
 * Summer 2013: Visiting Assistant Professor
-  * Gettysburg College | Department of Computer Science
+  * Gettysburg College | Department of Computer Science | 
 - Taught computer science courses and supervise research for undergraduate students (3 courses covering 6 section taught, 2 undergraduate research projects supervised).
 
 * Summer 2012: Post Doctoral Research Associate
-  * Old Dominion University | Virginia Modeling Analysis and Simulation Center
+  * Old Dominion University | Virginia Modeling Analysis and Simulation Center | 
   
 - Researched composability, interoperability, debugging, verification and validation supporting ongoing funded projects. 
 
