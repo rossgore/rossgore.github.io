@@ -14,8 +14,7 @@ This is Dr. Ross Gore's home on the web. My research focuses on extracting, comb
 Simulation Validation | Data Science & Predictive Analytics | Agent-based Simulation | Software Debugging
 
 ## [Selected Research Projects](research/research.md)
-
-My research focuses on extracting, combining, and analyzing data from new and diverse sources to provide quantitative and interpretable answers to questions. This analysis can take the form of analysis, statistical models or simulations. The domains of the questions have varied from public health, refugee migration, city planning, terrorist attack risk assessments, cyber security, software engineering and social science. The unifying theme across my work is the use of novel data sources to improve understanding of the problem at hand. [Here](research/research.md) are descriptions and publications from some of my projects that highlight my different interests and the themes of my research. A full list of my publications is available at my [Google Scholar profile](https://scholar.google.com/citations?user=Sp4pikIAAAAJ&hl=en).
+ The unifying theme across my work is the use of novel data sources to improve understanding of the problem at hand. [Here](research/research.md) are descriptions and publications from some of my projects that highlight my different interests and the themes of my research. A full list of my publications is available at my [Google Scholar profile](https://scholar.google.com/citations?user=Sp4pikIAAAAJ&hl=en).
 
 
 
