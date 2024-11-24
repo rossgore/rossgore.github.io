@@ -6,7 +6,7 @@ permalink: /publication/2024-threat-centric-ranking
 excerpt: 'This paper presents a framework for vulnerability management that uses public data sources and adversary criteria from MITRE ATT&CK to prioritize vulnerabilities, demonstrating significant improvements over CVSS in identifying targeted vulnerabilities and reducing patching costs.'
 date: 2024-10-01
 venue: 'Cybersecurity & Information Systems Information Analysis Center Journal'
-paperurl: 'http://rossgore.github.io/files/network_agent_based_model_ethnocentrism.pdf'
+paperurl: 'http://rossgore.github.io/files/threat_centric_ranking.pdf'
 citation: 'McCoy, Corren; Gore, Ross J; Nelson, Michael L; Weigel, Michele. (2024). "A Relevance Model for Threat-Centric Ranking of Cybersecurity Vulnerabilities." <i>Cybersecurity & Information Systems Information Analysis Center Journal</i>. Special AI/ML Edition.'
 ---
 The relentless process of tracking and remediating vulnerabilities is a top concern for cybersecurity professionals. The key challenge is trying to identify a remediation scheme specific to in-house, organizational objectives. Without a strategy, the result is a patchwork of fixes applied to a tide of vulnerabilities, any one of which could be the point of failure in an otherwise formidable defense. Given that few vulnerabilities are a focus of real-world attacks, a practical remediation strategy is to identify vulnerabilities likely to be exploited and focus efforts toward remediating those vulnerabilities first.
