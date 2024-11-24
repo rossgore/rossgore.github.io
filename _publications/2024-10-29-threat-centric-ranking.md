@@ -1,0 +1,14 @@
+---
+title: "A Relevance Model for Threat-Centric Ranking of Cybersecurity Vulnerabilities"
+collection: publications
+category: manuscripts
+permalink: /publication/2024-threat-centric-ranking
+excerpt: 'This paper presents a framework for vulnerability management that uses public data sources and adversary criteria from MITRE ATT&CK to prioritize vulnerabilities, demonstrating significant improvements over CVSS in identifying targeted vulnerabilities and reducing patching costs.'
+date: 2024-10-01
+venue: 'Cybersecurity & Information Systems Information Analysis Center Journal'
+paperurl: 'http://rossgore.github.io/files/network_agent_based_model_ethnocentrism.pdf'
+citation: 'McCoy, Corren; Gore, Ross J; Nelson, Michael L; Weigel, Michele. (2024). "A Relevance Model for Threat-Centric Ranking of Cybersecurity Vulnerabilities." <i>Cybersecurity & Information Systems Information Analysis Center Journal</i>. Special AI/ML Edition.'
+---
+The relentless process of tracking and remediating vulnerabilities is a top concern for cybersecurity professionals. The key challenge is trying to identify a remediation scheme specific to in-house, organizational objectives. Without a strategy, the result is a patchwork of fixes applied to a tide of vulnerabilities, any one of which could be the point of failure in an otherwise formidable defense. Given that few vulnerabilities are a focus of real-world attacks, a practical remediation strategy is to identify vulnerabilities likely to be exploited and focus efforts toward remediating those vulnerabilities first.
+
+The goal of this research is to demonstrate that aggregating and synthesizing readily accessible, public data sources to provide personalized, automated recommendations for organizations to prioritize their vulnerability management strategy will offer significant improvements over using the Common Vulnerability Scoring System (CVSS). A framework is provided for vulnerability management specifically focused on mitigating threats using adversary criteria derived from MITRE adversarial tactics, techniques, and common knowledge (ATT&CK). The approach here is tested by identifying vulnerabilities in software associated with six universities and four government facilities. Ranking policy performance is measured using the Normalized Discounted Cumulative Gain (nDCG). Results show an average 71.5%–91.3% improvement toward identifying vulnerabilities likely to be targeted and exploited by cyber threat actors. The return on investment (ROI) of patching using these policies results in a savings of 23.3%–25.5% in annualized costs. The results demonstrate the efficacy of creating knowledge graphs to link large datasets to facilitate semantic queries and create data-driven, flexible ranking policies.
