@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+My CV is listed below. You can also find a downloadable pdf version [here](https://rossgore.github.io/files/fullCV.pdf).
+
 Education
 ======
 * Ph.D in Computer Science, University of Virginia, 2012
