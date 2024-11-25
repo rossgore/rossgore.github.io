@@ -4,7 +4,7 @@ collection:"talks"
 type:"Talk" 
 permalink:"/talks/2017-04-01-modrn-scientific-study-religion" 
 venue:"Refugees, Religion and Radicalization Workshop" 
-date:"2017-April" 
+date:"2017-04-01" 
 location:"Kristiansand, Norway" 
 ---
 
