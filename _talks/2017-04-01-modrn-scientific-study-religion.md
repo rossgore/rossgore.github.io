@@ -3,7 +3,7 @@ title:"A MODRN Approach to the Scientific Study of Religion"
 collection: talks
 type: "Talk"
 permalink: /talks/2017-04-01-modrn-scientific-study-religion
-venue: "Refugees, Religion and Radicalization Workshop"
+venue: "Refugees Religion and Radicalization Workshop"
 date: 2017-04-01
 location: "Kristiansand, Norway"
 ---
