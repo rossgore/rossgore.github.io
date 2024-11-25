@@ -65,6 +65,7 @@ Teaching
   
 Awards and Honors
 ======
+- Sigma Xi Scientific Research Honor Society (2024)
 - Data for Refugees Challenge (D4R) Safety and Security Prize Winner: Characterizing the mobile phone use patterns of refugee hosting provinces in Turkey (2019)
 - Orange Data 4 Development (D4D) Practical Application Prize Winner: Mobile Data as Public-Health Decision Enabler (2015)
 - Finalist: Best Paper at the Winter Simulation Conference (2011)
@@ -90,8 +91,6 @@ Membership in Professional Societies
 - Association for Computing Machinery (ACM), 2012 - present
 - Society for Modeling and Simulation International (SCS), 2012 - present
 
-Professional Service
-======
 Publication Peer-Reviewer
 ======
 - Journal of Defense Modeling and Simulation
