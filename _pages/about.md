@@ -18,9 +18,9 @@ Simulation Validation | Data Science & Predictive Analytics | Agent-based Simula
 
 
 
-## [Service](service/service.md)
+## [Service](service/service.html)
 
-Service is an important component of our profession and an activity that grounds us in the local community, the university, and the academic community at large. [Here](service/service.md) is a full description of service in the Hampton Roads community, within Old Dominion University and in academia. [This white paper](service/Service-Gore.pdf) provides a detailed description of my approach and experience with service is available.
+Service is an important component of our profession and an activity that grounds us in the local community, the university, and the academic community at large. [Here](service/service.html) is a full description of service in the Hampton Roads community, within Old Dominion University and in academia. [This white paper](service/Service-Gore.pdf) provides a detailed description of my approach and experience with service is available.
 
 
 
