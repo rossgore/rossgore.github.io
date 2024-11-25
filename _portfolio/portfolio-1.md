@@ -1,5 +1,6 @@
 ---
 title: "Portfolio item number 1"
+date: 2017-01-01
 excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
