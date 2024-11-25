@@ -133,7 +133,6 @@ include:
   - .htaccess
   - _pages
   - files
-  - service
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
