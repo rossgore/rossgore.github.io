@@ -1,5 +1,5 @@
 ---
-title:"A MODRN Approach to the Scientific Study of Religion" 
+title: "A MODRN Approach to the Scientific Study of Religion" 
 collection: talks
 type: "Talk"
 permalink: /talks/2017-04-01-modrn-scientific-study-religion
