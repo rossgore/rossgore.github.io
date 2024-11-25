@@ -1,8 +1,10 @@
 ---
-title: "Portfolio item number 1"
-date: 2017-01-01
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Individualized and Effective Cyber Risk Training Using Large Language Models"
+date: 2024-01-01
+excerpt: "Commonwealth Cyber Initiative"
+excerpt: "$50,000"
 collection: portfolio
 ---
-
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+PI: Ross Gore
+Co-PIs: Christopher Lynch, Hamdi Kavak, Barry Ezell
+Percent of Credit: 50%
