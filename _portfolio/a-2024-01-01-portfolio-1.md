@@ -1,11 +1,11 @@
 ---
 title: "Individualized and Effective Cyber Risk Training Using Large Language Models"
 collection: portfolio
-permalink: /publication/2024-01-01-portfolio-1
-date: 2024-01-01
+type: "Talk"
+permalink: /publication/a-2024-01-01-portfolio-1
 venue: "Commonwealth Cyber Initiative"
+date: 2024-01-01
 excerpt: "$50,000"
-collection: portfolio
 ---
 PI: Ross Gore
 Co-PIs: Christopher Lynch, Hamdi Kavak, Barry Ezell
