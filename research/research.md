@@ -1,5 +1,3 @@
-# Selected Research Projects
-
 **[COVID-19 Case and Vaccine Forecasting](#covid-19-case-and-vaccine-forecasting)**
 
 <hr>

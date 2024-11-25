@@ -1,5 +1,3 @@
-# Service
-
 Service is an important component of our profession and an activity that grounds us in the local community, the university, and the academic community at large. For me it spans conducting research that supports the local community (both county and state-level), participating on university committees and volunteering my time and effort within professional organizations related to computer science, analysis, modeling and simulation.
 
 ## Jump To Subsections
