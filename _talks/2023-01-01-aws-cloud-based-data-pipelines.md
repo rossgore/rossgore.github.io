@@ -8,4 +8,4 @@ date: 2023-01-01
 location: "Suffolk, VA"
 ---
 
-This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!
+This talk showcases how VDEM can leverage AWS services to build a robust data management system, enabling rapid decision-making and efficient emergency response through automated data collection, integration, and analysis.

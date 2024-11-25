@@ -8,4 +8,4 @@ date: 2023-01-02
 location: "Suffolk, VA"
 ---
 
-This is a description of your conference proceedings talk, note the different field in type. You can put anything in this field.
+This talk emphasizes the critical importance of effective risk communication in saving lives and advocates for a unified approach to research in this field, aiming to consolidate the extensive body of literature on improving risk communication strategies.
