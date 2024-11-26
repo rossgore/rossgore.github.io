@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Funded Research"
 permalink: /portfolio/
 author_profile: true
 ---
@@ -52,9 +52,4 @@ author_profile: true
 | Development of Validated Trauma Knowledge Assessment for Role 2 And 3 Capabilities | 2014-2015 | The Geneva Foundation | $427,999 | 25% |
 | National Defense University, Information Resources Management College Systems Dynamics Modeling Support | 2014-2015 | NAVSUP Fleet Logistics Center Norfolk | $35,243 | 50% |
 | NCCMMS Year 4 Funding | 2014-2015 | Old Dominion University | $70,000 | 25% |
-
-
-[comment]:{% for post in site.portfolio %}
-[comment]:  {% include archive-single.html %}
-[comment]:{% endfor %}
 
