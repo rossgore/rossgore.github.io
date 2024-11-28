@@ -14,13 +14,13 @@ This is Dr. Ross Gore's home on the web. My research focuses on extracting, comb
 Simulation Validation | Data Science & Predictive Analytics | Agent-based Simulation | Software Debugging
 
 ## [Selected Research Projects](research/research/)
- The unifying theme across my work is the use of novel data sources to improve understanding of the problem at hand. [Here](research/research.md) are descriptions and publications from some of my projects that highlight my different interests and the themes of my research. A full list of my publications is available at my [Google Scholar profile](https://scholar.google.com/citations?user=Sp4pikIAAAAJ&hl=en).
+ The unifying theme across my work is the use of novel data sources to improve understanding of the problem at hand. [Here](research/research/) are descriptions and publications from some of my projects that highlight my different interests and the themes of my research. A full list of my publications is available at my [Google Scholar profile](https://scholar.google.com/citations?user=Sp4pikIAAAAJ&hl=en).
 
 
 
 ## [Service](service/service/)
 
-Service is an important component of our profession and an activity that grounds us in the local community, the university, and the academic community at large. [Here](service/service.html) is a full description of service in the Hampton Roads community, within Old Dominion University and in academia. [This white paper](service/Service-Gore.pdf) provides a detailed description of my approach and experience with service is available.
+Service is an important component of our profession and an activity that grounds us in the local community, the university, and the academic community at large. [Here](service/service/) is a full description of service in the Hampton Roads community, within Old Dominion University and in academia. [This white paper](service/Service-Gore.pdf) provides a detailed description of my approach and experience with service is available.
 
 
 

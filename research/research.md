@@ -1,3 +1,6 @@
+# Selected Research Projects
+ The unifying theme across my work is the use of novel data sources to improve understanding of the problem at hand. Here are descriptions and publications from some of my projects that highlight my different interests and the themes of my research. A full list of my publications is available at my [Google Scholar profile](https://scholar.google.com/citations?user=Sp4pikIAAAAJ&hl=en).
+<hr>
 **[COVID-19 Case and Vaccine Forecasting](#covid-19-case-and-vaccine-forecasting)**
 
 <hr>
