@@ -7,4 +7,4 @@ venue: "Refugees Religion and Radicalization Workshop"
 date: 2017-04-01
 location: "Kristiansand, Norway"
 ---
-This talk presents a novel methodology for analyzing religious phenomena using interdisciplinary techniques that combine empirical data collection, computational modeling, and theoretical frameworks from various social sciences. This approach probably aims to provide a more comprehensive and nuanced understanding of religion by integrating multiple perspectives and advanced analytical tools, moving beyond traditional methods in religious studies.
+This talk presents a novel methodology for analyzing religious phenomena using interdisciplinary techniques that combine empirical data collection, computational modeling, and theoretical frameworks from various social sciences. This approach aims to provide a more comprehensive and nuanced understanding of religion by integrating multiple perspectives and advanced analytical tools, moving beyond traditional methods in religious studies.
