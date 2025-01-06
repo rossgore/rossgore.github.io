@@ -3,7 +3,7 @@ title: "Modeling radicalization and violent extremism"
 collection: publications
 category: manuscripts
 permalink: /publication/2020-modeling-radicalization-extremism
-excerpt: 'This paper presents models for understanding and analyzing the processes of radicalization and violent extremism, likely using computational or theoretical approaches.'
+excerpt: 'This paper presents models for understanding and analyzing the processes of radicalization and violent extremism using computational or theoretical approaches.'
 date: 2020-08-01
 venue: 'Advances in Social Simulation: Looking in the Mirror'
 paperurl: 'http://rossgore.github.io/files/modeling_radicalization_extremism.pdf'

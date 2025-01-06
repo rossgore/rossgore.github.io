@@ -3,7 +3,7 @@ title: "Augmenting bottom-up metamodels with predicates"
 collection: publications
 category: manuscripts
 permalink: /publication/2017-augmenting-metamodels-predicates
-excerpt: 'This paper likely discusses a method for enhancing bottom-up metamodels by incorporating predicates, potentially improving the accuracy or interpretability of these models.'
+excerpt: 'This paper discusses a method for enhancing bottom-up metamodels by incorporating predicates, potentially improving the accuracy or interpretability of these models.'
 date: 2017-01-01
 venue: 'Journal of Artificial Societies and Social Simulation'
 paperurl: 'http://rossgore.github.io/files/augmenting_metamodels_predicates.pdf'

@@ -3,7 +3,7 @@ title: "Markov chain modeling of cyber threats"
 collection: publications
 category: manuscripts
 permalink: /publication/2017-markov-chain-cyber-threats
-excerpt: 'This paper presents the application of Markov chain modeling to analyze and predict cyber threats, likely providing insights into cybersecurity risk assessment and management.'
+excerpt: 'This paper presents the application of Markov chain modeling to analyze and predict cyber threats, providing insights into cybersecurity risk assessment and management.'
 date: 2017-01-01
 venue: 'The Journal of Defense Modeling and Simulation'
 paperurl: 'http://rossgore.github.io/files/markov_chain_cyber_threats.pdf'

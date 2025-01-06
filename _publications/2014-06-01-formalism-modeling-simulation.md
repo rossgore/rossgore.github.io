@@ -3,7 +3,7 @@ title: "Toward a formalism of modeling and simulation using model theory"
 collection: publications
 category: manuscripts
 permalink: /publication/2014-formalism-modeling-simulation
-excerpt: 'This paper proposes a formalism for modeling and simulation using model theory, likely aiming to provide a more rigorous mathematical foundation for the field.'
+excerpt: 'This paper proposes a formalism for modeling and simulation using model theory, aiming to provide a more rigorous mathematical foundation for the field.'
 date: 2014-06-01
 venue: 'Complexity'
 paperurl: 'http://rossgore.github.io/files/formalism_modeling_simulation.pdf'

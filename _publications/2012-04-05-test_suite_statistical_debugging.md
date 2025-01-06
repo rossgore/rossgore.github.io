@@ -3,7 +3,7 @@ title: "Modifying test suite composition to enable effective predicate-level sta
 collection: publications
 category: conferences
 permalink: /publication/2012-test-suite-statistical-debugging
-excerpt: 'This paper discusses techniques for modifying test suite composition to improve the effectiveness of predicate-level statistical debugging, likely enhancing software testing and fault localization processes.'
+excerpt: 'This paper discusses techniques for modifying test suite composition to improve the effectiveness of predicate-level statistical debugging, enhancing software testing and fault localization processes.'
 date: 2012-01-01
 venue: 'NASA Formal Methods: 4th International Symposium, NFM 2012, Norfolk, VA, USA, April 3-5, 2012. Proceedings 4'
 paperurl: 'http://rossgore.github.io/files/test_suite_statistical_debugging.pdf'

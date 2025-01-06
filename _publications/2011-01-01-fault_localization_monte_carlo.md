@@ -3,7 +3,7 @@ title: "Applying enhanced fault localization technology to Monte Carlo simulatio
 collection: publications
 category: conferences
 permalink: /publication/2011-fault-localization-monte-carlo
-excerpt: 'This paper presents an application of enhanced fault localization techniques to Monte Carlo simulations, likely improving the ability to identify and diagnose issues in complex stochastic models.'
+excerpt: 'This paper presents an application of enhanced fault localization techniques to Monte Carlo simulations, improving the ability to identify and diagnose issues in complex stochastic models.'
 date: 2011-01-01
 venue: 'Proceedings of the 2011 Winter Simulation Conference (WSC)'
 paperurl: 'http://rossgore.github.io/files/fault_localization_monte_carlo.pdf'

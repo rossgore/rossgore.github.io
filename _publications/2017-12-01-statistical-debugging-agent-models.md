@@ -3,7 +3,7 @@ title: "Applying statistical debugging for enhanced trace validation of agent-ba
 collection: publications
 category: manuscripts
 permalink: /publication/2017-statistical-debugging-agent-models
-excerpt: 'This paper presents the application of statistical debugging techniques to improve trace validation in agent-based models, likely enhancing the reliability and accuracy of simulation results.'
+excerpt: 'This paper presents the application of statistical debugging techniques to improve trace validation in agent-based models, enhancing the reliability and accuracy of simulation results.'
 date: 2017-01-01
 venue: 'Simulation'
 paperurl: 'http://rossgore.github.io/files/statistical_debugging_agent_models.pdf'

@@ -3,7 +3,7 @@ title: "AggPro: the aggregate projection system"
 collection: publications
 category: manuscripts
 permalink: /publication/2009-aggpro-projection-system
-excerpt: 'This paper introduces AggPro, an aggregate projection system for baseball analytics. It likely discusses methods for projecting player performance using aggregated statistical data.'
+excerpt: 'This paper introduces AggPro, an aggregate projection system for baseball analytics. It discusses methods for projecting player performance using aggregated statistical data.'
 date: 2009-01-01
 venue: 'Baseball Research Journal'
 paperurl: 'http://rossgore.github.io/files/aggpro_projection_system.pdf'

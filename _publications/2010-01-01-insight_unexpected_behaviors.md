@@ -3,7 +3,7 @@ title: "INSIGHT: understanding unexpected behaviours in agent-based simulations"
 collection: publications
 category: manuscripts
 permalink: /publication/2010-insight-unexpected-behaviors
-excerpt: 'This paper presents INSIGHT, a framework for understanding unexpected behaviors in agent-based simulations. It likely discusses methods for analyzing and interpreting emergent phenomena in complex systems.'
+excerpt: 'This paper presents INSIGHT, a framework for understanding unexpected behaviors in agent-based simulations. It discusses methods for analyzing and interpreting emergent phenomena in complex systems.'
 date: 2010-01-01
 venue: 'Journal of Simulation'
 paperurl: 'http://rossgore.github.io/files/insight_unexpected_behaviors.pdf'
