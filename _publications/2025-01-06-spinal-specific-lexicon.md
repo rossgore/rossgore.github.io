@@ -1,0 +1,13 @@
+---
+title: "Spinal Specific Lexicon for Sentiment Analysis of Adult Spinal Deformity Patient Interviews Correlate with SRS22, SF36, and ODI Scores: A Pilot Study of 25 Patients"
+collection: publications
+category: manuscripts
+permalink: /publication/2025-spinal-lexicon
+excerpt: 'This paper explores the use of natural language processing and sentiment analysis on telehealth visit transcripts to develop a novel health-related quality of life (HRQOL) metric for adult spinal deformity patients. The study demonstrates significant correlations between this new sentiment analysis-based metric and conventional HRQOL measures, suggesting that NLP techniques applied to patient transcripts can produce effective HRQOL metrics.'
+date: 2025-01-06
+venue: 'Preprints.org'
+paperurl: 'http://rossgore.github.io/files/spinal_specific_lexicon.pdf'
+citation: 'Gore, Ross, Safaee, Michael M, Lynch, Christopher J, Ames, Chris P. (2025). "Spinal Specific Lexicon for Sentiment Analysis of Adult Spinal Deformity Patient Interviews Correlate with SRS22, SF36, and Odi Scores: A Pilot Study of 25 Patients." <i>Preprints</i>.'
+
+---
+Classic health-related quality of life (HRQOL) metrics are cumbersome, time-intensive, and subject to biases based on the subject’s native language, educational level, and cultural values. Natural language processing (NLP) converts text into quantitative metrics. Sentiment analysis enables subject matter experts to construct domain-specific lexicons that assign a value of either negative (-1) or positive (1) to certain words. The growth of telehealth provides opportunities to apply sentiment analysis to transcripts of adult spinal deformity patient visits to derive a novel and less biased HRQOL metric. In this study, we demonstrate the feasibility of constructing a spine-specific lexicon for sentiment analysis to derive an HRQOL metric for adult spinal deformity patients from their preoperative telehealth visit transcripts. We asked each of twenty-five (25) adult patients seven open-ended questions about their spinal conditions, treatment, and quality of life during telehealth visits. We analyzed the Pearson correlation between our sentiment analysis HRQOL metric and established HRQOL metrics (Scoliosis Research Society-22 questionnaire [SRS-22], 36-Item Short Form Health Survey [SF-36], and Oswestry Disability Index [ODI]). The results show statistically significant correlations (0.43–0.74) between our sentiment analysis metric and the conventional metrics. This provides evidence that applying NLP techniques to patient transcripts can yield effective HRQOL metrics.
