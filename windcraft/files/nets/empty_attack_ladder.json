@@ -7,16 +7,17 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": -48.077552795410156,
-      "y": -20.39805316925049,
+      "x": -80.01806640625,
+      "y": -137.1679449081421,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
-        "1yes": 0.5,
-        "1no": 0.5
-      }
+        "1yes": 1,
+        "1no": 0
+      },
+      "sampled": false
     },
     {
       "id": 2,
@@ -25,22 +26,23 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 262.19983673095703,
-      "y": 15.44980239868164,
+      "x": 174.81012725830078,
+      "y": -38.012118339538574,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "4yes": {
-          "2yes": 0.5,
-          "2no": 0.5
+          "2yes": 0.55,
+          "2no": 0.45
         },
         "4no": {
-          "2yes": 0.5,
-          "2no": 0.5
+          "2yes": 0,
+          "2no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 3,
@@ -49,22 +51,35 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 252.8245391845703,
-      "y": 104.4096622467041,
+      "x": 275.44305419921875,
+      "y": 122.91571235656738,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "2yes": {
-          "3yes": 0.5,
-          "3no": 0.5
+          "6yes": {
+            "3yes": 1,
+            "3no": 0
+          },
+          "6no": {
+            "3yes": 0.5,
+            "3no": 0.5
+          }
         },
         "2no": {
-          "3yes": 0.5,
-          "3no": 0.5
+          "6yes": {
+            "3yes": 0.5,
+            "3no": 0.5
+          },
+          "6no": {
+            "3yes": 0,
+            "3no": 1
+          }
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 4,
@@ -73,22 +88,23 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 129.96287155151367,
-      "y": 19.430360794067383,
+      "x": 50.7981071472168,
+      "y": -41.228355407714844,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "1yes": {
-          "4yes": 0.5,
-          "4no": 0.5
+          "4yes": 0.55,
+          "4no": 0.45
         },
         "1no": {
-          "4yes": 0.5,
-          "4no": 0.5
+          "4yes": 0,
+          "4no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 6,
@@ -97,22 +113,23 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 484.2138977050781,
-      "y": 20.4542236328125,
+      "x": 281.6754150390625,
+      "y": -31.9795823097229,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "2yes": {
-          "6yes": 0.5,
-          "6no": 0.5
+          "6yes": 0.15,
+          "6no": 0.85
         },
         "2no": {
-          "6yes": 0.5,
-          "6no": 0.5
+          "6yes": 0,
+          "6no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 7,
@@ -121,8 +138,8 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 621.409423828125,
-      "y": 4.072672367095947,
+      "x": 931.8513793945312,
+      "y": -109.1764349937439,
       "values": [
         "yes",
         "no"
@@ -133,10 +150,11 @@
           "7no": 0.5
         },
         "6no": {
-          "7yes": 0.5,
-          "7no": 0.5
+          "7yes": 0,
+          "7no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 8,
@@ -145,8 +163,8 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 632.6716918945312,
-      "y": 106.4573745727539,
+      "x": 935.5193481445312,
+      "y": 95.55773162841797,
       "values": [
         "yes",
         "no"
@@ -157,82 +175,86 @@
           "8no": 0.5
         },
         "6no": {
-          "8yes": 0.5,
-          "8no": 0.5
+          "8yes": 0,
+          "8no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 10,
       "orderId": 10,
-      "title": "Heat Sensor (PT100 RTD Sensor)",
+      "title": "Heat Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 21.43508529663086,
-      "y": 313.2744598388672,
+      "x": -119.02652549743652,
+      "y": 307.1228790283203,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "13yes": {
-          "10yes": 0.5,
-          "10no": 0.5
+          "10yes": 0.85,
+          "10no": 0.15
         },
         "13no": {
-          "10yes": 0.5,
-          "10no": 0.5
+          "10yes": 0,
+          "10no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 11,
       "orderId": 11,
-      "title": "Pressure Sensor (A-10 Pressure Transmitter)",
+      "title": "Pressure Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 132.01055908203125,
-      "y": 323.5129089355469,
+      "x": 87.924072265625,
+      "y": 288.65380859375,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "13yes": {
-          "11yes": 0.5,
-          "11no": 0.5
+          "11yes": 0.85,
+          "11no": 0.15
         },
         "13no": {
-          "11yes": 0.5,
-          "11no": 0.5
+          "11yes": 0,
+          "11no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 12,
       "orderId": 12,
-      "title": "Hall Effect Sensor (NRG 40H Anemometer)",
+      "title": "Hall Effect Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 228.25216674804688,
-      "y": 315.3221435546875,
+      "x": 263.11126708984375,
+      "y": 265.08404541015625,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "13yes": {
-          "12yes": 0.5,
-          "12no": 0.5
+          "12yes": 0.85,
+          "12no": 0.15
         },
         "13no": {
-          "12yes": 0.5,
-          "12no": 0.5
+          "12yes": 0,
+          "12no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 13,
@@ -249,14 +271,15 @@
       ],
       "tbl": {
         "3yes": {
-          "13yes": 0.5,
-          "13no": 0.5
+          "13yes": 0.75,
+          "13no": 0.25
         },
         "3no": {
-          "13yes": 0.5,
-          "13no": 0.5
+          "13yes": 0,
+          "13no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 16,
@@ -265,27 +288,28 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": 455.54620361328125,
-      "y": 191.43667602539062,
+      "x": 423.6746826171875,
+      "y": 260.3203125,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "3yes": {
-          "16yes": 0.5,
-          "16no": 0.5
+          "16yes": 0.75,
+          "16no": 0.25
         },
         "3no": {
-          "16yes": 0.5,
-          "16no": 0.5
+          "16yes": 0,
+          "16no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 17,
       "orderId": 17,
-      "title": "Pitch Electronic Motor (Bonfiglioli 700w))",
+      "title": "Pitch Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
@@ -300,18 +324,18 @@
           "11yes": {
             "12yes": {
               "16yes": {
-                "17yes": 0.5,
-                "17no": 0.5
+                "17yes": 1,
+                "17no": 0
               },
               "16no": {
-                "17yes": 0.5,
-                "17no": 0.5
+                "17yes": 0.75,
+                "17no": 0.25
               }
             },
             "12no": {
               "16yes": {
-                "17yes": 0.5,
-                "17no": 0.5
+                "17yes": 0.65,
+                "17no": 0.35
               },
               "16no": {
                 "17yes": 0.5,
@@ -382,18 +406,19 @@
                 "17no": 0.5
               },
               "16no": {
-                "17yes": 0.5,
-                "17no": 0.5
+                "17yes": 0,
+                "17no": 1
               }
             }
           }
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 18,
       "orderId": 18,
-      "title": "Yaw Electronic Motor (Bonfiglioli 700w)",
+      "title": "Yaw Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
@@ -408,18 +433,18 @@
           "11yes": {
             "12yes": {
               "16yes": {
-                "18yes": 0.5,
-                "18no": 0.5
+                "18yes": 1,
+                "18no": 0
               },
               "16no": {
-                "18yes": 0.5,
-                "18no": 0.5
+                "18yes": 0.75,
+                "18no": 0.25
               }
             },
             "12no": {
               "16yes": {
-                "18yes": 0.5,
-                "18no": 0.5
+                "18yes": 0.65,
+                "18no": 0.35
               },
               "16no": {
                 "18yes": 0.5,
@@ -490,18 +515,19 @@
                 "18no": 0.5
               },
               "16no": {
-                "18yes": 0.5,
-                "18no": 0.5
+                "18yes": 0,
+                "18no": 1
               }
             }
           }
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 19,
       "orderId": 19,
-      "title": "Generator Motor (Bonfiglioli 700w)",
+      "title": "Generator Motor Controller (Festo CMMO-ST-C5-1-LKP)",
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
@@ -515,18 +541,18 @@
         "10yes": {
           "11yes": {
             "16yes": {
-              "19yes": 0.5,
-              "19no": 0.5
+              "19yes": 1,
+              "19no": 0
             },
             "16no": {
-              "19yes": 0.5,
-              "19no": 0.5
+              "19yes": 0.75,
+              "19no": 0.25
             }
           },
           "11no": {
             "16yes": {
-              "19yes": 0.5,
-              "19no": 0.5
+              "19yes": 0.65,
+              "19no": 0.35
             },
             "16no": {
               "19yes": 0.5,
@@ -551,17 +577,18 @@
               "19no": 0.5
             },
             "16no": {
-              "19yes": 0.5,
-              "19no": 0.5
+              "19yes": 0,
+              "19no": 1
             }
           }
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 20,
       "orderId": 20,
-      "title": "Drive Motor (Bonfiglioli 700w)",
+      "title": "Drive Motor Controller (Festo CMMO-ST-C5-1-LKP)",
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
@@ -575,18 +602,18 @@
         "10yes": {
           "11yes": {
             "16yes": {
-              "20yes": 0.5,
-              "20no": 0.5
+              "20yes": 1,
+              "20no": 0
             },
             "16no": {
-              "20yes": 0.5,
-              "20no": 0.5
+              "20yes": 0.75,
+              "20no": 0.25
             }
           },
           "11no": {
             "16yes": {
-              "20yes": 0.5,
-              "20no": 0.5
+              "20yes": 0.65,
+              "20no": 0.35
             },
             "16no": {
               "20yes": 0.5,
@@ -611,12 +638,13 @@
               "20no": 0.5
             },
             "16no": {
-              "20yes": 0.5,
-              "20no": 0.5
+              "20yes": 0,
+              "20no": 1
             }
           }
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 36,
@@ -633,14 +661,15 @@
       ],
       "tbl": {
         "1yes": {
-          "36yes": 0.5,
-          "36no": 0.5
+          "36yes": 0.65,
+          "36no": 0.35
         },
         "1no": {
-          "36yes": 0.5,
-          "36no": 0.5
+          "36yes": 0,
+          "36no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 39,
@@ -649,22 +678,23 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": -365.2604064941406,
-      "y": -71.77056562900543,
+      "x": -416.26043701171875,
+      "y": -83.77057325839996,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "36yes": {
-          "39yes": 0.5,
-          "39no": 0.5
+          "39yes": 0.35,
+          "39no": 0.65
         },
         "36no": {
-          "39yes": 0.5,
-          "39no": 0.5
+          "39yes": 0,
+          "39no": 1
         }
-      }
+      },
+      "sampled": false
     },
     {
       "id": 41,
@@ -673,75 +703,76 @@
       "functionalities": [],
       "vulnerabilities": [],
       "attack_techniques": [],
-      "x": -383.8312072753906,
-      "y": 135.60313034057617,
+      "x": -404.8312072753906,
+      "y": 149.60313034057617,
       "values": [
         "yes",
         "no"
       ],
       "tbl": {
         "36yes": {
-          "41yes": 0.5,
-          "41no": 0.5
+          "41yes": 0.35,
+          "41no": 0.65
         },
         "36no": {
-          "41yes": 0.5,
-          "41no": 0.5
+          "41yes": 0,
+          "41no": 1
         }
-      }
+      },
+      "sampled": false
+    },
+    {
+      "id": 42,
+      "orderId": 42,
+      "title": "Weather Station (Ambient WS-2902)",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 775.1961669921875,
+      "y": 246.5157928466797,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "3yes": {
+          "42yes": 0.5,
+          "42no": 0.5
+        },
+        "3no": {
+          "42yes": 0,
+          "42no": 1
+        }
+      },
+      "sampled": false
+    },
+    {
+      "id": 43,
+      "orderId": 43,
+      "title": "Storage Database (ThinkSystem SR860 V3 Mission Control Server)",
+      "functionalities": [],
+      "vulnerabilities": [],
+      "attack_techniques": [],
+      "x": 928.4620971679688,
+      "y": -10.317361831665039,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "tbl": {
+        "6yes": {
+          "43yes": 0.5,
+          "43no": 0.5
+        },
+        "6no": {
+          "43yes": 0,
+          "43no": 1
+        }
+      },
+      "sampled": false
     }
   ],
   "edges": [
-    {
-      "source": {
-        "id": 2,
-        "orderId": 2,
-        "title": "Firewall (SIMATIC CP 1243)",
-        "functionalities": [],
-        "vulnerabilities": [],
-        "attack_techniques": [],
-        "x": 262.19983673095703,
-        "y": 15.44980239868164,
-        "values": [
-          "yes",
-          "no"
-        ],
-        "tbl": {
-          "4yes": {
-            "2yes": 0.5,
-            "2no": 0.5
-          },
-          "4no": {
-            "2yes": 0.5,
-            "2no": 0.5
-          }
-        }
-      },
-      "target": {
-        "id": 3,
-        "orderId": 3,
-        "title": "Network Switch (SCALANCE M800)",
-        "functionalities": [],
-        "vulnerabilities": [],
-        "attack_techniques": [],
-        "x": 252.8245391845703,
-        "y": 104.4096622467041,
-        "values": [
-          "yes",
-          "no"
-        ],
-        "tbl": {
-          "2yes": {
-            "3yes": 0.5,
-            "3no": 0.5
-          },
-          "2no": {
-            "3yes": 0.5,
-            "3no": 0.5
-          }
-        }
-      }
-    },
     {
       "source": {
         "id": 1,
@@ -750,16 +781,17 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": -48.077552795410156,
-        "y": -20.39805316925049,
+        "x": -80.01806640625,
+        "y": -137.1679449081421,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
-          "1yes": 0.5,
-          "1no": 0.5
-        }
+          "1yes": 1,
+          "1no": 0
+        },
+        "sampled": false
       },
       "target": {
         "id": 4,
@@ -768,22 +800,23 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 129.96287155151367,
-        "y": 19.430360794067383,
+        "x": 50.7981071472168,
+        "y": -41.228355407714844,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "1yes": {
-            "4yes": 0.5,
-            "4no": 0.5
+            "4yes": 0.55,
+            "4no": 0.45
           },
           "1no": {
-            "4yes": 0.5,
-            "4no": 0.5
+            "4yes": 0,
+            "4no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -794,22 +827,23 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 129.96287155151367,
-        "y": 19.430360794067383,
+        "x": 50.7981071472168,
+        "y": -41.228355407714844,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "1yes": {
-            "4yes": 0.5,
-            "4no": 0.5
+            "4yes": 0.55,
+            "4no": 0.45
           },
           "1no": {
-            "4yes": 0.5,
-            "4no": 0.5
+            "4yes": 0,
+            "4no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 2,
@@ -818,22 +852,23 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 262.19983673095703,
-        "y": 15.44980239868164,
+        "x": 174.81012725830078,
+        "y": -38.012118339538574,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "4yes": {
-            "2yes": 0.5,
-            "2no": 0.5
+            "2yes": 0.55,
+            "2no": 0.45
           },
           "4no": {
-            "2yes": 0.5,
-            "2no": 0.5
+            "2yes": 0,
+            "2no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -844,22 +879,23 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 484.2138977050781,
-        "y": 20.4542236328125,
+        "x": 281.6754150390625,
+        "y": -31.9795823097229,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "2yes": {
-            "6yes": 0.5,
-            "6no": 0.5
+            "6yes": 0.15,
+            "6no": 0.85
           },
           "2no": {
-            "6yes": 0.5,
-            "6no": 0.5
+            "6yes": 0,
+            "6no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 7,
@@ -868,8 +904,8 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 621.409423828125,
-        "y": 4.072672367095947,
+        "x": 931.8513793945312,
+        "y": -109.1764349937439,
         "values": [
           "yes",
           "no"
@@ -880,10 +916,11 @@
             "7no": 0.5
           },
           "6no": {
-            "7yes": 0.5,
-            "7no": 0.5
+            "7yes": 0,
+            "7no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -894,22 +931,23 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 484.2138977050781,
-        "y": 20.4542236328125,
+        "x": 281.6754150390625,
+        "y": -31.9795823097229,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "2yes": {
-            "6yes": 0.5,
-            "6no": 0.5
+            "6yes": 0.15,
+            "6no": 0.85
           },
           "2no": {
-            "6yes": 0.5,
-            "6no": 0.5
+            "6yes": 0,
+            "6no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 8,
@@ -918,8 +956,8 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 632.6716918945312,
-        "y": 106.4573745727539,
+        "x": 935.5193481445312,
+        "y": 95.55773162841797,
         "values": [
           "yes",
           "no"
@@ -930,10 +968,11 @@
             "8no": 0.5
           },
           "6no": {
-            "8yes": 0.5,
-            "8no": 0.5
+            "8yes": 0,
+            "8no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -944,22 +983,23 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 262.19983673095703,
-        "y": 15.44980239868164,
+        "x": 174.81012725830078,
+        "y": -38.012118339538574,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "4yes": {
-            "2yes": 0.5,
-            "2no": 0.5
+            "2yes": 0.55,
+            "2no": 0.45
           },
           "4no": {
-            "2yes": 0.5,
-            "2no": 0.5
+            "2yes": 0,
+            "2no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 6,
@@ -968,22 +1008,23 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 484.2138977050781,
-        "y": 20.4542236328125,
+        "x": 281.6754150390625,
+        "y": -31.9795823097229,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "2yes": {
-            "6yes": 0.5,
-            "6no": 0.5
+            "6yes": 0.15,
+            "6no": 0.85
           },
           "2no": {
-            "6yes": 0.5,
-            "6no": 0.5
+            "6yes": 0,
+            "6no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -994,22 +1035,35 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 252.8245391845703,
-        "y": 104.4096622467041,
+        "x": 275.44305419921875,
+        "y": 122.91571235656738,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "2yes": {
-            "3yes": 0.5,
-            "3no": 0.5
+            "6yes": {
+              "3yes": 1,
+              "3no": 0
+            },
+            "6no": {
+              "3yes": 0.5,
+              "3no": 0.5
+            }
           },
           "2no": {
-            "3yes": 0.5,
-            "3no": 0.5
+            "6yes": {
+              "3yes": 0.5,
+              "3no": 0.5
+            },
+            "6no": {
+              "3yes": 0,
+              "3no": 1
+            }
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 13,
@@ -1026,14 +1080,15 @@
         ],
         "tbl": {
           "3yes": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0.75,
+            "13no": 0.25
           },
           "3no": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0,
+            "13no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -1052,38 +1107,40 @@
         ],
         "tbl": {
           "3yes": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0.75,
+            "13no": 0.25
           },
           "3no": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0,
+            "13no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 10,
         "orderId": 10,
-        "title": "Heat Sensor (PT100 RTD Sensor)",
+        "title": "Heat Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 21.43508529663086,
-        "y": 313.2744598388672,
+        "x": -119.02652549743652,
+        "y": 307.1228790283203,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0.85,
+            "10no": 0.15
           },
           "13no": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0,
+            "10no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -1102,38 +1159,40 @@
         ],
         "tbl": {
           "3yes": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0.75,
+            "13no": 0.25
           },
           "3no": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0,
+            "13no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 11,
         "orderId": 11,
-        "title": "Pressure Sensor (A-10 Pressure Transmitter)",
+        "title": "Pressure Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 132.01055908203125,
-        "y": 323.5129089355469,
+        "x": 87.924072265625,
+        "y": 288.65380859375,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0.85,
+            "11no": 0.15
           },
           "13no": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0,
+            "11no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -1152,38 +1211,40 @@
         ],
         "tbl": {
           "3yes": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0.75,
+            "13no": 0.25
           },
           "3no": {
-            "13yes": 0.5,
-            "13no": 0.5
+            "13yes": 0,
+            "13no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 12,
         "orderId": 12,
-        "title": "Hall Effect Sensor (NRG 40H Anemometer)",
+        "title": "Hall Effect Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 228.25216674804688,
-        "y": 315.3221435546875,
+        "x": 263.11126708984375,
+        "y": 265.08404541015625,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "12yes": 0.5,
-            "12no": 0.5
+            "12yes": 0.85,
+            "12no": 0.15
           },
           "13no": {
-            "12yes": 0.5,
-            "12no": 0.5
+            "12yes": 0,
+            "12no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -1194,22 +1255,35 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 252.8245391845703,
-        "y": 104.4096622467041,
+        "x": 275.44305419921875,
+        "y": 122.91571235656738,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "2yes": {
-            "3yes": 0.5,
-            "3no": 0.5
+            "6yes": {
+              "3yes": 1,
+              "3no": 0
+            },
+            "6no": {
+              "3yes": 0.5,
+              "3no": 0.5
+            }
           },
           "2no": {
-            "3yes": 0.5,
-            "3no": 0.5
+            "6yes": {
+              "3yes": 0.5,
+              "3no": 0.5
+            },
+            "6no": {
+              "3yes": 0,
+              "3no": 1
+            }
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 16,
@@ -1218,22 +1292,23 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 455.54620361328125,
-        "y": 191.43667602539062,
+        "x": 423.6746826171875,
+        "y": 260.3203125,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "3yes": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0.75,
+            "16no": 0.25
           },
           "3no": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0,
+            "16no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -1244,27 +1319,28 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 455.54620361328125,
-        "y": 191.43667602539062,
+        "x": 423.6746826171875,
+        "y": 260.3203125,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "3yes": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0.75,
+            "16no": 0.25
           },
           "3no": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0,
+            "16no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 17,
         "orderId": 17,
-        "title": "Pitch Electronic Motor (Bonfiglioli 700w))",
+        "title": "Pitch Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -1279,18 +1355,18 @@
             "11yes": {
               "12yes": {
                 "16yes": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 1,
+                  "17no": 0
                 },
                 "16no": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0.75,
+                  "17no": 0.25
                 }
               },
               "12no": {
                 "16yes": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0.65,
+                  "17no": 0.35
                 },
                 "16no": {
                   "17yes": 0.5,
@@ -1361,13 +1437,14 @@
                   "17no": 0.5
                 },
                 "16no": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -1378,27 +1455,28 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 455.54620361328125,
-        "y": 191.43667602539062,
+        "x": 423.6746826171875,
+        "y": 260.3203125,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "3yes": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0.75,
+            "16no": 0.25
           },
           "3no": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0,
+            "16no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 18,
         "orderId": 18,
-        "title": "Yaw Electronic Motor (Bonfiglioli 700w)",
+        "title": "Yaw Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -1413,18 +1491,18 @@
             "11yes": {
               "12yes": {
                 "16yes": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 1,
+                  "18no": 0
                 },
                 "16no": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0.75,
+                  "18no": 0.25
                 }
               },
               "12no": {
                 "16yes": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0.65,
+                  "18no": 0.35
                 },
                 "16no": {
                   "18yes": 0.5,
@@ -1495,13 +1573,14 @@
                   "18no": 0.5
                 },
                 "16no": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0,
+                  "18no": 1
                 }
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -1512,27 +1591,28 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 455.54620361328125,
-        "y": 191.43667602539062,
+        "x": 423.6746826171875,
+        "y": 260.3203125,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "3yes": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0.75,
+            "16no": 0.25
           },
           "3no": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0,
+            "16no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 19,
         "orderId": 19,
-        "title": "Generator Motor (Bonfiglioli 700w)",
+        "title": "Generator Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -1546,18 +1626,18 @@
           "10yes": {
             "11yes": {
               "16yes": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 1,
+                "19no": 0
               },
               "16no": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 0.75,
+                "19no": 0.25
               }
             },
             "11no": {
               "16yes": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 0.65,
+                "19no": 0.35
               },
               "16no": {
                 "19yes": 0.5,
@@ -1582,12 +1662,13 @@
                 "19no": 0.5
               },
               "16no": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 0,
+                "19no": 1
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -1598,27 +1679,28 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 455.54620361328125,
-        "y": 191.43667602539062,
+        "x": 423.6746826171875,
+        "y": 260.3203125,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "3yes": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0.75,
+            "16no": 0.25
           },
           "3no": {
-            "16yes": 0.5,
-            "16no": 0.5
+            "16yes": 0,
+            "16no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 20,
         "orderId": 20,
-        "title": "Drive Motor (Bonfiglioli 700w)",
+        "title": "Drive Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -1632,18 +1714,18 @@
           "10yes": {
             "11yes": {
               "16yes": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 1,
+                "20no": 0
               },
               "16no": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 0.75,
+                "20no": 0.25
               }
             },
             "11no": {
               "16yes": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 0.65,
+                "20no": 0.35
               },
               "16no": {
                 "20yes": 0.5,
@@ -1668,43 +1750,45 @@
                 "20no": 0.5
               },
               "16no": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 0,
+                "20no": 1
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 12,
         "orderId": 12,
-        "title": "Hall Effect Sensor (NRG 40H Anemometer)",
+        "title": "Hall Effect Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 228.25216674804688,
-        "y": 315.3221435546875,
+        "x": 263.11126708984375,
+        "y": 265.08404541015625,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "12yes": 0.5,
-            "12no": 0.5
+            "12yes": 0.85,
+            "12no": 0.15
           },
           "13no": {
-            "12yes": 0.5,
-            "12no": 0.5
+            "12yes": 0,
+            "12no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 18,
         "orderId": 18,
-        "title": "Yaw Electronic Motor (Bonfiglioli 700w)",
+        "title": "Yaw Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -1719,18 +1803,18 @@
             "11yes": {
               "12yes": {
                 "16yes": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 1,
+                  "18no": 0
                 },
                 "16no": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0.75,
+                  "18no": 0.25
                 }
               },
               "12no": {
                 "16yes": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0.65,
+                  "18no": 0.35
                 },
                 "16no": {
                   "18yes": 0.5,
@@ -1801,44 +1885,46 @@
                   "18no": 0.5
                 },
                 "16no": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0,
+                  "18no": 1
                 }
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 12,
         "orderId": 12,
-        "title": "Hall Effect Sensor (NRG 40H Anemometer)",
+        "title": "Hall Effect Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 228.25216674804688,
-        "y": 315.3221435546875,
+        "x": 263.11126708984375,
+        "y": 265.08404541015625,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "12yes": 0.5,
-            "12no": 0.5
+            "12yes": 0.85,
+            "12no": 0.15
           },
           "13no": {
-            "12yes": 0.5,
-            "12no": 0.5
+            "12yes": 0,
+            "12no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 17,
         "orderId": 17,
-        "title": "Pitch Electronic Motor (Bonfiglioli 700w))",
+        "title": "Pitch Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -1853,18 +1939,18 @@
             "11yes": {
               "12yes": {
                 "16yes": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 1,
+                  "17no": 0
                 },
                 "16no": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0.75,
+                  "17no": 0.25
                 }
               },
               "12no": {
                 "16yes": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0.65,
+                  "17no": 0.35
                 },
                 "16no": {
                   "17yes": 0.5,
@@ -1935,44 +2021,46 @@
                   "17no": 0.5
                 },
                 "16no": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 11,
         "orderId": 11,
-        "title": "Pressure Sensor (A-10 Pressure Transmitter)",
+        "title": "Pressure Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 132.01055908203125,
-        "y": 323.5129089355469,
+        "x": 87.924072265625,
+        "y": 288.65380859375,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0.85,
+            "11no": 0.15
           },
           "13no": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0,
+            "11no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 17,
         "orderId": 17,
-        "title": "Pitch Electronic Motor (Bonfiglioli 700w))",
+        "title": "Pitch Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -1987,18 +2075,18 @@
             "11yes": {
               "12yes": {
                 "16yes": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 1,
+                  "17no": 0
                 },
                 "16no": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0.75,
+                  "17no": 0.25
                 }
               },
               "12no": {
                 "16yes": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0.65,
+                  "17no": 0.35
                 },
                 "16no": {
                   "17yes": 0.5,
@@ -2069,44 +2157,46 @@
                   "17no": 0.5
                 },
                 "16no": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 11,
         "orderId": 11,
-        "title": "Pressure Sensor (A-10 Pressure Transmitter)",
+        "title": "Pressure Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 132.01055908203125,
-        "y": 323.5129089355469,
+        "x": 87.924072265625,
+        "y": 288.65380859375,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0.85,
+            "11no": 0.15
           },
           "13no": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0,
+            "11no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 18,
         "orderId": 18,
-        "title": "Yaw Electronic Motor (Bonfiglioli 700w)",
+        "title": "Yaw Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -2121,18 +2211,18 @@
             "11yes": {
               "12yes": {
                 "16yes": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 1,
+                  "18no": 0
                 },
                 "16no": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0.75,
+                  "18no": 0.25
                 }
               },
               "12no": {
                 "16yes": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0.65,
+                  "18no": 0.35
                 },
                 "16no": {
                   "18yes": 0.5,
@@ -2203,44 +2293,46 @@
                   "18no": 0.5
                 },
                 "16no": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0,
+                  "18no": 1
                 }
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 11,
         "orderId": 11,
-        "title": "Pressure Sensor (A-10 Pressure Transmitter)",
+        "title": "Pressure Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 132.01055908203125,
-        "y": 323.5129089355469,
+        "x": 87.924072265625,
+        "y": 288.65380859375,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0.85,
+            "11no": 0.15
           },
           "13no": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0,
+            "11no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 19,
         "orderId": 19,
-        "title": "Generator Motor (Bonfiglioli 700w)",
+        "title": "Generator Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -2254,18 +2346,18 @@
           "10yes": {
             "11yes": {
               "16yes": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 1,
+                "19no": 0
               },
               "16no": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 0.75,
+                "19no": 0.25
               }
             },
             "11no": {
               "16yes": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 0.65,
+                "19no": 0.35
               },
               "16no": {
                 "19yes": 0.5,
@@ -2290,43 +2382,45 @@
                 "19no": 0.5
               },
               "16no": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 0,
+                "19no": 1
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 11,
         "orderId": 11,
-        "title": "Pressure Sensor (A-10 Pressure Transmitter)",
+        "title": "Pressure Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 132.01055908203125,
-        "y": 323.5129089355469,
+        "x": 87.924072265625,
+        "y": 288.65380859375,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0.85,
+            "11no": 0.15
           },
           "13no": {
-            "11yes": 0.5,
-            "11no": 0.5
+            "11yes": 0,
+            "11no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 20,
         "orderId": 20,
-        "title": "Drive Motor (Bonfiglioli 700w)",
+        "title": "Drive Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -2340,18 +2434,18 @@
           "10yes": {
             "11yes": {
               "16yes": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 1,
+                "20no": 0
               },
               "16no": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 0.75,
+                "20no": 0.25
               }
             },
             "11no": {
               "16yes": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 0.65,
+                "20no": 0.35
               },
               "16no": {
                 "20yes": 0.5,
@@ -2376,43 +2470,45 @@
                 "20no": 0.5
               },
               "16no": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 0,
+                "20no": 1
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 10,
         "orderId": 10,
-        "title": "Heat Sensor (PT100 RTD Sensor)",
+        "title": "Heat Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 21.43508529663086,
-        "y": 313.2744598388672,
+        "x": -119.02652549743652,
+        "y": 307.1228790283203,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0.85,
+            "10no": 0.15
           },
           "13no": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0,
+            "10no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 17,
         "orderId": 17,
-        "title": "Pitch Electronic Motor (Bonfiglioli 700w))",
+        "title": "Pitch Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -2427,18 +2523,18 @@
             "11yes": {
               "12yes": {
                 "16yes": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 1,
+                  "17no": 0
                 },
                 "16no": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0.75,
+                  "17no": 0.25
                 }
               },
               "12no": {
                 "16yes": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0.65,
+                  "17no": 0.35
                 },
                 "16no": {
                   "17yes": 0.5,
@@ -2509,44 +2605,46 @@
                   "17no": 0.5
                 },
                 "16no": {
-                  "17yes": 0.5,
-                  "17no": 0.5
+                  "17yes": 0,
+                  "17no": 1
                 }
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 10,
         "orderId": 10,
-        "title": "Heat Sensor (PT100 RTD Sensor)",
+        "title": "Heat Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 21.43508529663086,
-        "y": 313.2744598388672,
+        "x": -119.02652549743652,
+        "y": 307.1228790283203,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0.85,
+            "10no": 0.15
           },
           "13no": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0,
+            "10no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 18,
         "orderId": 18,
-        "title": "Yaw Electronic Motor (Bonfiglioli 700w)",
+        "title": "Yaw Electronic Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -2561,18 +2659,18 @@
             "11yes": {
               "12yes": {
                 "16yes": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 1,
+                  "18no": 0
                 },
                 "16no": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0.75,
+                  "18no": 0.25
                 }
               },
               "12no": {
                 "16yes": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0.65,
+                  "18no": 0.35
                 },
                 "16no": {
                   "18yes": 0.5,
@@ -2643,44 +2741,46 @@
                   "18no": 0.5
                 },
                 "16no": {
-                  "18yes": 0.5,
-                  "18no": 0.5
+                  "18yes": 0,
+                  "18no": 1
                 }
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 10,
         "orderId": 10,
-        "title": "Heat Sensor (PT100 RTD Sensor)",
+        "title": "Heat Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 21.43508529663086,
-        "y": 313.2744598388672,
+        "x": -119.02652549743652,
+        "y": 307.1228790283203,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0.85,
+            "10no": 0.15
           },
           "13no": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0,
+            "10no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 19,
         "orderId": 19,
-        "title": "Generator Motor (Bonfiglioli 700w)",
+        "title": "Generator Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -2694,18 +2794,18 @@
           "10yes": {
             "11yes": {
               "16yes": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 1,
+                "19no": 0
               },
               "16no": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 0.75,
+                "19no": 0.25
               }
             },
             "11no": {
               "16yes": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 0.65,
+                "19no": 0.35
               },
               "16no": {
                 "19yes": 0.5,
@@ -2730,43 +2830,45 @@
                 "19no": 0.5
               },
               "16no": {
-                "19yes": 0.5,
-                "19no": 0.5
+                "19yes": 0,
+                "19no": 1
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
       "source": {
         "id": 10,
         "orderId": 10,
-        "title": "Heat Sensor (PT100 RTD Sensor)",
+        "title": "Heat Sensor (Tollhouse SmartGrid Lighthouse Sensor Management System)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": 21.43508529663086,
-        "y": 313.2744598388672,
+        "x": -119.02652549743652,
+        "y": 307.1228790283203,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "13yes": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0.85,
+            "10no": 0.15
           },
           "13no": {
-            "10yes": 0.5,
-            "10no": 0.5
+            "10yes": 0,
+            "10no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 20,
         "orderId": 20,
-        "title": "Drive Motor (Bonfiglioli 700w)",
+        "title": "Drive Motor Controller (Festo CMMO-ST-C5-1-LKP)",
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
@@ -2780,18 +2882,18 @@
           "10yes": {
             "11yes": {
               "16yes": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 1,
+                "20no": 0
               },
               "16no": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 0.75,
+                "20no": 0.25
               }
             },
             "11no": {
               "16yes": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 0.65,
+                "20no": 0.35
               },
               "16no": {
                 "20yes": 0.5,
@@ -2816,12 +2918,13 @@
                 "20no": 0.5
               },
               "16no": {
-                "20yes": 0.5,
-                "20no": 0.5
+                "20yes": 0,
+                "20no": 1
               }
             }
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -2832,16 +2935,17 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": -48.077552795410156,
-        "y": -20.39805316925049,
+        "x": -80.01806640625,
+        "y": -137.1679449081421,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
-          "1yes": 0.5,
-          "1no": 0.5
-        }
+          "1yes": 1,
+          "1no": 0
+        },
+        "sampled": false
       },
       "target": {
         "id": 36,
@@ -2858,14 +2962,15 @@
         ],
         "tbl": {
           "1yes": {
-            "36yes": 0.5,
-            "36no": 0.5
+            "36yes": 0.65,
+            "36no": 0.35
           },
           "1no": {
-            "36yes": 0.5,
-            "36no": 0.5
+            "36yes": 0,
+            "36no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -2884,14 +2989,15 @@
         ],
         "tbl": {
           "1yes": {
-            "36yes": 0.5,
-            "36no": 0.5
+            "36yes": 0.65,
+            "36no": 0.35
           },
           "1no": {
-            "36yes": 0.5,
-            "36no": 0.5
+            "36yes": 0,
+            "36no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 39,
@@ -2900,22 +3006,23 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": -365.2604064941406,
-        "y": -71.77056562900543,
+        "x": -416.26043701171875,
+        "y": -83.77057325839996,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "36yes": {
-            "39yes": 0.5,
-            "39no": 0.5
+            "39yes": 0.35,
+            "39no": 0.65
           },
           "36no": {
-            "39yes": 0.5,
-            "39no": 0.5
+            "39yes": 0,
+            "39no": 1
           }
-        }
+        },
+        "sampled": false
       }
     },
     {
@@ -2934,14 +3041,15 @@
         ],
         "tbl": {
           "1yes": {
-            "36yes": 0.5,
-            "36no": 0.5
+            "36yes": 0.65,
+            "36no": 0.35
           },
           "1no": {
-            "36yes": 0.5,
-            "36no": 0.5
+            "36yes": 0,
+            "36no": 1
           }
-        }
+        },
+        "sampled": false
       },
       "target": {
         "id": 41,
@@ -2950,22 +3058,267 @@
         "functionalities": [],
         "vulnerabilities": [],
         "attack_techniques": [],
-        "x": -383.8312072753906,
-        "y": 135.60313034057617,
+        "x": -404.8312072753906,
+        "y": 149.60313034057617,
         "values": [
           "yes",
           "no"
         ],
         "tbl": {
           "36yes": {
-            "41yes": 0.5,
-            "41no": 0.5
+            "41yes": 0.35,
+            "41no": 0.65
           },
           "36no": {
-            "41yes": 0.5,
-            "41no": 0.5
+            "41yes": 0,
+            "41no": 1
           }
-        }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 3,
+        "orderId": 3,
+        "title": "Network Switch (SCALANCE M800)",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 275.44305419921875,
+        "y": 122.91571235656738,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "6yes": {
+              "3yes": 1,
+              "3no": 0
+            },
+            "6no": {
+              "3yes": 0.5,
+              "3no": 0.5
+            }
+          },
+          "2no": {
+            "6yes": {
+              "3yes": 0.5,
+              "3no": 0.5
+            },
+            "6no": {
+              "3yes": 0,
+              "3no": 1
+            }
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 42,
+        "orderId": 42,
+        "title": "Weather Station (Ambient WS-2902)",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 775.1961669921875,
+        "y": 246.5157928466797,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "3yes": {
+            "42yes": 0.5,
+            "42no": 0.5
+          },
+          "3no": {
+            "42yes": 0,
+            "42no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 6,
+        "orderId": 6,
+        "title": "Rapid SCADA Server With PLC (SIMATIC S7-1500)",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 281.6754150390625,
+        "y": -31.9795823097229,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "6yes": 0.15,
+            "6no": 0.85
+          },
+          "2no": {
+            "6yes": 0,
+            "6no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 3,
+        "orderId": 3,
+        "title": "Network Switch (SCALANCE M800)",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 275.44305419921875,
+        "y": 122.91571235656738,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "6yes": {
+              "3yes": 1,
+              "3no": 0
+            },
+            "6no": {
+              "3yes": 0.5,
+              "3no": 0.5
+            }
+          },
+          "2no": {
+            "6yes": {
+              "3yes": 0.5,
+              "3no": 0.5
+            },
+            "6no": {
+              "3yes": 0,
+              "3no": 1
+            }
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 6,
+        "orderId": 6,
+        "title": "Rapid SCADA Server With PLC (SIMATIC S7-1500)",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 281.6754150390625,
+        "y": -31.9795823097229,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "6yes": 0.15,
+            "6no": 0.85
+          },
+          "2no": {
+            "6yes": 0,
+            "6no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 43,
+        "orderId": 43,
+        "title": "Storage Database (ThinkSystem SR860 V3 Mission Control Server)",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 928.4620971679688,
+        "y": -10.317361831665039,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "6yes": {
+            "43yes": 0.5,
+            "43no": 0.5
+          },
+          "6no": {
+            "43yes": 0,
+            "43no": 1
+          }
+        },
+        "sampled": false
+      }
+    },
+    {
+      "source": {
+        "id": 2,
+        "orderId": 2,
+        "title": "Firewall (SIMATIC CP 1243)",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 174.81012725830078,
+        "y": -38.012118339538574,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "4yes": {
+            "2yes": 0.55,
+            "2no": 0.45
+          },
+          "4no": {
+            "2yes": 0,
+            "2no": 1
+          }
+        },
+        "sampled": false
+      },
+      "target": {
+        "id": 3,
+        "orderId": 3,
+        "title": "Network Switch (SCALANCE M800)",
+        "functionalities": [],
+        "vulnerabilities": [],
+        "attack_techniques": [],
+        "x": 275.44305419921875,
+        "y": 122.91571235656738,
+        "values": [
+          "yes",
+          "no"
+        ],
+        "tbl": {
+          "2yes": {
+            "6yes": {
+              "3yes": 1,
+              "3no": 0
+            },
+            "6no": {
+              "3yes": 0.5,
+              "3no": 0.5
+            }
+          },
+          "2no": {
+            "6yes": {
+              "3yes": 0.5,
+              "3no": 0.5
+            },
+            "6no": {
+              "3yes": 0,
+              "3no": 1
+            }
+          }
+        },
+        "sampled": false
       }
     }
   ]
