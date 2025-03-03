@@ -1111,7 +1111,7 @@ var loadDefaultNetwork = function(filepath, isInitial, val) {
 	  };
 
 	  // start the force layout
-	  forceLayout(nodes, edges);
+	  //forceLayout(nodes, edges);
 	});
 };
 
